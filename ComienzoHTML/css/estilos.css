@@ -1,0 +1,11 @@
+h1{
+    color:red;
+    text-align: center;
+}
+p{
+    background-color: rgba(2, 232, 25);
+}
+h2{
+    border: 1px;
+    margin: 5px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamiento de imagenes</title>
+    <script src="https://kit.fontawesome.com/d9c76c70ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <figure style="float: left;">
+        <img src="imagenes2/ipod.jpg" height="200px" width="100px" alt="imagen de un ipod">
+        <img src="imagenes2/ipod1.jpg" height="200px" width="100px" alt="imagen de un ipod">
+         <figcaption>
+        Primera imagen
+         </figcaption>
+        </figure>
+    <figure style="float: left;">
+        <img src="imagenes2/planetas.jpg" height="200px" width="100px" alt="imagen de los planetas">
+        <figcaption>
+            Segunda imagen
+        </figcaption>
+    </figure>
+    <figure style="float: left;">
+        <img src="imagenes2/vengadores.jpg" height="300px" width="400px" alt="imagen de los planetas">
+        <figcaption>
+            Vengadores
+        </figcaption>
+    </figure>
+
+    <figure>
+        <picture>
+            <source media="(min-width:650px)" srcset="./imagenes2/ipod.jpg">
+            <source media="(min-width:465px)" srcset="./imagenes2/ipod1.jpg">
+            <img src="./imagenes2/flores.jpg" alt="Foto" style="width:auto;">
+          </picture>
+    </figure>
+<h2> Imagen como mapa</h2>
+<p>Pincha en cada planeta para ver más detalle sobre él:</p>
+<img src="https://concepto.de/wp-content/uploads/2018/02/Sistema-solar-e1518703607625.jpg" alt="Planetas
+del sistema solar" usemap="#planetmap">
+<map name="planetmap">
+ <area shape="rect" coords="0,160,90,275" alt="Sol" href="https://es.wikipedia.org/wiki/Sol">
+ <area shape="circle" coords="120,220,5" alt="Mercurio"
+href="https://es.wikipedia.org/wiki/Mercurio_(planeta)">
+ <area shape="circle" coords="170,220,20" alt="Venus" href="https://es.wikipedia.org/wiki/Venus_(planeta)">
+ <area shape="circle" coords="245,220,20" alt="Tierra" href="https://es.wikipedia.org/wiki/Tierra">
+ <area shape="circle" coords="525,220,20" alt="Saturno" href="https://es.wikipedia.org/wiki/Saturno_(planeta)">
+</map>
+
+    <footer>
+        <h3>Acceso a mis redes sociales</h3>
+        <figure style="float: left;">
+           <a href="https://www.instagram.com/llubi_uli/"><img src="imagenes2/instagram.webp" height="50px" width="50px" alt="logo de instagram"></a>
+        </figure>
+        <figure>
+            <a href="https://www.facebook.com"><img src="./imagenes2/facebook.webp"height="50px" width="50px" alt="logo de facebook"></a>
+        </figure>
+        <br/>
+        <hr/>
+       <h1> Siguenos en fontawesome:
+        <i class="fa-brands fa-twitter"></i><a href="https://www.instagram.com/llubi_uli/"><i class="fa-brands fa-instagram"></a></i><i class="fa-brands fa-facebook"></i></h1>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/d9c76c70ad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Formulario HTML</h1>
+    <form action="../../form-result.php" method="post" target="_blank">
+
+        <p>Nombre de usuario: <input type="text" name="usuario"></p>
+      
+        <p>Contraseña: <input type="password" name="pass"></p>
+      
+        <p><input type="submit" value="Enviar datos"></p>
+      
+      </form>
+    
+      <h1> Segundo formulario</h1>
+        
+    <form action="../../form-result.php" method="get" target="_blank">
+        <fieldset>
+        <legend>Información básica</legend>
+        <p><label>Nombre completo: <input type="text" name="nombrecompleto"></label></p>
+        <p><label>Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>
+        <p>Gender:
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        </p>
+        <p><label>Dirección: <input type="text" name="direccion"></label></p>
+        <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+        </fieldset>
+        <h1> Tercer formulario</h1>
+        <fieldset>
+            <legend>Información extra</legend>
+            <p>Intereses:
+            <label><input type="checkbox" name="libros"> Libros</label>
+            <label><input type="checkbox" name="peliculas"> Películas</label>
+            <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+            </p>
+            <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+            </fieldset>
+
+<fieldset>
+    <legend>Selecciona un equipo de futbol</legend>
+    <select name="Equipos_de_Furbo">
+        <option value="1">Real Madrid</option>
+        <option value="2">Barça</option>
+        <option value="3" selected>Betis</option>
+        <option value="4">Real Sociedad</option>
+       </select>
+</fieldset>
+
+            <p>
+            <button type="submit">
+            <i class="fa-regular fa-paper-plane" style="color: palevioletred";></i>Enviar
+            </button>
+            <button type="reset">
+            <i class="fa-sharp fa-solid fa-xmark" style="color: red";></i>Reset
+            </button>
+            </p>
+           </form>
+
+    <h1>Formulario con OUTPUT</h1>
+    <form oninput="total.value=parseInt(n1.value)+parseInt(n2.value)">
+        <input type="number" id="n1" name="n1" value="0">
+        +<input type="number" id="n2" name="n2" value="0">
+        =<output name="total" for="n1 n2" id="total"></output>
+       </form>
+
+       <meter value="138" min="1" max="200" high="150" low="60" >138</meter> 
+       <br/>
+       <progress max="100" value="35">35%</progress>
+           
+</body>
+</html>

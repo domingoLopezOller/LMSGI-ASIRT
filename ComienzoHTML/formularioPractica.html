@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Práctica 1: Formulario</h1>
+    <p>Aprende a formatear un documento</p>
+    <form
+      action="."
+      oninput="range_control_value.value = range_control.valueAsNumber"
+    >
+      <p>
+        Nombre: <input type="text" name="name_control" autofocus required />
+        <br />
+        Correo Electrónico:
+        <input type="email" name="email_control" required /> <br />
+        URL:
+        <input
+          type="url"
+          name="url_control"
+          placeholder="Escribe la URL de tu página web personal"
+        />
+        <br />
+        Fecha: <input type="date" name="date_control" /> <br />
+        Tiempo: <input type="time" name="time_control" /> <br />
+        Fecha y hora de nacimiento:
+        <input type="datetime" name="datetime_control" /> <br />
+        Mes: <input type="month" name="month_control" /> <br />
+        Semana: <input type="week" name="week_control" /> <br />
+        Número (min -10, max 10):
+        <input
+          type="number"
+          name="number_control"
+          min="-10"
+          max="10"
+          value="0"
+        />
+        <br />
+        Intervalo (min 0, max 10):
+        <input type="range" name="range_control" min="0" max="10" value="0" />
+        <output for="range_control" name="range_control_value">0</output> <br />
+        Teléfono: <input type="tel" name="tel_control" /> <br />
+        Término de búsqueda: <input type="search" name="search_control" />
+        <br />
+        Color Favorito: <input type="color" name="color_control" /> <br />
+        <input type="submit" value="Submit!" />
+      </p>
+    </form>
+    <h2>Formulario de la práctica 2</h2>
+    <form>
+        <fieldset style="width: 70%; background-color: aquamarine;">
+            <legend>Datos personales</legend>
+            <ol>
+                <li>
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
+                </li>
+                <li>
+                    <label for="name">Email</label>
+                    <input id="email" name="email" type="email" placeholder="example@domain.com" required>
+                </li>
+                <li>
+                    <label for="name">phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="Ex: 6XXXXXXXX" required>
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset style="width: 50%; background-color: orange;">
+            <legend>Dirección de envío</legend>
+            <ul>
+                <li>
+                    <label for="address">Dirección</label>
+                    <textarea id="address" name="address" rows="5" placeholder="Avenida..." required></textarea>
+                </li>
+                <li>
+                    <label for="postcode">Código postal</label>
+                    <input id="postcode" name="postcode" type="text" required>
+                </li>
+                <li>
+                    <label for="country">País</label>
+                    <input id="country" name="country" type="text" required>
+                </li>
+            </ul>
+
+        </fieldset>
+        <fieldset style="width: 30%; background-color: rgb(207, 182, 43);">
+            <legend>Card type</legend>
+            <ol>
+                <li>
+                    <input id="visa" name="cardtype" type="radio">
+                    <label for="visa"><i class="fa-brands fa-cc-visa"></i>VISA</label>
+                </li>
+                <li>
+                    <input id="amex" name="cardtype" type="radio">
+                    <label for="amex">Amex</label>
+                </li>
+                <li>
+                    <input id="mastercard" name="cardtype" type="radio">
+                    <label for="mastercard">Mastercard</label>
+                </li>
+            </ol>
+
+        </fieldset>
+    </form>
+  </body>
+</html>

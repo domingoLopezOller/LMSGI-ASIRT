@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bb9bdfb2bc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="../../form-result.php" method="get" target="_blank">
+        <fieldset>
+        <legend>Información básica</legend>
+        <p><label for="nombrecompleto">Nombre completo: <input type="text" name="nombrecompleto" value="Persona" disabled></label></p>
+        <p><label for="fechadenacimiento">Fecha de nacimiento: <input type="date" name="fechadenacimiento"></label></p>
+        <p>Género:
+        <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+        <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+        <label><input type="radio" name="genero" value="no_binario" checked> No binario</label>
+
+        </p>
+        <p><label>Dirección: <input type="text" name="direccion"></label></p>
+        <p><label>Número telefónico: <input type="tel" name="telefono"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Información extra</legend>
+            <p>Intereses:
+            <label><input type="checkbox" name="libros" checked> Libros</label>
+            <label><input type="checkbox" name="peliculas"> Películas</label>
+            <label><input type="checkbox" name="videojuegos"> Videojuegos</label>
+            <label for="numero">Introduce un número </label><input type="number" name="numero" min="20">
+            </p>
+            <p><label>Color favorito: <input type="color" name="colorfavorito"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Selecciona un equipo de fútbol</legend>
+                <select name="equipos_futbol">
+                    <option value="Real_Madrid">Real Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Betis">Betis</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select>
+                <p>Formato de imagen: <input type="text" name="formatoimagen" list="listaformatosimagen"></p>
+
+                    <datalist id="listaformatosimagen">
+
+                        <option>PNG</option>
+
+                        <option>JPEG</option>
+
+                        <option>GIF</option>
+
+                        <option>TGA</option>
+
+                    </datalist>
+                    <label for="fichero">Elige el fichero</label> <input type="file" accept="image/PNG">
+            </fieldset>
+            <p>
+            <button type="submit">
+                <i class="fa-solid fa-check" style="color:green;"></i> Enviar
+            </button>
+            <button type="reset">
+                <i class="fa-solid fa-xmark" style="color:red;"></i> Resetear formulario
+            </button>
+            </p>
+           </form>    
+           <h2>Formulario con output</h2>
+           <form oninput="total.value=parseInt(n1.value)*parseInt(n2.value)">
+            <input type="number" id="n1" name="n1" value="0">
+            *<input type="number" id="n2" name="n2" value="0">
+            =<output name="total" for="n1 n2" id="total"></output>
+            <meter value="138" min="1" max="200" high="150" low="60" >138</meter>
+           </form>
+           <h2>Barra de estado</h2>
+           <meter value="138" min=”1” max=”200” high=”150” low=”60” >138</meter>
+</body>
+</html>

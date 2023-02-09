@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+</head>
+
+<body>
+    <div id="audio">
+        <h1>Acceso a un fichero de audio MP3</h1>
+        <audio controls>
+            <source src="./media/misionImposible.ogg" type="audio/ogg" />
+            <source src="./media/misionImposible.mp3" type="audio/mpeg" />
+            Tu buscador no soporta las extensiones de audio propuestas OGG y MP3
+        </audio>
+
+    <p>Si tenemos el recurso en la red también podemos enlazarlo directamente, eso sí, todo lo que sea externo antes tiene que cargarse </p>
+    <audio controls>
+        <source src="https://s3-us-west-2.amazonaws.com/allmetalmixtapes/Saxon%20-%201984%20-%20Crusader/04%20-%20Sailing%20To%20America.mp3" type="audio/mpeg" />
+        Tu buscador no soporta las extensiones de audio propuestas
+    </audio>
+     
+
+    <p> También podemos hacer que se reproduzca nada más cargar la web </p> 
+    <!-- <audio controls autoplay>
+        <source src="./media/DragonBall.ogg" type="audio/ogg" />
+        <source src="./media/DragonBall.mp3" type="audio/mpeg" />
+        Tu buscador no soporta las extensiones de audio propuestas OGG y MP3
+    </audio>   -->
+
+        <hr />
+    </div>
+    <div id="video">
+        <h2>Colocar un vídeo propio con subtítulos</h2>
+        <video id="video" controls>
+            <source src="./media/friday.mp4" type="video/mp4" />
+            <source src="./media/friday.webm" type="video/webm" />
+            <track label="English" kind="subtitles" srclang="en" src="./media/friday.vtt" default />
+        </video>
+        <hr />
+    </div>
+    <div id="dibujo">
+        <h2>Pintar CANVA y SVG en HTML5</h2>
+        <div style="float:left;">
+            <canvas id="lienzo1" width="600" height="400">
+                <script type="text/javascript">
+                    var canvas = document.getElementById("lienzo1");
+                    var contexto = canvas.getContext("2d");
+                    contexto.lineWidth = 2;
+                    for (i = 0; i <= 600; i += 20) {
+                        contexto.moveTo(0, 0);
+                        contexto.lineTo(i, 400)
+                        contexto.stroke();
+                    }
+                </script>
+            </canvas>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3c.org/2000/svg" height="400">
+                <rect id="rec1" x="50" y="50" width="300" height="100" fill="red" />
+                <ellipse id="elips1" cx="200" cy="100" rx="50" ry="75" fill="blue" />
+            </svg>
+        </div>
+
+        <hr />
+    </div>
+    <div id="insertarCodigo">
+        <div>
+            <h2>Colocar un vídeo de Youtube en la página web</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6Jfk8ic3KVk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div style="float: left">
+            <h2>Incrustar una página web dentro de otra</h2>
+            <iframe src="http://iescuravalera.es" height="300px" width="1000px"></iframe>
+        </div>
+        <div>
+            <h2>Incluir un PDF para leerlo</h2>
+            <embed type="application/pdf"
+                src="https://gutl.jovenclub.cu/wp-content/uploads/2013/10/El+gran+libro+de+HTML5+CSS3+y+Javascrip.pdf"
+                width="500" height="300" />
+        </div>
+
+        <hr />
+    </div>
+</body>
+
+</html>

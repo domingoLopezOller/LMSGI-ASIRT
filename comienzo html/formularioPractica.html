@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/e382bdee75.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>Práctica 1: Formulario</h1>
+    <p>Aprende a formatear un documento</p>
+    <form
+      action="."
+      oninput="range_control_value.value = range_control.valueAsNumber"
+    >
+      <p>
+        Nombre: <input type="text" name="name_control" autofocus required />
+        <br />
+        Correo Electrónico:
+        <input type="email" name="email_control" required /> <br />
+        URL:
+        <input
+          type="url"
+          name="url_control"
+          placeholder="Escripe la URL de tu página web personal"
+        />
+        <br />
+        Fecha: <input type="date" name="date_control" /> <br />
+        Tiempo: <input type="time" name="time_control" /> <br />
+        Fecha y hora de nacimiento:
+        <input type="datetime" name="datetime_control" /> <br />
+        Mes: <input type="month" name="month_control" /> <br />
+        Semana: <input type="week" name="week_control" /> <br />
+        Número (min -10, max 10):
+        <input
+          type="number"
+          name="number_control"
+          min="-10"
+          max="10"
+          value="0"
+        />
+        <br />
+        Intervalo (min 0, max 10):
+        <input type="range" name="range_control" min="0" max="10" value="0" />
+        <output for="range_control" name="range_control_value">0</output> <br />
+        Teléfono: <input type="tel" name="tel_control" /> <br />
+        Término de búsqueda: <input type="search" name="search_control" />
+        <br />
+        Color Favorito: <input type="color" name="color_control" /> <br />
+        <input type="submit" value="Submit!" />
+      </p>
+    </form>
+
+    <h2>formulario de practica 2</h2>
+
+    <form action="">
+      <fieldset style="width:70% ; background-color:cyan;">
+        <legend>Datos personales</legend>
+        <ol>
+          <li>
+            <label for="name">Nombre</label>
+            <imput id="name" name="name" type="text" aria-placeholder="First and last name" required autofocus></imput>
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <imput id="email" name="email" type="email" aria-placeholder="ejemplo@dominio.com" required></imput>
+          </li>
+          <li>
+            <label for="phone">telefono</label>
+            <imput id="phone" name="phone" type="tel" aria-placeholder="ej. +34000000000" required></imput>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset style="width:50% ; background-color: orange;">
+        <legend>Direccion de envio</legend>
+        <ol>
+          <li><label for="address">Direccion</label>
+            <textarea id="address" name="address" rows="5" placeholder="Avenida...." required></textarea>
+          </li>
+          <li>
+          <label for="postcode">Codigo Postal</label>
+          <imput id="postcode" name="postcode" type="text" required></imput>
+          </li>
+          <li>
+            <label for="country">Pais</label>
+            <imput id="country" name="country" type="text" required></imput>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset style="width:30% ; background-color: rgb(207, 182, 43);">
+        <legend>Card details</legend>
+        <ol>
+          <li>
+            <input id="visa" name="cardtype" type="radio"></input>
+            <label for="visa"><i class="fa-brands fa-cc-visa"></i>>Visa</label>
+          </li>
+          <li>
+            <input id="amex" name="cardtype" type="radio"></input>
+            <label for="amex"><i class="fa-brands fa-cc-amex"></i>>Amex</label>
+          </li>
+          <li>
+            <input id="mastercard" name="cardtype" type="radio"></input>
+            <label for="mastercard"><i class="fa-brands fa-cc-mastercard"></i>>mastercard</label>
+          </li>
+        </ol>
+      </fieldset>
+      <li><label for="address">Direccion</label>
+            <textarea id="address" name="address" rows="5" placeholder="Avenida...." required></textarea>
+          </li>
+          <li>
+          <label for="postcode">Codigo Postal</label>
+          <imput id="postcode" name="postcode" type="text" required></imput>
+          </li>
+          <li>
+            <label for="country">Pais</label>
+            <imput id="country" name="country" type="text" required></imput>
+          </li>
+    </form>
+  </body>
+</html>

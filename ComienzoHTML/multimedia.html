@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <div id="audio">
+        <audio controls>
+            <source src="./media/electronic.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div id="video">
+        <video width="320" height="240" controls>
+            <source src="forrest_gump.mp4" type="video/mp4">
+            <source src="forrest_gump.ogg" type="video/ogg">
+            <track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian">
+          </video>
+    </div>
+    <div>
+        <canvas id="lienzo1" width="600" height="400">
+            <script type="text/javascript">
+            var canvas=document.getElementById("lienzo1");
+            var contexto=canvas.getContext("2d");
+            contexto.lineWidth=2;
+            for(i=0;i<=600;i+=20){
+            contexto.moveTo(0,0);
+           contexto.lineTo(i,400)
+           contexto.stroke();
+            }
+            </script>
+           </canvas>
+    </div>
+    <div>
+        <svg xmlns="http://www.w3c.org/2000/svg" height="400">
+            <rect id="rec1" x="50" y="50" width="300" 
+            height="100" fill="red" />
+            <ellipse id="elips1" cx="200" cy="100" rx="50" 
+            ry="75" fill="blue" />
+           </svg>
+           
+    </div>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CocEMWdc7Ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <h2>Introducir una página dentro de otra</h2>
+    <iframe src="https://iescuravalera.es" height="500px" width="900px"></iframe>
+    <h2>Incluir un PDF para leerlo</h2>
+    <embed type="application/PDF"
+    src="https://iesmardeponiente.com/wp-content/uploads/2022/08/GUIA_DE_CONEXION_DE_USUARIOS_AL_SERVICIO_WIFI_CORPORATIVO_DE_LOS_CENTROS_EDUCATIVOS_v6.pdf"
+    width="500" height="300"/>
+</body>
+</html>

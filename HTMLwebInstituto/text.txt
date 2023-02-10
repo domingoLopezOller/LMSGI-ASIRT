@@ -1,2 +1,0 @@
-HEADER style="background: linear-gradient(rgb(255, 255, 255) 10%, transparent 90%), 
-url('./media/imagenes/headerIES.jpg') no-repeat"

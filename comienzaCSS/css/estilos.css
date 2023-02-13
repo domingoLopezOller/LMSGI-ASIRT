@@ -1,0 +1,34 @@
+p{
+    background-color: aqua;
+}
+
+p.otro{
+    background-color: red;
+}
+
+p#identificador{
+    background-color: green;
+}
+
+ul li{
+    background-color: orange;
+}
+
+ol li:nth-child(even){
+    background-color: plum;
+}
+
+td{
+    border: 2px dotted blue;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 1s;
+}
+
+div:hover {
+    width: 300px;
+}

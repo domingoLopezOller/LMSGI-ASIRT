@@ -35,3 +35,11 @@ div {
 div:hover{
     width: 300px;
 }
+
+h1{
+    transition: ;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}

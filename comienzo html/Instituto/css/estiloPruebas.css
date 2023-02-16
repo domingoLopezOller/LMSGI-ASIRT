@@ -1,0 +1,110 @@
+p.clase1{
+    text-decoration: overline;
+    font-size:  larger;
+}
+p.calse2{
+    background-color: red;
+    border: 1px solid rebeccapurple;    
+    
+}
+h1,h2,h3{
+    
+}
+div h1{
+    
+    border: none;
+}
+
+h1{
+    
+    font-size: 12px;
+    /* border: 2px dotted rgb(177, 42, 42); */
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(177, 42, 42);
+}
+
+p.groucho{
+    font-style: italic;
+    font-weight: bold;
+}
+
+p.aviso{
+    
+    text-decoration: underline;
+}
+
+
+.clase{
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+}
+
+
+#ide{
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+}
+
+*{
+    color: gray;
+    font-style: normal;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p *{
+    color: green;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+p h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    color: aquamarine;
+}
+
+section article p{
+    color: red;
+}
+
+section.rojo{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clase1{
+    color: aqua;
+}

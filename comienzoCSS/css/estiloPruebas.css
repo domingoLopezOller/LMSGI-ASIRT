@@ -1,0 +1,86 @@
+/* Reglas para todas las etiquetas */
+*{
+    color: gray;
+    font-style: normal;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/*Reglas para encabezado */
+h1{
+    color: blue; 
+    font-size:12px;
+    border: rgb(123,234,12);
+    border-style: dotted;
+    border-width: 2px;
+}
+
+h1,h2,h3{
+    color:blue;
+    }
+
+div h1{
+    color: rgb(184, 27, 237);
+    border: none;
+}
+
+/* Domingo me obliga a poner comentarios */
+p.clase1{
+    text-decoration:overline;
+    font-size: larger;
+}
+p.clase2{
+    background-color: orange;
+    border: 1px solid cyan;
+}
+
+p{
+    color:blue;
+    font-size:12pt;
+}
+
+.clase3{
+    color: coral;
+}
+
+p.groucho{
+    font-style: italic;
+    font-weight: bold;
+}
+p.aviso{
+    color: green;
+    text-decoration:underline;
+}
+
+p *{
+    color:brown;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+p h1{
+    font-family: fantasy;
+    font-size: large;
+    color:darkgoldenrod;
+}
+
+/* Ejemplo Clase con id */
+.clase{
+    color:darkblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: darkgray;
+}
+
+#ide{
+    color:darkblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: darkgray;
+}

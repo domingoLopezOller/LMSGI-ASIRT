@@ -7,6 +7,7 @@ p {
     text-decoration:line-through;
     background-color:blueviolet;
 }
+
 p.otro{
     background-color:bisque;
 }
@@ -81,10 +82,14 @@ div {
     @keyframes animated_div
     {
     0% {transform: rotate(0deg);left:0px;}
-    25% {transform: rotate(20deg);left:0px;}
+    25% { transform: rotate(20deg); left:0px; -webkit-transform: rotate(20deg); -moz-transform: rotate(20deg); -ms-transform: rotate(20deg); -o-transform: rotate(20deg); }
     50% {transform: rotate(0deg);left:500px;}
     55% {transform: rotate(0deg);left:500px;}
     70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-    100% {transform: rotate(-360deg);left:0px;}
+    100% { transform: rotate(-360deg); left:0px; -webkit-transform: rotate(-360deg); -moz-transform: rotate(-360deg); -ms-transform: rotate(-360deg); -o-transform: rotate(-360deg); }
     }
     
+h1{
+    animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+}    

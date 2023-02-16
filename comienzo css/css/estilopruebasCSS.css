@@ -1,0 +1,94 @@
+/*Reglas generales para todas las etiquetas*/
+
+*{
+    color: dimgrey;
+    font-style: normal;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Regla para encabezado h1*/
+h1{
+    font-size: 12px;
+    border-color: chocolate;
+    border-style: dotted;
+    border-width: 2px;
+    /*border: 2px dotted chocolate; (Sinonimo de lo de arriba)*/ 
+}
+
+div h1{
+    color: darksalmon;
+    border: none;
+}
+
+
+/* Regla para los parrafos*/
+
+p *{
+    color: bisque;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+p h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: aquamarine;
+}
+
+p{
+    font-size:12pt;
+   }
+
+p.clase1{
+    text-decoration: overline;
+    font-size: larger;
+}
+p.clase2{
+    background-color: aqua;
+    border: 2px solid plum;
+
+}
+
+
+p.groucho{
+    font-style: italic;
+    font-weight: bold;
+}
+
+p.aviso{
+    color: rgb(57, 184, 57);
+    text-decoration: underline;
+}
+
+
+/*Ejemplo para ver class e ID*/
+
+.clase{
+    color: darkslateblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: bisque;
+}
+
+#ide{
+    color: darkslateblue;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: bisque;
+}
+
+section article p{
+    color: red;
+}
+
+section.rojo{
+    color: red;
+}   

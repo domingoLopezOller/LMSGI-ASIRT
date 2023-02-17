@@ -1,0 +1,58 @@
+/*Regla para el encabezado h1 */
+h1{
+    color: blue; font-size: 12px;
+    font-size: 12px;
+    border: 2px dotted red;
+}
+h1,h2,h3{
+    color:blue;
+   }
+div h1{
+    color:orange;
+    border: none;
+}
+/*Reglas para los párrafos */
+p{
+    color:blue;
+    font-size:12pt;
+   }
+p.clase1{
+    text-decoration: overline;
+    font-size: larger;
+}
+p.clase2{
+    background-color: orange;
+    border: 1px solid cyan;
+    color: red;
+}
+.clase3{
+    color: aqua;
+}
+p.groucho {
+    font-weight: bold;
+    font-style: italic;
+  }
+  p.aviso {
+    color: green;
+    text-decoration: underline;
+  }
+/* ejemplo para ver class e id*/
+  .clase{
+    color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+}
+  #ide{
+    color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+  }
+  section >p{color:red;}

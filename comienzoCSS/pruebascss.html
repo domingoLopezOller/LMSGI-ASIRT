@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <meta name="description" content="Página web del instituto">
+    <meta name="keywords" content="CSS3">
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <!--Inclusión de ficheros externos-->
+    <link rel="stylesheet" href="./css/estilopruebas.css">
+    <script src="./js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Primera prueba con CSS</h1>
+    <p class="clase1">Hola, ¿cómo estás?</p>
+    <p class="clase2" style="background: cyan;">Estoy muy bien, gracias.</p>
+    <p>Esto es otro párrafo</p>
+    <div>
+        <h2>Otro encabezado</h2>
+        <h1>Otro encabezado</h1>
+    </div>
+    <h3 class="clase3">Otro encabezado</h3>
+    <h2>Ejemplo de aplicar dos clases a la vez</h2>
+    <p class="groucho aviso">- Dice que… la parte contratante de la primera parte será considerada como la parte 
+        contratante de la primera parte.</p>
+        <h4>Cuidado con Class y ID</h4>    
+        <p class="clase">Párrafo al que le afecta la clase general llamada clase</p>
+        <p id="ide">Párrafo al que le afecta el identificador general ide</p>
+        <h4 class="clase">Párrafo al que le afecta la clase general llamada clase</h4>
+        <!--Esta línea debería de marcar id="ide" porque no debe haber más de un identificador igual-->
+        <h4 id="ide">Párrafo al que le afecta el identificador general ide</h4>
+
+        <h1>Pruebas con selectores descendientes</h1>
+        <section>
+            <h1>Título</h1>
+            <p id=”p1”>Sale de color rojo</p>
+            <article>
+            <p id=”p2”>No sale de color rojo</p>
+            </article>
+           </section>
+
+</body>
+</html>

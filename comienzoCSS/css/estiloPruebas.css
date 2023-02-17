@@ -52,3 +52,6 @@ p.aviso{
     text-decoration: underline;
 }
 
+/*Analizar situación de parentesco*/
+/* section h1{color:red;} */
+section > h1{  color:red;}

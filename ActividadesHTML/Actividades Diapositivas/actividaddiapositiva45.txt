@@ -1,0 +1,5 @@
+Actividad: Reconoce cada una de estas nuevas etiquetas de HTML5 según las 
+definiciones anteriores.
+
+El 1 es el header, el 2 es el nav, el 3 es el section, el 4 es el aside, el 5 es el footer y el 6 está dentro del main, o se puede decir-
+- que es un <p>

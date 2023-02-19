@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e382bdee75.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MI PRIMER FORMULARIO</h1>
+    <form action="../../form-result.php" method="get" target="_blank">
+        <p>Nombre: <input type="text" name="usuario"></p>
+        <p>Apellidos: <input type="text" name="Apellidos"></p>
+       
+
+      </form>
+      
+        
+      <p>Sexo:
+        <label><input type="radio" name="genero" value="masculino"> Hombre</label>
+        <label><input type="radio" name="genero" value="femenino" > Mujer</label>
+        </p>
+        <p>Poblacion:
+        <select name="Poblacion">
+            <option value="Alicante" selected>Alicante</option>
+            <option value="Albox">Albox</option>
+            <option value="Barcelona" >Barcelona</option>
+            <option value="Sevilla">Sevilla</option>
+            </select></p>
+            <p>Correo: <input type="email" name="Correo"></p>
+
+            <p>Descripcion:
+                <textarea  name="Descripcion"></textarea> <!-- No se como poner el ancho y altura, se que es con el withd y height pero en la chuleta dice que no tiene esas etiquetas y tampoco me permite emplear la etiqueta en el textarea-->           
+            </p>
+            <label><input type="checkbox" name="cokkis"> Deseo recibir informacion sobre novedades y ofertas</label> <br> <br>
+            <label><input type="checkbox" name="cokkis2"> Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label>
+
+            
+                <p><input type="submit" value="Enviar"></p>         
+</body>
+</html>

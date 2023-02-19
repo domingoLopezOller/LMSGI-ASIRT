@@ -1,0 +1,53 @@
+p.clase1{
+    text-decoration: overline;
+    font-size: large;  
+}
+/* p{
+    color:blue;
+    font-size:12pt;
+   }
+*/   
+
+p.clase2 {
+    background-color: orange;
+    border: 1px solid;
+}
+
+h1 {
+    color:blue ;
+    font-size: 12px;
+    border: 2px dotted rgb(123, 234, 12);
+}
+
+h1,h2,h3{
+    color:blue;
+   }
+.clase4 {
+    color: blueviolet;
+}
+
+p.groucho {
+    font-style: italic;
+    font-weight: bold;
+}
+p.aviso {
+    color: greenyellow;
+    text-decoration:  underline;
+}
+
+p * {
+    text-decoration: overline;
+    text-align: center;
+    text-decoration-color: blue;
+    -moz-text-decoration-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+} 
+
+section.rojo {
+
+    color: red;
+}
+
+section > p {
+    color: red;
+}

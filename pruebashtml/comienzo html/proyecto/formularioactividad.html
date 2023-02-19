@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    
+    
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+      <p>Nombre: 
+        <input type="text" name="name_control" autofocus required/>
+        <br/>
+        EDAD:
+        <input type="number" name="number_control" min="18" max="80" value="0"/>
+        <br/>
+        
+        URL:
+        <input type="url" name="url_control" placeholder="Escripe la URL de tu página web personal"/>
+        <br/>
+        Correo Electrónico:
+        <input type="email" name="email_control" required/> 
+        <br/>
+        Teléfono: 
+        <input type="tel" name="tel_control"/> 
+        <br/>
+        direccion: 
+        <input type="address" name="address_control"/> 
+        <br/>
+        codigo postal: 
+        <input type="codigo" name="postcode_control"/> 
+        <br/>
+        Pais
+        <input type="Pais" name="country_control"/> 
+        <br/>
+      </p>
+    </form>
+    <br><br>
+
+    
+    <form>
+      <fieldset >
+        <ol>
+          <li>
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" placeholder="First and last name" required autofocus>
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="example@domail.com" required>
+          </li>
+          <li>
+            <label for="phone">Teléfono</label>
+            <input id="phone" name="phone" type="tel" placeholder="Eg. +346666000000" required>
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Dirección de envío</legend>
+        <ul>
+          <li>
+            <label for="address">Dirección</label>
+            <input id="address" name="address" rows="5" placeholder="Avenida..." required>
+          </li>
+          <li>
+            <label for="postcode">Codigo Postal</label>
+            <input id="postcode" name="postcode" type="text" required>
+          </li>
+          <li>
+            <label for="country">País</label>
+            <input id="country" name="country" type="text" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Card details</legend>
+        <ol>
+          <li>
+            <fieldset>
+              <legend>Card type</legend>
+              <ol>
+                <li>
+                  <input id="vista" name="cardtype" type="radio">
+                  <label for="vista">visa</label>
+                  <input id="amex" name="cardtype" type="radio">
+                  <label for="amex">amex</label>
+                  <input id="mastercard" name="cardtype" type="radio">
+                  <label for="mastercrad">mastercrad</label>
+                </li>
+              </ol>
+            </fieldset>
+            
+            
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset >
+        <legend>NUMERO</legend>
+        <ol>
+          <li>
+            <label for="number">numero de tarjeta</label>
+            <input id="number" name="number" type="text" placeholder="number Card" required autofocus>
+         
+        </ol>
+      </fieldset>
+      <fieldset >
+        <legend>CODIGO DE SEGURIDAD</legend>
+        <ul>
+            
+            <label for="number">numero de seguridad</label>
+            <input id="number" name="number" type="text" placeholder="number " required autofocus>
+            </ul>
+      </fieldset>
+      <fieldset >
+        <legend>NAME ON CARD</legend>
+        <ul>
+            
+            <label for="number">NAME ON CARD</label>
+            <input id="number" name="number" type="text" placeholder="number " required autofocus>
+            </ul>
+      </fieldset>
+    </form>
+  </body>
+</html>

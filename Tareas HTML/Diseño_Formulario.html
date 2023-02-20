@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        <p>Name: 
+          <input type="text" name="name" autofocus required/>
+          <br/>
+        Age:
+            <select name="edad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="18" selected>18</option>
+            </select>
+            <br/>
+        URL:
+            <input type="url" name="url" placeholder="http://example.com"/>
+            <br/>
+        Email:
+            <input type="email" name="email" placeholder="example@domail.com" required/> 
+            <br/>
+        Phone:
+            <input type="telefono" name="telefono" min="-10" max="10" placeholder="Eg. +447500000000"/>
+            <br/>
+        Address:
+            <input type="text" name="direccion" autofocus required/>
+            <br/> 
+        Post code:
+            <input type="text" name="Codigo_Postal" autofocus required/>
+            <br/>
+        Country:
+            <input type="text" name="Pais" autofocus required/>
+            <br/>
+        Gender 
+            <br/>
+            <input type="radio" name="genero" id="hombre" value="h">
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="genero" id="mujer" value="m" checked >
+            <label for="mujer">Mujer</label>
+            <br/>
+            <input type="submit" value="Submit!"/>
+        </p>
+
+</body>
+</html>

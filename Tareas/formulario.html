@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d9c76c70ad.js" crossorigin="anonymous"></script>
+    <title>Formulario</title>
+</head>
+<body>
+    <p>Step 1: Your details</p>
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        Nombre: <input type="text" name="name_control" autofocus required placeholder="First and Lat name"/>
+        <br /><br />
+        Email:<input type="email" name="email_control" required placeholder="examenple@domain.com"/> <br /><br />
+        Teléfono: <input type="tel" name="tel_control" placeholder="Eg. +44750000000000"/> <br /><br />
+    </form>
+    <P>Step 2: Delivery address</P>
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="5" required></textarea><br />
+        <label for="postcode">Post Code</label>
+        <textarea id="postcode" name="postcode" rows="1" required></textarea><br />
+        <label for="country">Country</label>
+        <textarea id="country" name="country" rows="1" required></textarea><br />
+    </form>
+    <P>Step 3: Card details</P>
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        <legend>Card Details</legend>
+        <ol>
+            <li>
+                <input id="visa" name="cardtype" type="radio">
+                <label for="visa"><i class="fa-brands fa-cc-visa">VISA</i></label>
+                <input id="amex" name="cardtype" type="radio">
+                <label for="amex"><i class="fa-brands fa-cc-amex"></i>AmEx</label>
+                <input id="mastercard" name="cardtype" type="radio">
+                <label for="mastercard"><i class="fa-brands fa-cc-mastercard"></i>Mastercard</label>
+            </li>
+        </ol>
+        Card number: <input type="text" name="cardnumber_control" autofocus required/><br />
+        Security code: <input type="text" name="security_control" autofocus required/><br />
+        Name on card <input type="text" name="name_control" autofocus required placeholder="Exact name as on the card"/><br />
+    </form><br/>
+    <button class="btn success" >BUY IT!</button>
+    </body>
+</html>

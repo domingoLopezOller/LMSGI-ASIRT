@@ -1,0 +1,37 @@
+#intro:target{
+    color:blue
+}
+
+/*Pseudo sobre-enlaces */
+a.enlace{
+    text-decoration:none;
+}
+a.enlace2:visited{
+    color:gray; text-decoration:underline;
+}
+a.enlace3:hover{
+    background-color: #f44336; color: white;
+    padding: 14px 25px;
+}
+
+p:target {
+    background-color: gold;
+}
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+}
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+    color: red;
+}
+
+#ElQuijote:after {
+    content: "SEGUIR LEYENDO...";
+}
+#ElQuijote::first-letter {
+    font-size: 3em;
+}

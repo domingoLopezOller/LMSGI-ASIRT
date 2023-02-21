@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/c7a127ebee" crossorigin="anonymous"></script>
     <style>
         table, tr, th, td {
         border: 1px solid black;
         }
     </style>
 </head>
+<script src="https://kit.fontawesome.com/c7a127ebee" crossorigin="anonymous"></script>
 <body>
     <h1>LOS TRES PILARES DE LA WEB</h1>
     <section>
@@ -66,19 +68,38 @@
         <li> principales protocolos</li>
         <li>formas de conectarse</li>
     </ol>
-    <h1>
+        <h1>
         <ol>
            <LI>principales protocolos</LI>
-        </ol>
+        </ol></h1>
             <ul>
                 <li>transmision de ficheros</li>
                     <ul>
                         <li>FTP</li>
                     </ul>
-            </ul>
-    </h1>
+             <li>Correo electrónico</li>
+                        <ul>
+                            <li>IMAP</li>
+                            <li>POP</li>
+                            <li>SMTP</li>
+                        </ul>
+                </ul>
+            <article>
+                <h2>2. Formas de conectarse</h2>
+                <dl>
+                    <dt>Red Telefónica Conmutada (RTC)</dt>
+                        <dd>La línea telefónica de toda la vida. Para acceder a Internet es necesario un módem.</dd>
+                    <dt>Red Digital de Servicios Integrados (RDSI)</dt>
+                        <dd>Una línea telefónica especial. Para acceder a Internet es necesario un módem RDSI.</dd>
+                    <dt>Línea de Abonado Digital Asimétrica (ADSL)</dt>
+                        <dd>Se basa en la coversión de una línea RTC en una línea de alta velocidad. Para acceder a Internet es necesario un módem ADSL.</dd>
+                    <dt>Fibra Óptica</dt>
+                        <dd>Una línea de fibra óptica. Normalmente la fibra no llega hasta el usuario final, por lo que el término más apropiado es Fibra hibrida coaxial.</dd>
+                </dl>
+            </article>
+            </section>          
     <h1>TABLA</h1>
-    <table  style="height: 40 wi;">
+    <table  border="1px">
        <tbody>
         <tr>
             <td>a</td>
@@ -87,9 +108,119 @@
             <td>d </td>
         </tr>
         <tr>
-            <td ></td>
+          <td rowspan="2">ej</td>
+          <td>f</td>
+          <td colspan="2">g,h</td>  
+        </tr>
+        <tr>
+            <td> j </td>
+            <td rowspan="2">ko</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td>m</td>
+            <td>n</td>
+            <td>p</td>
         </tr>
         </tbody>
     </table>
+
+    <section>
+    <h1>FORMULARIO </h1>
+    <br action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        <br>Nombre: 
+          <input type="text" name="name_control" autofocus required/>
+          <br/>
+          Apellido:
+          <input type="text" name="apellido_control" min="5" max="80" value="0"/>
+          <br/>
+          SEXO
+          <br/>
+          <input type="radio" name="genero" id="hombre" value="h">
+          <label for="hombre">Hombre</label>
+          <input type="radio" name="genero" id="mujer" value="m" checked >
+          <label for="mujer">Mujer</label>
+          <br/>
+          Correo Electrónico:
+          <input type="email" name="email_control" required/> 
+          <br/>
+          poblacion
+          <select name="POBLACION">
+            <option value="1">alicante</option>
+            <option value="2">huercal-overa</option>
+            <option value="3" selected>madrid</option>
+           </select>
+           <br>
+           <label for="descripcion">Descripción:</label>
+           <textarea id="descripcion" name="descripcion" rows="6" cols="70"></textarea> <br> <br>
+        </br>
+           <input type="checkbox" id="texto1" name="terminos" value="yes">
+           <label for="hombre">Deseo recibir información sobre novedades y ofertas</label> <br> <br>
+           <input type="checkbox" id="texto1" name="terminos" value="yes">
+           <label for="mujer">Declaro haber leído y aceptar las condiciones generales del programa</label><br> <br>
+   
+           <input type="button" name="botonenviar" onclick="alert('Enviado!')" value="Enviar">
+       </section>
+      </form>
+      </section>
+
+      <section>
+
+
+      <header>
+        <center><img src="./imagenes/images.png" id="inicio"></center>
+    </header>
+    <nav>
+        <a href="#datospersonales">Datos personales</a> |
+        <a href="#formacion">Formación académica</a> |
+        <a href="#experiencia">Experiencia laboral</a> |
+        <a href="#datos">Otros datos de interés</a> |
+    </nav>
+    <section>
+        <article>
+            <h2 id="datospersonales">Datos Personales</h2>
+            <img src="./imagenes/kevin.jpg" height="200px" width="200px"  style="float: left;"  />
+            <dl>
+                <dt>Nombre:</dt>
+                    <dd>kevin</dd>
+                <dt>Apellidos:</dt>
+                    <dd>Acuña paredes</dd>
+                <dt>Dirección:</dt>
+                    <dd>micasa</dd>
+                <dt>Teléfono:</dt>
+                    <dd>635858899</dd>
+                <dt>Correo electrónico:</dt>
+                    <dd>kevin.acupar18@gmail.com</dd>
+            </dl>
+        </article>
+        <article>
+            <h1 id="formacion">Formación Académica</h1>
+            <ul>
+                <li>
+                    <strong>estudiante de formacion profesional administracion de redes e informatica </strong> <br>
+                </li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae, inventore temporibus. Quisquam porro numquam est atque eos quae mollitia doloribus, vel deleniti, saepe explicabo quo nesciunt nihil quas corporis recusandae.</li>
+            </ul>
+        </article>
+        <article>
+            <h2 id="experiencia">Experiencia Laboral</h2>
+            <ol>
+                <li>
+                    <strong>Por el momento ninguna </strong> <br>
+            </ol>
+        </article>
+        <article>
+            <h2 id="datos"> Datos de Interés</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, alias corrupti expedita nemo officiis qui amet doloremque provident! Quibusdam architecto nihil voluptatibus dolores consectetur in doloremque. Atque velit et quaerat!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ducimus sed facere voluptatum soluta, illum fugiat earum ratione vel placeat sequi ea, fugit eos aspernatur officiis nihil perferendis consequuntur voluptate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam delectus repellat asperiores quos architecto porro error. Ea quis possimus porro aperiam obcaecati dicta, exercitationem assumenda eum eaque qui ratione cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, unde. Quas assumenda quisquam magni ullam porro nemo doloremque nihil laboriosam magnam nesciunt? Sequi quo repellat veritatis beatae, explicabo corporis eligendi.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel asperiores error pariatur explicabo, et iste aliquam, aspernatur dolorem eligendi quia, consequuntur mollitia perferendis maxime. Molestiae, sunt. Voluptatem exercitationem provident commodi!</p>
+        </article>
+    </section>
+    <footer>
+            <p><a href="#inicio">inicio</a></p>
+    </footer>
+</section>
 </body>
 </html>

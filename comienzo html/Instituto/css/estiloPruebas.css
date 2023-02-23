@@ -7,9 +7,7 @@ p.calse2{
     border: 1px solid rebeccapurple;    
     
 }
-h1,h2,h3{
-    
-}
+
 div h1{
     
     border: none;
@@ -86,25 +84,35 @@ section.rojo{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section h1{color:red;}
 
 
 .clase1{
     color: aqua;
 }
+
+ul > li + li{
+    background-color: red;
+}
+
+article p:nth-of-type(2){
+    color:red;
+    }
+
+    div:nth-child(2) {
+        background: red;
+        }
+        li:nth-child(2) {
+        background: lightgreen;
+        }
+        :nth-child(3) {
+        background: yellow;
+        }
+
+        ul.pintar li:nth-child(odd){
+            color: blueviolet;
+        }
+
+        ul.pintar li:nth-child(even){
+            background-color: aqua;
+        }

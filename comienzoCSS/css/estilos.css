@@ -1,89 +1,79 @@
+/*Reglas generales para todas las etiquetas */
+*{
+    color:gray;
+    font-style:normal;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+
+/*Regla para el encabezado h1 */
+h1{
+    font-size:12px;
+    border-color: rgb(123,234,12);
+    border-style: dotted;
+    border-width: 2px;
+   /* border: 2px dotted rgb(123,234,12);*/
+}
+/*Regla de encabezado dentro de div */
+div h1{
+    border:none;
+}
+/* Reglas para los párrafos */
 p {
+    color:green ;
+    text-align: center;
+}
+/*Reglas especiales de párrafos que tienen clase */
+/*Clase e ID genéricos */
+.clase{
+    color:aqua;
+    text-shadow: 2px;
+}
+#ide{
+    color:blue;
+    text-decoration:wavy;
+}
+/*Clase asociada al párrafo*/
+p.clase1{
+    text-decoration:overline;
+    font-size: larger;
+}
+p.clase2{
+    background-color: orange;
+    border:1px solid cyan;
+}
+
+p.groucho{
     font-weight: bold;
-    text-decoration:line-through;
-    background-color:blueviolet;
-}
-p.otro{
-    background-color:bisque;
+    font-style:italic;
 }
 
-p#identificador{
-    text-decoration: none;
-    background-color:orange;
-}
-/*Ojo con el la jerarquía en el uso de CSS */
-ol li{
-    background-color:rgb(174, 225, 170);
-}
-li:nth-child(even) {
-    background-color: green;
+p.aviso{
+    text-decoration: underline;
 }
 
-ul.impar li {
-    background-color: aqua;
+/*Analizar situación de parentesco*/
+/* section h1{color:red;} */
+section > h1{  color:red;}
+
+section h1{
+     color:red !important;
 }
 
-/*Vamos a pintar la tabla. Fíjate que si pinto la celda puedo estar pintando sobre lo que haga la fila y la tabla*/
-table{
-    border: 2px dotted black;
-    border-collapse: collapse;
+ul > li +li{
+    background-color: red;
 }
 
-tr:nth-child(even) {
-    background-color: green;
-}
-
-tr:nth-child(even) td{
-    border: 2px solid blue;
-}
-
-tr:nth-child(odd) {
-    background-color: yellow;
-}
-
-tr.fila{
-    background-color: rgba(112,212,125,1);
-}
-
-/*Vamos a hacer transiciones y animaciones */
-div {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: width 2s;
-  }
-  
-  div:hover {
-    width: 300px;
-  }
-
-  div#animated_div:active {
-    width:70px;
-    height:47px;
-    background: #92B901;
-    color: #ffffff;
-    position: relative;
-    font-weight:bold;
-    font-size:20px;
-    padding:10px;
-    animation:animated_div 5s 1;
-    -moz-animation:animated_div 5s 1;
-    -webkit-animation:animated_div 5s 1;
-    -o-animation:animated_div 5s 1;
-    border-radius:5px;
-    -webkit-border-radius:5px;
+article p:nth-of-type(2){
+    color:rgb(3, 254, 191);
     }
-    
-    @keyframes animated_div
-    {
-    0% {transform: rotate(0deg);left:0px;}
-    25% {transform: rotate(20deg);left:0px;}
-    50% {transform: rotate(0deg);left:500px;}
-    55% {transform: rotate(0deg);left:500px;}
-    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-    100% {transform: rotate(-360deg);left:0px;}
-    }
-    h1{
-        animation: animated_div 5s 1;
-        -webkit-animation: animated_div 5s 1;
-}
+    div:nth-child(2) {
+        background: rgb(107, 59, 59);
+       }
+       li:nth-child(2) {
+        background: rgb(249, 78, 155);
+       }
+       :nth-child(3) {
+        background: rgb(160, 160, 73);
+       }
+   

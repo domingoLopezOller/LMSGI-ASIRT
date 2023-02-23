@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 #intro:target{
         color:blue;
         }
@@ -48,9 +50,102 @@ body{
     }
 
 div.imagenFondo{
-    background-image: url(../media/gato.jpg);
+    background-image: url("../media/gato.png"), url(../media/gato.jpg);
     width: 100%;
     height: 300px;
-    background-size: contain;
+    background-size: 100% 100%;
+ /*   background-size: contain;*/
+   /* background-repeat: no-repeat;*/
 }
 
+div{
+    display: block;
+    width:40%;
+    overflow:auto;
+}
+
+div img{
+    width: inherit;
+}
+
+div.degradado{
+    background-image: linear-gradient(pink, purple, aquamarine);
+}
+div.background{
+    background: url(../media/ola.jpg) no-repeat;
+}
+
+h2.letra{
+    font-family: Mynerve;
+}
+
+h1.sombreado {
+    text-shadow: 2px 2px palevioletred;
+}
+
+div.columnas {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 4px dotted purple;
+  }
+
+
+  /*Trabajando con NAV*/
+nav{
+    background-color: white;
+    width: 70%;
+    border-style: dotted;
+    border-color: palevioletred;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}  
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;   
+}
+
+nav ul li a:hover{
+    background-color: palevioletred;
+    color: darkblue ;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*Trabajando con listas*/
+
+ul{
+    list-style:url(../media/hogwarts2.png);
+}
+
+/*Tabblas*/
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+    width: 50%;
+}
+thead{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    
+}
+
+tbody{
+    background-color: cyan;
+    color: black;
+}
+
+tr td{
+    border: 1px red dotted;
+    vertical-align: middle;
+}

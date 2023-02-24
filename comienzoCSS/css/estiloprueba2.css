@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
 #intro:target{
     color:blue;
 }
@@ -31,15 +33,102 @@ p:target {
   }
 
   body{
-    background-color:grey;
+    background-color:rgb(153, 224, 135);
   }
   p{
     color:black;
   }
 
 div.imagenFondo{
-    background-image: url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg");
+    background-image: url("https://www.pngall.com/wp-content/uploads/2017/05/Star-Free-Download-PNG.png"),url("../media/vengadores.jpeg");
     width:100%;
     height:300px;
-    background-size:auto;
+    background-size:100% 100%;
+        
+    /* background: no-repeat url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg"); */
+}
+div{
+  display:block;
+  width:40%;
+  overflow: auto;
+}
+div img{
+  width:inherit;
+} 
+div.degradado{
+  background-image: linear-gradient(red,yellow,red);
+}
+div.background{
+  background: url("../media/vengadores.jpeg") no-repeat;
+} 
+h2.letra{
+  font-family:'Mynerve','Times New Roman','Arial';
+  font-size:3em;
+} 
+
+h1.sombreado {
+  text-shadow: 2px 2px #FF0000;
+}
+
+.columnas{
+  column-count: 3;
+  column-rule: 4px dotted rgb(79, 185, 227);
+}
+
+/*Trabajando con nav*/
+nav{
+  background-color:white;
+  width:70%;
+  border-color:red;
+  border-style: dotted;
+  border-radius: 20% 30% 10% 20%;
+  -webkit-border-radius: 20% 30% 10% 20%;
+  -moz-border-radius: 20% 30% 10% 20%;
+  -ms-border-radius: 20% 30% 10% 20%;
+  -o-border-radius: 20% 30% 10% 20%;
+}
+
+nav ul{
+  list-style-type: none;
+  text-align:center;
+}
+
+nav ul li{
+  display: inline-block; 
+  padding: 10px;
+  margin:10px;
+}
+
+nav ul li a:hover{
+  background-color:black;
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+/*Trabajando con listas */
+ul{
+  list-style:url("../media/favicon.ico");
+}
+
+/*Trabajando con tablas*/
+table{
+  border-collapse: collapse;
+  caption-side: bottom;
+  width:50%;
+}
+thead{
+  background-color:blue;
+  color:white;
+  font-weight: bold;
+}
+
+tbody{
+  background-color:cyan;
+  color:black;
+}
+tr td{
+  border:3px red dotted ;
+  vertical-align: middle;
+  text-align: center;
 }

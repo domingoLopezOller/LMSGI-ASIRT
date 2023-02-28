@@ -41,7 +41,101 @@ p:target {
 }
 
 div.imagenFondo{
-    background-image: url("https://img.asmedia.epimg.net/resizer/-1PaaDKc5QIrgbn5KTvnGCQo8jc=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/MIOSIBEPXFO7HJHGMUPF2Y3UPQ.jpg");
+    background-image: url(https://i.pinimg.com/originals/69/8e/1e/698e1e1e5d36eafed1cde1ae438680d1.png), url("https://img.asmedia.epimg.net/resizer/-1PaaDKc5QIrgbn5KTvnGCQo8jc=/1952x1098/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/MIOSIBEPXFO7HJHGMUPF2Y3UPQ.jpg");
     width: 100%;
-    height: 60%;
+    height: 300px;    
+    background-size: 100% 100%s;
+    /*background-repeat: no-repeat;*/
+}
+
+div{
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+div img{
+    width: inherit;
+}
+
+div.degradado{
+    background-image:linear-gradient(limegreen,white,limegreen);
+}
+
+div.background{
+    background: url(../media/imagenes/vengadores1.jpg) 100% no-repeat;
+}
+
+h2.letra{
+    font-family: 'Glock', 'Times New Roman', 'Arial';
+    font-size: 3em;
+}
+
+h1.sombreado{
+    text-shadow: 2px 2px pink;
+}
+.columnas{
+    column-count: 3;
+    column-rule: 4px dotted rgb(79, 185, 227);
+}
+
+nav{
+    vertical-align: middle;
+    background-color: white;
+    width: 70%;
+    border-color: red;
+    border-style: dotted;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+
+}
+
+body{
+    background-color: aquamarine;
+}
+
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*Trabajando con listas*/
+ul{
+   /* list-style-type: lower-greek;*/
+   list-style: url(../media/imagenes/favicon.ico);
+}
+
+thead{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+tbody{
+    background-color: aqua;
+    color: black;
+}
+
+tr td{
+    border: 3px red dotted;
+    vertical-align: middle;
+    /*text-align: center;*/
+}
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
 }

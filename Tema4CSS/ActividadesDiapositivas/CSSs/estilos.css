@@ -1,0 +1,56 @@
+tr:nth-child(even){
+  background-color: grey;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    text-align: left;
+}
+
+th, td{
+    padding: 20px;
+}
+
+li:nth-child(3n+3){
+    text-decoration: underline;
+}
+
+p[lang^="es"]{
+    color: orange;
+    background-color: cyan;
+}
+
+nav{
+    width:70%;
+  }
+  
+  nav p{
+    display: inline-block; 
+    padding: 10px;
+    margin:10px;
+  }
+
+  .class1:hover{
+    text-decoration: underline;
+  }
+
+  .class2:hover{
+    color: green;
+  }
+
+  .class3:hover{
+    border: solid green;
+  }
+
+  .class4:hover{
+    background-color: red;
+  }
+  
+  #parrafo1::first-letter{
+    font-size: 2em;
+  }
+
+  .parrafo2::after{
+    font-family: "Font Awesome 5 Brands"; content: "\f167";
+  }

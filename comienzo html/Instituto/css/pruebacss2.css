@@ -1,6 +1,13 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
 #intro:target{
     color: blue;
 }
+
 
 /*Pseudo clases */    
 .enlace{
@@ -272,3 +279,33 @@ table{
    #menu ul li:hover > ul {
     display:block;
    }
+
+   div.caja{
+    background-color: cyan;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+   }
+
+   div.borde{
+    border: 2px solid orange;
+   }
+
+   div.padding{
+    padding: 20px;
+   }
+
+   div.ejemplo {
+    width: 33.3%;
+    border: 10px;
+    padding: 10px;
+    float:left;
+    background-color: orange;
+    }
+
+
+div.oveflow{
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+}

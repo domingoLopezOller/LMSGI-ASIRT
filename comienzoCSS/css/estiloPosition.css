@@ -1,0 +1,55 @@
+div {
+    width: 500px;
+    padding: 40px;
+    margin: 20px;
+}
+
+div.rojo {
+    width: 100px;
+    background-color: rgb(253, 35, 35);
+    float:left;
+}
+
+div.azul {
+    width: 100px;
+    background-color: rgb(54, 103, 182);
+    /* position: absolute; */
+    /* top: 300px;
+    right: 100px; */
+    z-index: 3;
+    float:left;
+}
+
+div.verde {
+    width: 100px;
+    background-color: rgb(67, 230, 67);
+    /* position: absolute; */
+    /* top: 100px;
+    left: 300px; */
+    z-index: 5;
+    float:left;
+}
+
+div.amarillo {
+    width: 100px;
+    background-color: rgb(243, 243, 24);
+    /* position: absolute; */
+    /* top: 100px;
+    left: 300px; */
+    z-index: 5;
+    float:right;
+}
+
+div.violeta {
+    border: 2px solid blueviolet;
+}
+
+/*Poner la imagen a la derecha del contenido*/
+div.violeta img {
+    float:right;
+}
+
+/*Liberar el float*/
+div.violeta::after {
+    float:clear
+}

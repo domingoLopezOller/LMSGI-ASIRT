@@ -1,0 +1,75 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+main{
+    display:flex;
+    background-color:red;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around   ;
+}
+
+main  div{
+    background-color: aquamarine;
+    width:20%;
+    height:100px;
+    margin: 10px;
+}
+
+div.uno{
+    order:3;
+}
+div.dos{
+    order:5;
+}
+div.tres{
+    order:1;
+}
+div.cuatro{
+    order:2;
+}
+div.cinco{
+    order:4;
+}
+
+/* CSS para article de fresa con flexbox CASO 1*/
+article{
+    display:flex;
+    flex-direction: row;
+    width:250px;
+    height:300px;
+    border:black 1px solid;
+}
+article div.tipo{
+    display:flex;
+    flex-direction: column;
+    border-left:black 1px solid;
+    justify-content: center;
+}
+article p.fruta{
+    font-size: 300%;
+    align-self: center;
+}
+article p.contenido{
+    height:90%;
+    width:100%;
+    border:blue 1px solid;
+    padding:5%;
+    text-align: justify;
+}
+article p.fruta2{
+    border:orange 1px solid;
+    background-color:aquamarine;
+    height:10%;
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 3%;
+    color:red;
+}
+
+/*CSS para article de sandía con flexbox CASO 2*/

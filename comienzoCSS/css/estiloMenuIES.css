@@ -5,13 +5,13 @@
 }
 
 /*Borde y posición del nav*/
-nav{
-  position:sticky; position:-webkit-sticky; top:0; /* Posición sticky en top */
+ nav{
+  position:sticky; position:-webkit-sticky; top:10px;
   width:70%;
   height:10%;
-  margin:auto; /*Centra el nav*/
+  margin:auto; 
   background-color:white;
-  /*Centrarnav*/border-color:red;
+  border-color:red;
   border-style: dotted;
   border-radius:15px;
   -webkit-border-radius:15px;
@@ -19,7 +19,7 @@ nav{
   -ms-border-radius:15px;
   -o-border-radius:15px;
   -webkit-border-radius:15px;
-}
+} 
 
 /*Quitar estilo <li> a <ul> */
 nav ul {
@@ -27,12 +27,12 @@ nav ul {
 }
 
 /* items del menu */
-nav ul li {
+ nav ul li {
   display:inline-block;
-  width:16.33%;
+  width:16%;
   height:100%;
   
-}
+} 
    
 /* items del menu desplegable */
 nav ul ul li {
@@ -43,22 +43,22 @@ nav ul ul li {
 /* items del menu desplegable al pasar el ratón */   
 nav ul li:hover > ul {
   display:block;
-}  
+}   
 
-/* Posición del menú desplegable. Primer nivel */
+/* Posición del menú desplegable. Primer nivel */ 
 nav ul ul{
   display:none; /*No se visualiza mientras no haya evento hover */
   position:absolute; /*Posición respecto del nav */
   bottom:auto;
   background:#eee;
-}
+} 
 /* Posiciñon del menú desplegable. Segundo nivel */
 nav ul ul ul{
   display:none; /*No se visualiza mientras no haya evento hover */
   position:absolute; /*Posición respecto del ul */
   top:33.3%;
   left:100%;
-}
+} 
 
 /* Posiciñon del menú desplegable. Tercer nivel */
 nav ul ul ul ul{
@@ -66,7 +66,7 @@ nav ul ul ul ul{
   position:absolute; /*Posición respecto del ul */
   top:0%;
   left:100%;
-}
+} 
 
 /*Formato de los enlaces */
 nav ul li a {
@@ -78,7 +78,7 @@ nav ul li a {
   height:100%;
   letter-spacing:1px;
   padding:10px 15px;
-}
+} 
  
 /* efecto al pasar el ratón por los items del menu */   
 nav a:hover {

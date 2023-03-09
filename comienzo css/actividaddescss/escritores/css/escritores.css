@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    background-color: white;
+    font-family: "Playball", sans-serif;
+}
+
+/*Cabecera*/
+
+header h1 {
+    background-color: rgb(38, 187, 165);
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 5px 5px 20px 5px;
+}
+
+/*Pie de pagina*/
+
+footer h2 {
+    background-color: rgb(38, 187, 165);
+ 
+}
+
+/*Contenido de la web principal*/
+
+main{
+    margin:3% 7%;
+    padding:0 5%;
+    border-left: rgb(177, 96, 165) solid 3px;
+    border-right: rgb(177, 96, 165) solid 3px;
+}
+
+/* Css para las Secciones*/
+
+section{
+    background-color: rgb(169, 132, 171);
+    margin-bottom: 5%;
+    overflow: auto;
+}
+
+section h2, h3 {
+    color:white;
+    background-color: rgb(116, 103, 202);
+}
+
+section article{
+    margin:3% 10%;
+    overflow: auto;
+
+}
+
+section.siglo19 h2 h3{
+    color:rgb(194, 102, 191);
+    background-color: rgb(110, 154, 158);
+}
+section.siglo19{
+    background-color: rgb(201, 104, 156);
+}
+
+/*Contenido de la seccion con texto e imagenes*/
+
+article img{
+    width: 150px;
+    height: 200px;
+}
+
+article figure{
+    display: block;
+    float: right;
+    padding:2% 10%;
+    margin:0 2%;
+    border-left: rgb(116, 103, 202) dotted;
+}
+
+article p{
+    display: block;
+    width: 70%;
+    text-align: justify;
+    padding: 5%;
+}

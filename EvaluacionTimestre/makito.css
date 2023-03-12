@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    text-align: center;
+}
+
+header{
+  position:sticky; position:-webkit-sticky; top:0;
 }
 
 header div {
@@ -13,8 +18,11 @@ header div div {
     display: inline-block;
 }
 
+header div div figure.logo{
+  float: left;
+}
+
 nav{
-    position:sticky; position:-webkit-sticky; top:0;
     width:100%;
     height:50%;
     background-color:#BFC7CA;
@@ -24,6 +32,7 @@ nav{
 /*Quitar estilo <li> a <ul> */
 nav ul {
   list-style:none;
+  display: flex;
 }
 
 /* items del menu */
@@ -66,24 +75,88 @@ background-color:#3A4A5E;
 color:gray;
 }
 
-.CotizadorImpresion:hover{
-    background-color: #DD0000;
+nav li.CotizadorImpresion a:hover {
+  background-color: #DD0000;
+  color:white;
+  }
+
+  .parent {
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+      grid-area: 3 / 4 / 6 / 6;
+    }
+    .div2 { 
+      grid-area: 1 / 4 / 3 / 6; 
+    }
+    .div3 { 
+      grid-area: 1 / 1 / 4 / 4; 
+    }
+    .div4 { 
+      grid-area: 4 / 1 / 6 / 2; 
+    }
+    .div5 { 
+      grid-area: 4 / 2 / 6 / 4;
+    }
+
+    .div1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .div2 img{
+      width: 100%;
+      height: 100%;
+    }
+    .div3 img{
+      width: 100%;
+      height: 100%;
+
+    }
+    .div4 img{
+      width: 100%;
+      height: 100%;
+    }
+    .div5 img{
+      width: 100%;
+      height: 100%;
+    }
+
+section div.Sec2{
+    display: flex;
+    flex-direction: row;
 }
 
-section img{
-    text-align: center;
+section div.Sec2 figure{
+    width: 100%;
+}  
+section div.card{
+  width:20%;
+}
+section div.card{
+  display:flex;
+  flex-direction:column;
+}
+section div.card p{
+  text-align: center;
 }
 
-section img{
-    text-align: center;
+
+figure img{
+  width:100%;
+  height:100%;
+}
+section div.Sec2 figure.fig1{
+  background-image: url(./Imagenes/1629-000-11_m.jpg);
 }
 
-section div img:hover{
-    display: inline-block;
-    padding: 2%;
-    margin: 2%;
-    background-color: #7297C0;
-}
+
 
 footer {
     background-color: #EBECED;
@@ -96,3 +169,21 @@ footer div{
 footer div ol{
     list-style:none;
 }
+
+footer div figure.certificados{
+  float: right;
+}
+
+footer div figure.pagos{
+  float: right;
+}
+
+footer div figure.linkedin{
+  width: 10%;
+  height: 10%;
+}
+
+figure.fancylogin{
+  float: right;
+}
+

@@ -1,0 +1,42 @@
+
+
+header, nav, main, footer {
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: skyblue;
+  height: 3rem;
+  grid-area: header;
+}
+
+nav {
+  background: tomato;
+  height: 12rem;
+  grid-area: navigation;
+}
+
+main {
+  background: aliceblue;
+  height: 20rem;
+  grid-area: content;
+}
+
+footer {
+  background: lightgreen;
+  height: 15rem;
+  grid-area: footer;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px;
+  grid-template-areas:
+  "header header header"
+  "content navigation footer";
+  grid-gap: 1rem;
+}

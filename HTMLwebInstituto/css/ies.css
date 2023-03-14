@@ -167,7 +167,19 @@ footer{
 footer nav{
     width:100%;
     height:10%;
+    background-color: gray;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+footer nav a{
+    color:white;
+    text-decoration: none;
+    margin:2%;
+}
+footer nav a:hover{
+    color:yellowgreen;
+}
+
 footer div.contenido{
     display:flex;
     width:100%;
@@ -200,6 +212,10 @@ footer div.calendario{
     width:33%;
     padding:1%;
     border-right: red 2px solid;
+}
+footer div.calendario img{
+    width:85%;
+    height:85%;
 }
 footer div.enlaces{
     width:33%;

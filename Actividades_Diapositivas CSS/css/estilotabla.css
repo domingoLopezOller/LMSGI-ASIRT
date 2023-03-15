@@ -1,0 +1,34 @@
+table tr:nth-child(1) {
+    font-weight: bolder;
+    }
+table tr:nth-child(2) {
+    background: lightgreen;
+    }
+table tr:nth-child(4) {
+    background: lightgreen;
+    }
+
+table {
+    border-collapse: collapse;
+}
+table tr.line1 {
+    background-color: white;
+    font-weight: bolder;
+}
+table tr.line2 {
+    background-color: cyan;
+}
+table tr.line3 {
+    background-color: white;
+}
+table tr.line4 {
+    background-color: cyan;
+}
+table tr.line5 {
+    background-color: white;
+}
+table tr td {
+    width: 1000px;
+}
+
+

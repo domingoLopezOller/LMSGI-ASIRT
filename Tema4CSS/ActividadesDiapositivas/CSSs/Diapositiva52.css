@@ -1,0 +1,83 @@
+@import url("mclibre-pie.css");
+
+html {
+    font-family: sans-serif;
+    hyphens: auto;
+  }
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.ficha {
+    border: black 2px solid;
+    margin: 10px;
+}
+
+article p {
+    margin: 0;
+    padding: 5px;
+}
+
+p.p1 {
+    text-align: center;
+}
+
+p.p2 {
+    padding: 5px 0;
+    background-color: lightgray;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.p3 {
+    text-align: justify;
+}
+
+article.a32 div.ficha {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+  
+article.a32 div.parte {
+    display: flex;
+    flex-direction: column;
+    border-left: black 2px solid;
+}
+  
+article.a32 p.p1 {
+    font-size: 600%;
+    align-self: center;
+}
+  
+article.a32 p.p2 {
+    border-bottom: black 2px solid;
+}
+
+article.a33 div.ficha {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+  
+article.a33 div.parte {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+}
+  
+article.a33 p.p1 {
+    font-size: 400%;
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+    border-bottom-right-radius: 10px;
+}
+  
+article.a33 p.p2 {
+    align-self: center;
+    align-content: center;
+}

@@ -168,40 +168,36 @@ main section article{
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
 }
-main section article.inicial{
+main section article div.inicial{
     background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../media/imagenes/logo.png') no-repeat;
     background-size:cover;
-    position: relative;
-    background-position:  center;
-    overflow: hidden;
+    height:100%;
+    border-radius: 5%;
 }
-main section article.inicial:hover article.textoOver{
+main section article:hover div.oculto{
     opacity:1;
-}
-main section article.textoOver{
+} 
+main section article div.oculto{
     background-color:rgb(186, 119, 119);
-    padding:5%;
+    height:100%;
     text-align:center;
     position: relative;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    padding:10%;
+    top: -298px;
     z-index: 1;
-    opacity: 0;
-    display:none;
-    padding: 2rem 1.3rem 2rem 2rem;
+    border-radius: 5%;
+    opacity: 0; 
     transition: all 0.4s ease 0s;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
 }
-main section article.inicial h4{
+main section article div.inicial h4{
     padding: 3% 10%;
     border-bottom:1px red solid;
 }
-main section article.inicial h1{
+main section article div.inicial h1{
     padding: 5% 10%;
     font-size:1.5em;
 }

@@ -7,7 +7,7 @@
 /*Borde y posición del nav*/
 nav{
     position:sticky; position:-webkit-sticky; top:10px;
-    width:60%;
+    width:90%;
     height:10%;
     margin:auto;
     padding: 1em;

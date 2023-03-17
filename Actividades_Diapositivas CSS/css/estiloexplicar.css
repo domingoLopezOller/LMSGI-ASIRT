@@ -1,0 +1,16 @@
+p:target {
+    background-color: gold;
+    }
+    /* Agrega un pseudo-elemento dentro del elemento de
+    destino */
+    p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+    }
+    /* Estilo de elementos en cursiva dentro del elemento de
+    destino */
+    p:target i {
+    color: red;
+    }

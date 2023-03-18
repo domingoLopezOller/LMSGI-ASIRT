@@ -156,18 +156,253 @@ header nav ul li:hover > ul {
     color: white;
 }
      
+/* CSS MAIN */
 main{
     display:flex;
     flex: row nowrap;
+    background-color:lightgrey;
+    width:100%;
+    height:150%;
 }
-section{
-    width:80%;
-    height:45%;
+main section{
+    width:70%;
+    height:100%;
 }
-aside{
-    width:20%;
-    height:45%;
+/* Parte con los artículos de noticias */
+main section.noticias{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
 }
+
+/* Vamos a gestionar que el artículo tenga dos div (inicial y oculto) donde el oculto se ve al pasar por encima */
+main section article{
+    width:29%;
+    height:300px;
+    margin:2%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+
+main section article.card1{
+    border:1px #CE4639 solid;
+    color:#CE4639;
+}
+
+main section article.card2{
+    border:1px #26866D solid;
+    color:#26866D;
+}
+
+main section article.card3{
+    border:1px #604D88 solid;
+    color:#604D88;
+}
+
+main section article.card1 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/jace.png') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card1 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #CE4639 solid;
+}
+
+main section article.card1 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article.card2 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/Mural-8M-1024x768.jpg') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card2 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #26866D solid;
+}
+main section article.card2 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article.card3 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/torneoAjedrez.jpg') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card3 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #604D88 solid;
+}
+main section article.card3 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article:hover div.oculto{
+    opacity:1;
+} 
+
+main section article div.oculto{
+    height:100%;
+    background-size:cover;
+    text-align:left;
+    position: relative;
+    top: -298px;
+    z-index: 1;
+    border-radius: 5%;
+    opacity: 0; 
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+
+main section article.card1 div.oculto{
+    background-color:#CE4639;
+    color: white;
+}
+
+main section article.card1 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card1 div.oculto p{
+    padding: 2% 10%;
+}
+
+main section article.card2 div.oculto{
+    background-color:#26866D;
+    color: white;
+}
+
+main section article.card2 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card2 div.oculto p{
+    padding: 2% 10%;
+}
+
+
+main section article.card3 div.oculto{
+    background-color:#604D88;
+    color: white;
+}
+
+main section article.card3 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card3 div.oculto p{
+    padding: 2% 10%;
+}
+
+/* CSS sobre ASIDE */
+main aside{
+    width:30%;
+    height:100%;
+    padding:2%;
+}
+
+main aside p a{
+    color:red;
+    text-decoration:none;
+}
+main aside p a:hover{
+    color:gray;
+}
+main aside section.biblioteca{
+    width:100%;
+    height:25%;
+    margin:5%;
+}
+main aside figure.biblioteca{
+    width:100%;
+}
+main aside figure.logotipos{
+    width:50%;
+    margin:2%;
+    display:flex;
+    flex:row nowrap;
+    gap:1%;
+}
+
+main aside section.encuentranos{
+    width:100%;
+    height:20%;
+    margin:2%;
+    padding:5%;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+main aside section.encuentranos a{
+    color:#66A896;
+}
+main aside section.encuentranos a:hover{
+    color:gray;
+}
+
+main aside section.buscar{
+    width:100%;
+    height:15%;
+    padding:5%;
+}
+
+main aside section.buscar form input{
+    margin:2%;
+}
+main aside section.buscar form input.submit{
+    border:1px red solid;
+    padding:10px;
+    background-color:white;
+    color:red;
+    font-weight: bold;
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    -moz-border-radius:10%;
+    -ms-border-radius:10%;
+    -o-border-radius:10%;
+}
+main aside section.buscar form input.submit:hover{
+    background-color:black;
+    color:white;
+    border-color:black;
+}
+main aside section.videos{
+    width:100%;
+    height:35%;
+    padding:5%;
+    overflow:auto;
+    border-top:1px black solid;
+    border-bottom:1px black solid;
+}
+main aside section.videos hr{
+    margin:5%;
+}
+main aside section.videos iframe{
+    width:100%;
+    height:auto;
+    margin-top:3%;
+}
+
 footer{
     width:100%;
     height:50%;

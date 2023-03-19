@@ -1,0 +1,19 @@
+ul li  {
+    list-style-type: none;
+
+}
+
+img.logo {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+div.prueba {
+    float: right;
+}
+
+div.cuatro {
+  float: right;  
+  
+}

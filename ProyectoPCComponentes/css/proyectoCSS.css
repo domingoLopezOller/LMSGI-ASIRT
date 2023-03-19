@@ -1,0 +1,47 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+header{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex: row nowrap;
+}
+
+div.flex{
+    display:flex;
+    background-color:white;
+    flex:row nowrap;
+}
+
+div.flex header nav ul {
+    list-style:none;
+  }
+
+.fa-arrow-trend-up{
+    color: orangered;
+}
+
+.fa-cart-shopping{
+    color: black;
+}
+
+.fa-user{
+    color: black;
+}
+
+.fa-box{
+    color: black;
+}
+
+body div.flex header nav.interfaz ul li{
+    text-decoration: none;
+    color: black;
+}
+
+.negrita{
+    font-weight: bold;
+}

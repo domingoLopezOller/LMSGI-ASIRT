@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playball');
+
+/* Contenido común para todas las etiquetas html */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    background-color:white;
+    font-family: "Playball", sans-serif;
+}
+
+/* Cabecera de la página */
+header h1{
+    background-color: rgb(231, 85, 45);
+    font-size:40px;
+    text-transform: uppercase;
+    padding:5px 5px 20px 5px;
+}
+/* Pie de la página */
+footer h2{
+    background-color:rgb(231, 85, 45);
+}
+/* Contenido de la web principal*/
+main{
+    margin:3% 7%;
+    padding:0 5%;
+    border-left:red solid 3px;
+    border-right:red solid 3px;
+
+}
+
+/* css para las seccions*/
+section{
+    background-color: bisque;
+    margin-bottom: 5%;
+    overflow: auto;
+}
+section h2,h3{
+    color:white;
+    background-color:yellowgreen;
+}
+
+section article{
+    margin:3% 10%;
+    overflow: auto;
+}
+
+section.siglo19 h2,h3{
+    color:purple;
+    background-color:goldenrod;
+}
+
+section.siglo19{
+    background-color: brown;
+}
+
+/*Contenido de la sección con texto e imágenes */
+article img{
+    width:100px;
+    height:200px;
+}
+article figure{
+    display:block;
+    float:right;
+    padding:2% 5%;
+    margin:0 2%;
+    border-left: grey dotted 3px;
+}
+article p{
+    display:block;
+    width:70%;
+    text-align: justify;
+    padding:1%;
+}

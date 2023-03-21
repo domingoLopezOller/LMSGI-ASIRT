@@ -2,188 +2,201 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    text-align: center;
 }
+
+body{
+  width: 100%;
+  height: 1600px;
+} 
 
 header{
-  position:sticky; position:-webkit-sticky; top:0;
+  width: 100%;
+  height: 8%;
+  background-color: #202A36;
+  position:sticky; 
+  position:-webkit-sticky; 
+  top: 0px;
 }
 
-header div {
-    background-color: #202A36;
-    color: white;
+header div.encabezado{
+  margin-left: 7%;
+  margin-right: 7%;
+  display:flex;
+  flex:row nowrap;
+  width:100%;
+  height:15%;
+  padding:2%;
+  gap:5%; 
 }
 
-header div div {
-    display: inline-block;
+header div.encabezado figure.logo{
+  position: relative;
+  bottom: 15px;
 }
 
-header div div figure.logo{
-  float: left;
+header div.encabezado figure,{
+  
 }
 
-nav{
-    width:100%;
-    height:50%;
-    background-color:#BFC7CA;
-    border-color:black;
+header div.encabezado div.encabezadoderecha{
+  position: relative;
+  left: 33%;
+  display: inline-flex;
+  color: white;
 }
 
-/*Quitar estilo <li> a <ul> */
-nav ul {
+header div.encabezado form,figure,p{
+  margin-left: 0.8%;
+  margin-right: 0.8%;
+  font-size: 12px;
+}
+header div.encabezado p.pipeline{
+  font-size: 22px;
+}
+
+header div.encabezado figure.posicionamiento,p.posicionamiento{
+  position: relative;
+  top:5px;
+}
+
+header div.encabezado div.encabezadoderecha form input{
+  height: 30px;
+}
+
+header nav{
+  position: relative;
+  top: 36%;
+  width: 100%;
+  height: 35%;
+  background-color: #C3CACD;
+}
+
+/* menu */
+
+header nav ul {
+  margin-left: 10%;
+  margin-right: 10%;
   list-style:none;
-  display: flex;
-}
-
-/* items del menu */
-nav ul li{
-  display:inline-block;
-  align-items: center;
-}
-   
-/* items del menu desplegable */
-nav ul ul li {
-  display:block;
-}
-
-/* items del menu desplegable al pasar el ratón */   
-nav ul li:hover > ul {
-  display:block;
-}  
-
-/* Posición del menú desplegable. Primer nivel */
-nav ul ul{
-  display:none; /*No se visualiza mientras no haya evento hover */
-  position:absolute; /*Posición respecto del nav */
-  bottom:auto;
-  background:#eee;
-}
-
-/*Formato de los enlaces */
-nav ul li a {
+  height: 100%;
+  width: 80%;
+ }
+ 
+ /* items del menu */
+ 
+ header nav ul li {
+  background-color:#C3CACD;
+  height: 100%;
+  width: autoS;
+ }
+ 
+ /* enlaces del menu */
+ 
+ header nav ul a {
+  height: 100%;
   display:block;
   color:#202A36;
   text-decoration:none;
-  font-size:15px;
-  letter-spacing:1px;
-  padding:10px 15px;
-}
+  font-size: 12px;
+  padding:10px;
+  border-right: #B4B4B4 solid 1px;
+ }
+
  
-/* efecto al pasar el ratón por los items del menu */   
-nav a:hover {
-background-color:#3A4A5E;
-color:gray;
-}
 
-nav li.CotizadorImpresion a:hover {
+ header nav ul li.cotizadorimpresion{
   background-color: #DD0000;
-  color:white;
-  }
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: solid #DD0000 1px;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+  
+ }
 
-  .parent {
-    width: 100%;
-    height: 40%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { 
-      grid-area: 3 / 4 / 6 / 6;
-    }
-    .div2 { 
-      grid-area: 1 / 4 / 3 / 6; 
-    }
-    .div3 { 
-      grid-area: 1 / 1 / 4 / 4; 
-    }
-    .div4 { 
-      grid-area: 4 / 1 / 6 / 2; 
-    }
-    .div5 { 
-      grid-area: 4 / 2 / 6 / 4;
-    }
+ header nav ul li.asiaexpress{
+  background-repeat: no-repeat;
+  background-image: url(./Imagenes/asiaexpress.png);
+ }
 
-    .div1 img{
-        width: 100%;
-        height: 100%;
-    }
-    .div2 img{
-      width: 100%;
-      height: 100%;
-    }
-    .div3 img{
-      width: 100%;
-      height: 100%;
+ header nav ul li.asiaexpress a{
+  color: transparent;
+ }
+ 
+ /* items del menu */
+ 
+ header nav ul li {
+  position:relative;
+  float:left;
+ }
+ 
+ /* efecto al pasar el ratón por los items del menu */
+ 
+header nav ul li:hover a{
+  height: 100%;
+  background:#202A36;
+  color: white;
+ } 
 
-    }
-    .div4 img{
-      width: 100%;
-      height: 100%;
-    }
-    .div5 img{
-      width: 100%;
-      height: 100%;
-    }
+ header nav ul li.cotizadorimpresion:hover a{
+  height: 100%;
+  background:#DD0000;
+  color: white;
+ }
 
-section div.Sec2{
-    display: flex;
-    flex-direction: row;
+main{
+  width: 100%;
+  height: 55%;
 }
 
-section div.Sec2 figure{
-    width: 100%;
-}  
-section div.card{
-  width:20%;
-}
-section div.card{
-  display:flex;
-  flex-direction:column;
-}
-section div.card p{
-  text-align: center;
+main section.imagencentral{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  height:120%;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px; 
 }
 
-
-figure img{
+main section.imagencentral div{
   width:100%;
   height:100%;
 }
-section div.Sec2 figure.fig1{
-  background-image: url(./Imagenes/1629-000-11_m.jpg);
+
+main section.imagencentral div img{
+  width:100%;
+  height:100%;
+  object-fit:fill;
 }
 
-
-
-footer {
-    background-color: #EBECED;
+main section.imagencentral div.uno{
+  grid-area: 1 / 1 / 7 / 3;
 }
 
-footer div{
-    display: inline-block;
+main section.imagencentral div.dos{
+  grid-area: 1 / 3 / 6 / 4;
 }
 
-footer div ol{
-    list-style:none;
+main section.imagencentral div.tres{
+  grid-area: 7 / 1 / 11 / 2;
 }
 
-footer div figure.certificados{
-  float: right;
+main section.imagencentral div.cuatro{
+  grid-area: 7 / 2 / 11 / 3;
 }
 
-footer div figure.pagos{
-  float: right;
+main section.imagencentral div.cinco{
+  grid-area: 6 / 3 / 11 / 4;
 }
 
-footer div figure.linkedin{
-  width: 10%;
-  height: 10%;
+footer{
+  width: 100%;
+  height: 30%;
 }
-
-figure.fancylogin{
-  float: right;
-}
-

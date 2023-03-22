@@ -89,3 +89,218 @@ color:gray;
 nav a i{
   float:right;
 }
+
+
+<div class="flex">
+            
+            <div>
+                <nav class="categorias">
+                    <ul>
+                        <li>
+                            <a href="#">Todas las categorias</a>
+                            <ul>
+                                <li><a href="#">Dia del Padre</a></li>
+                                <li><a href="#">En tendencia</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo en tendencia</a></li>
+                                        <li><p class="negrita">No te lo puedes perder</p></li>
+                                        <li><a href="#">Las mejores ofertas</a></li>
+                                        <li><a href="#">Lo mas vendido</a></li>
+                                        <li><a href="#">Novedades y lanzamientos</a></li>
+                                        <li><p class="negrita">Nuestra marcas</p></li>
+                                        <li><a href="#">Tempest</a></li>
+                                        <li><a href="#">Forgeon</a></li>
+                                        <li><a href="#">PcCom</a></li>
+                                        <li><a href="#">Nilait</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Componentes</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Componentes</a></li>
+                                        <li><p class="negrita">Pc a Medida</p></li>
+                                        <li><a href="#">Configurador de PCs<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><p class="negrita">Componentes</p></li>
+                                        <li><a href="#">Placa base</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ordenadores</a>
+                                    <ul>
+                                        <li><a href="#">Ver todos Ordenadores</a></li>
+                                        <li><p class="negrita">Portátiles</p></li>
+                                        <li><a href="#">Te ayudamos a elegir portátil<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Ver todos los portátiles</a></li>
+                                        <li><p class="negrita">Portátiles por tipo</p></li>
+                                        <li><a href="#">Portátiles baratos</a></li>
+                                        <li><a href="#">Portátiles gaming<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Smartphones y Telefonia</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Smartphones y Telefonia</a></li>
+                                        <li><p class="negrita">Smartphones / Moviles</p></li>
+                                        <li><a href="#">Te ayudamos a elegir movil<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Moviles y Smartphones<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><p class="negrita">Top Marcas</p></li>
+                                        <li><a href="#">iPhone</a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Audio, Foto y Video</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Audio, Foto y Video</a></li>
+                                        <li><p class="negrita">TV</p></li>
+                                        <li><a href="#">Te ayudamos a elegir televisor<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Televisores</a></li>
+                                        <li><p class="negrita">Cámaras de fotos</p></li>
+                                        <li><a href="#">Cámaras digitales compactas</a></li>
+                                        <li><a href="#">Cámaras réflex</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Perifericos</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Periféricos</a></li>
+                                        <li><p class="negrita">Periféricos</p></li>
+                                        <li><a href="#">Monitores<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Teclados<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><p class="negrita">Almacenamiento</p></li>
+                                        <li><a href="#">Memorias USB</a></li>
+                                        <li><a href="#">Tarjetas de Memoria</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Televsiores</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Televsiores</a></li>
+                                        <li><p class="negrita">Marcas</p></li>
+                                        <li><a href="#">Te ayudamos a elegir tu TV<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Televisores Samsung</a></li>
+                                        <li><p class="negrita">Pulgadas</p></li>
+                                        <li><a href="#">TV 32 Pulgadas</a></li>
+                                        <li><a href="#">TV 40 Pulgadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Tablets y Ebooks</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Tablets y Ebooks</a></li>
+                                        <li><p class="negrita">Tablets</p></li>
+                                        <li><a href="#">Tablets</a></li>
+                                        <li><a href="#">Tablets Samsung</a></li>
+                                        <li><p class="negrita">iPad</p></li>
+                                        <li><a href="#">iPad</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Gaming</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Gaming</a></li>
+                                        <li><p class="negrita">Ordenadores Gaming</p></li>
+                                        <li><a href="#">PC Sobremesa Gaming</a></li>
+                                        <li><a href="#">Portátiles Gaming</a></li>
+                                        <li><p class="negrita">Periféricos Gaming</p></li>
+                                        <li><a href="#">Teclaos Gaming</a></li>
+                                        <li><a href="#">Ratones Gaming</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Consolas y videojuegos</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Consolas y videojuegos</a></li>
+                                        <li><p class="negrita">Consolas</p></li>
+                                        <li><a href="#">PS5<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Xbox Serie X<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><p class="negrita">Juegos</p></li>
+                                        <li><a href="#">Juegos PS4</a></li>
+                                        <li><a href="#">Juegos PS5<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                    </ul>    
+                                </li>
+                                <li><a href="#">Impresoras y Consumibles</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Impresoras y Consumibles</a></li>
+                                        <li><p class="negrita">Multifunciones</p></li>
+                                        <li><a href="#">Multifunciones Inyección de tinta</a></li>
+                                        <li><a href="#">Multifunciones láser</a></li>
+                                        <li><p class="negrita">Escáners</p></li>
+                                        <li><a href="#">Todos los Escaners</a></li>
+                                        <li><a href="#">Escáners de documentos</a></li>
+                                    </ul>   
+                                </li>
+                                <li><a href="#">Smarthome</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Smarthome</a></li>
+                                        <li><p class="negrita">¿Qué es Smarthome?</p></li>
+                                        <li><a href="#">¿Qué es Smarthome?</a></li>
+                                        <li><a href="#">Ir a Smarthome</a></li>
+                                        <li><p class="negrita">Seguridad Inteligente</p></li>
+                                        <li><a href="#">Alarmas</a></li>
+                                        <li><a href="#">Detectores de movimiento</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="#">Electrodomésticos y Hogar</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Electrodomésticos y Hogar</a></li>
+                                        <li><p class="negrita">Gran electrodoméstico</p></li>
+                                        <li><a href="#">Frigorificos</a></li>
+                                        <li><a href="#">Lavadoras</a></li>
+                                        <li><p class="negrita">Cafeteria y cápsulas</p></li>
+                                        <li><a href="#">Cafeteras</a></li>
+                                        <li><a href="#">Todas las Capsulas<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="#">Cuidado Personal y Salud</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Cuidado Personal y Salud</a></li>
+                                        <li><p class="negrita">Wearables deportivos</p></li>
+                                        <li><a href="#">Pulseras de actividad</a></li>
+                                        <li><a href="#">Pulsómetros (Relojes Deportivos)</a></li>
+                                        <li><p class="negrita">Belleza</p></li>
+                                        <li><a href="#">Adeitadoras</a></li>
+                                        <li><a href="#">Cortapelos</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="#">Redes y Cables</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Redes y Cables</a></li>
+                                        <li><p class="negrita">Redes</p></li>
+                                        <li><a href="#">Puntos de acceso</a></li>
+                                        <li><a href="#">Routers</a></li>
+                                        <li><p class="negrita">Básicos</p></li>
+                                        <li><a href="#">Cargadores</a></li>
+                                        <li><a href="#">Regletas</a></li>
+                                    </ul>  
+                                </li>
+                                <li><a href="#">Ocio y Tiempo libre</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Ocio y Tiempo libre</a></li>
+                                        <li><p class="negrita">Juguetes y Juegos</p></li>
+                                        <li><a href="#">Juguetes</a></li>
+                                        <li><a href="#">Juguetes Vtech</a></li>
+                                        <li><p class="negrita">Gadgets y Smart Technology</p></li>
+                                        <li><a href="#">Smartwatches</a></li>
+                                        <li><a href="#">Prismáticos</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#">Reacondicionados</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Reacondicionados</a></li>
+                                        <li><p class="negrita">Smartphones Reacondicionados</p></li>
+                                        <li><a href="#">iPhone<i class="fa-solid fa-arrow-trend-up"></i></a></li>
+                                        <li><a href="#">Samsung</a></li>
+                                        <li><p class="negrita">Portátiles Reacondicionados</p></li>
+                                        <li><a href="#">Macbook</a></li>
+                                        <li><a href="#">MSI</a></li>
+                                    </ul> 
+                                </li>
+                                <li><a href="#">Formacion</a></li>
+                                <li><a href="#">Servicios y alquiler de tecnologia</a>
+                                    <ul>
+                                        <li><a href="#">Ver todo Servicios y alquiler de tecnologia</a></li>
+                                        <li><p class="negrita">Instalacion placas solares</p></li>
+                                        <li><p class="negrita">Alquiler de Tecnología</p></li>
+                                        <li><a href="#">Alquiler de ordenadores</a></li>
+                                        <li><a href="#">Alquiler de móviles</a></li>
+                                    </ul> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>  
+            </div>
+            <div class="expertos"><p><strong> Expertos en tecnologia</strong> con un servicio 5 estrellas </p></div>
+        </div>

@@ -1,0 +1,394 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    width: 100%;
+    height: 1500px;
+}
+
+/*Esto la cabecera */
+header{
+    width: 100%;
+    height: 5%;
+}
+header div.cabecera1{
+    display: flex;
+    flex: row nowrap;
+}
+ 
+header div.cabecera1 img{
+    width:80%;
+    padding-top: 7%;
+    padding-left: 17%;
+}
+
+header div.cabecera1 div.imagen{
+    width: 15%;
+}
+
+/*
+header div.flex1 div.cabecera1 nav.interfaz ul li a{
+    display: flex;
+    flex:row nowrap;
+    justify-content: space-around;
+  align-items: center;
+}*/
+
+header div.cabecera1 div form div div.buscar input{
+    width: 600px;
+    height: 45px;
+    border-right: 0px ;
+}
+header div.cabecera1 div form div div.buscar i{
+    width: 50px;
+    height: 50px;
+    border-top: 1px gray solid;
+    font-size: 30px;
+    margin-top: 4px;
+}
+
+header div.cabecera1 div form div div.buscar{
+    width: 770px;
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 3%;
+}
+
+/*Configuracion de la lista "Todas las categorias"*/
+/*Bloque de "Categorias"*/
+
+#menubloque {
+    background-color:white;
+    width: 100%;
+    height: 35px;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    font-family:'Trebuchet MS',Arial,Verdana,Sans-Serif;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+
+/*Edicion de los estilos de los puntos de las listas*/
+    #menudesplegable li {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    }
+
+    #menudesplegable li a i{
+        padding-right: 5%;
+        width: 8%;
+    }
+
+    #menudesplegable li a{
+        width: 90%;
+    }
+
+    .negrita{
+        width: 140px;
+        font-weight: bold;
+        background-color:  white;
+        z-index: 9999;
+    }
+    
+   /*No se que hace*/
+    #menudesplegable ul {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+/*Configuracion de los subniveles para que esten debajo y/e la derecha con su respectivo tamaño*/
+    #menudesplegable li a, #menudesplegable li a:link, #menudesplegable li a:visited {
+    color: black;
+    display: block;
+    font-weight: normal;
+    padding: 9px 15px 8px;
+    text-decoration: none;
+    margin: 0;
+    width: 100%;
+    }
+
+    /*Configuracion de la caja "Categorias" al pasar por encima*/
+    #menudesplegable li a:active, #menudesplegable li a:hover {
+    color: #000000;
+    background-color: rgb(244, 244, 244);
+    text-decoration: none;
+    margin: 0;
+    padding: 9px 15px 8px;
+    border-radius: 4%;
+    -webkit-border-radius: 4%;
+    -moz-border-radius: 4%;
+    -ms-border-radius: 4%;
+    -o-border-radius: 4%;
+}
+
+    /*Configuracion de las cajas de los subniveles al pasar por encima*/
+    #menudesplegable li li a:link, #menudesplegable li li a, #menudesplegable li li a:visited {
+    color: black;
+    font-weight: normal;
+    text-transform: none;
+    background-color:white;
+    width: 160px;
+    float: none;
+    margin: 0;
+    padding: 7px 10px;
+    border-bottom: 1px solid rgb(244, 244, 244);;
+    border-left: 4px solid gray;
+    border-right: 1px solid rgb(244, 244, 244);;
+    }
+
+/*Configuracion de los subniveles de los subniveles al pasar por encima*/
+    #menudesplegable li li a:hover, #menudesplegable li li a:active {
+    background-color: rgb(244, 244, 244);
+    color: #000000;
+    padding: 7px 10px;
+    }
+
+    /*Configuracion de la hitbox de la caja "Categorias"*/
+    #menudesplegable li {
+    float: left;
+    padding: 0;
+    }
+
+    
+    /* #menudesplegable li ul a { 
+     width: 140px; 
+     } */
+
+     /*Configuracino para comprimir los subniveles con nivel padre*/
+    #menudesplegable li ul {
+        position: absolute;
+        margin: 0px;
+        z-index: 9999;
+        left: -999em;
+        height: auto;
+        width:1%;
+        padding: 0;
+        }
+
+    
+    /* #menudesplegable li:hover, #menudesplegable li.sfhover {
+    position: static;
+    } */
+
+/*Configuracion para que las listas se despliegen a la derecha*/
+    #menudesplegable li ul ul {
+    margin: -33px 0px 0px 170px;
+    }
+
+    /*Configuracion para esconder los subniveles de los subniveles*/
+    #menudesplegable li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+    left: -999em;
+    }
+
+    /*Configuracion para que aparezca hacia abajo el primer subnivel de "Categorias"*/
+    #menudesplegable li:hover ul, #menudesplegable li li:hover ul, #nav li li.sfhover ul,#menudesplegable li li li:hover ul, #menudesplegable li.sfhover ul, #menudesplegable li li li.sfhover ul {
+    left: auto;
+    }
+/*Final de configuracion de "Todas las listas"*/
+
+main{
+    width: 100%;
+    height: 10000px;
+}
+
+main section.seccion1 figure a img{
+    width:100%;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+main section.seccion2{
+    display: flex;
+    flex: row wrap;
+    width:98%;
+}
+main section.seccion2 article a img{
+margin-left: 10%;
+margin-right: 10%;
+    width:100%;
+    padding: 5%;
+}
+
+main section.seccion2 article p{
+   text-align: center;
+   padding-left: 20%;
+    }
+
+    main section.seccion3{
+        display: flex;
+        flex: row wrap;
+        width:98%;
+        justify-content: space-between;
+        margin-top: 4%;
+    }
+    main section.seccion3 figure a img{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 20%;
+        width:140px;   
+        }
+        main section.seccion3 figure p{
+            width: 150px;
+           padding-left: 10%;  
+                    }
+
+main section.seccion4 {
+    display: flex;
+    flex: row wrap;
+    width:98%;
+}
+
+main section.seccion4 article{
+    margin-left: 10%;
+    margin-right: 10%;
+        width:10%;
+        padding: 5%; 
+}
+
+
+
+
+
+
+
+
+
+
+/*Configuracion del footer*/
+footer{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    border-top: 2px gray solid;
+    padding: 2%;
+}
+footer div.contenedorFooter{
+    display: flex;
+    flex: row nowrap;
+    width:100%;
+    height:140%;
+}
+
+footer div.contenedorFooter div{
+    width: 16%;
+}
+
+footer div.contenedorFooter div h4{
+    font-size: 20px;
+}
+
+footer section div.direccion{
+    width:100%;
+    height:auto;
+    font-size: small;
+    text-align: center;
+    align-self: center;
+    border-top: 1px gray solid;
+    padding-top: 1.2%;
+}
+footer div a{
+    text-decoration: none;
+    color: black;
+}
+
+footer div a img{
+    width: 120px;
+}
+
+footer div ul{
+    padding-top:10%;
+    
+}
+
+footer div ul li{
+    list-style: none;
+}
+
+
+
+footer div ul.iconos a li{
+    font-size: 20px;
+    text-decoration: none;
+    
+    width:100%;
+    height:40px;
+    
+    padding-bottom:7px;
+    
+}
+
+
+footer div ul.iconos a li i{
+    padding-right:3% ;  
+    font-size: 30px;
+} 
+
+footer div.contenedorFooter ul li{
+    padding-bottom:10% ;
+    padding-top: 7px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    transition:0.2s;
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -ms-transition:0.2s;
+    -o-transition:0.2s;
+} 
+
+footer div ul.iconos li:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+footer div.contenedorFooter ul li:hover{
+    background-color:  rgb(243, 243, 243);
+    
+} 
+
+footer div.menu form select{
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    padding-left: 5%;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 110%;
+}
+
+footer div.menu form{
+    padding-bottom: 5%;
+}
+
+footer div.menu h4{
+    padding-bottom: 6%;
+    font-size: 20px;
+}
+
+footer div.menu article p{
+    padding-bottom: 5%;
+}
+
+footer div.menu article:hover{
+    background-color:  rgb(243, 243, 243);
+}
+
+footer div form select:hover{
+    border:1px black solid;
+    box-shadow: 1px 1px 5px rgb(2, 120, 150) ;
+    border-radius: 3%;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    -ms-border-radius: 3%;
+    -o-border-radius: 3%;
+}
+/*Final de la configuracion del footer "Temporal*/

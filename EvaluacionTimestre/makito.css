@@ -268,8 +268,46 @@ footer{
 
 footer section.top{
   width: 100%;
-  height: 80%;
+  height: 88%;
   background-color: #EBECED;
+}
+
+footer section.top{
+ display: inline-block;
+}
+
+footer section.top div.derecha{
+  margin-right: 10%;
+  float: right;
+  text-align: center;
+}
+
+footer section.top div.izquierda{
+  margin-left: 10%;
+  float: left;
+}
+
+footer section.top div.izquierda img{
+  margin-top: 4%;
+  width: 8%;
+  height: 8%;
+}
+
+footer section.top div.listado{
+  margin-top: 12%;
+  display: flex;
+  white-space: nowrap;
+}
+
+footer section.top div.listado ul{
+  list-style: none;
+  margin-right: 60%;
+}
+
+footer section.top div.listado ul li{
+  margin-top: 3%;
+  font-size: 13px;
+  color: black;
 }
 
 footer section.sub{

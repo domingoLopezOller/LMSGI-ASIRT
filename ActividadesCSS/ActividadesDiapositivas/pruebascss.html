@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a CSS</title>
+    <meta name="description" content="Página web del instituto">
+    <meta name="keywords" content="CSS3">
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <!--Inclusión de ficheros externos-->
+    <link rel="stylesheet" href="./css/estilopruebas.css">
+    <script src="./js/javascript.js"></script>
+    <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Primera prueba de CSS</h1>
+    <p class="clase1">Hola ¿como estas?</p>
+    <p class="clase2" style="color: cyan;">Estoy muy bien, Gracias</p>
+    <p>esto es un parrafo normal</p>
+    <div>
+        <h2>Otro encabezado</h2>
+        <h1>Otro encabezado1</h1>
+    </div>
+    <h3 class="clase1">kksjsjdjdj</h3>
+    <h3>ejemplo de usar dos clases a la vez</h3>
+    <p class="groucho aviso">dice que.. la parte cortante de la primera parte sera considerada como la parte cortante de la primera parte</p>
+    <h4 id="">CUIDANDO LOS IDENTIFICADORES</h4>
+    <p class="clase">parrafo al que le afecta la clase general llamada clase</p>
+    <p id="id">parrafo al que le afecta la clase general llamada id</p>
+    <h4 class="clase">parrafo al que le afecta la clase general llamada clase</h4>
+    <!--esta linea se deveria marcar por ser repetida como identificador-->
+    <h4 id="id">parrafo al que le afecta la clase general</h4>
+    <h4>control de aplicar css a tan solo a parte de dentro de etiquetas susando *</h4>
+    <p>
+        <h2>texto prueba</h2>
+        <ul>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ul>
+    </p>
+    <p>
+        <h1>texto de prueba con encabezado h1</h1>
+        <ul>
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ul>
+    </p>
+    <section>
+        <article>
+            <p>parrafo que se pondra en rojo</p>
+        </article>
+    </section>
+    <section class="rojo">
+        <p>este parrafo tiene que pintarse de rojo</p>
+        TENER CUIDADO CON LO QUE QUIERES HACER CON EL CSS!!!
+    </section>
+
+    <h1>pruebas con el selector decendientes</h1>
+    <section>
+        <h1>Título</h1>
+        <h1>Sale de color rojo</h1>
+        <article>
+            <h1>No sale de color rojo</h1>
+        </article>
+    </section>
+
+    <ul class="descendiente">
+        <li>uno</li>
+        <li>dos</li>
+        <li>tres</li>
+        <li>cuatro</li>
+        <li>cinco</li>
+    </ul>
+ 
+
+    <article>
+        <p>
+            Primer párrafo
+        </p>
+        <p>
+            Segundo párrafo
+        </p>
+        <p>
+            Tercer párrafo
+        </p>
+        <p>
+            Cuarto párrafo, 
+        </p>
+    </article>
+
+    <ul class="pintar">
+        <li>adsfasdf</li>
+        <li>asdfadsfd</li>
+        <li>asdfasdf</li>
+        <li>asdfads</li>
+        <li>asdfasdf</li>
+        <li>adfadsf</li>
+        <li>adfadsf</li>
+    </ul>
+
+    <ul class="pintar2">
+        <li>adsfasdf</li>
+        <li>asdfadsfd</li>
+        <li>asdfasdf</li>
+        <li>asdfads</li>
+        <li>asdfasdf</li>
+        <li>adfadsf</li>
+        <li>adfadsf</li>
+    </ul>
+
+    <ol>
+       <li class="tachar">adsfadf</li> 
+       <li>adsfadf</li> 
+       <li>adsfadf</li> 
+       <li class="tachar">adsfadf</li> 
+       <li>adsfadf</li> 
+    </ol>
+
+    <ol class="tachar">
+        <li>adsfadf</li> 
+        <li>adsfadf</li> 
+        <li>adsfadf</li> 
+        <li>adsfadf</li> 
+        <li>adsfadf</li> 
+     </ol>
+
+    <h1>Resalta el primero de cada tipo dentro de un div</h1>
+    <div>
+        <h1 class="remarcar">texto de cabecera 1</h1>
+        <h1 class="remarcar">texto de cabecera 2</h1>
+        <p class="remarcar">Párrafo 1</p>
+        <p class="remarcar">Párrafo 2</p>
+        <ul class="remarcar">
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ul>
+        <ul class="remarcar">
+            <li>uno</li>
+            <li>dos</li>
+            <li>tres</li>
+        </ul>
+    </div> 
+
+
+    <h1>Prueba con atributos de lang</h1>
+    <p lang="en-CA"> lang en-CA </p>
+    <p lang="en-JM"> lang en-JM </p>
+    <p lang="es"> lang es </p>
+</body>
+</html>

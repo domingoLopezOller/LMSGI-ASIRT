@@ -24,7 +24,6 @@ header div.encabezado{
   margin-right: 7%;
   display:flex;
   flex:row nowrap;
-  width:100%;
   height:50%;
   padding:2%;
   gap:5%; 
@@ -217,6 +216,22 @@ main section.panelhorizontal article div img{
   object-fit: fill;
 }
 
+main section.panelhorizontal article div.inicial p,div.colores{
+  text-align: center;
+  margin-top: 5%;
+}
+
+main section.panelhorizontal article div.inicial div.colores{
+  display: inline-flex;
+  position: relative;
+  left: 46%;
+}
+
+main section.panelhorizontal article div.inicial div.colores img{
+  width: 6%;
+  height: 6%;
+}
+
 main section.panelhorizontal article div h1{
   padding: 45% 10%;
   font-size: 1em;
@@ -249,5 +264,32 @@ main section.panelhorizontal article div.oculto{
 footer{
   width: 100%;
   height: 15%;
-  background-color: orange;
+}
+
+footer section.top{
+  width: 100%;
+  height: 80%;
+  background-color: #EBECED;
+}
+
+footer section.sub{
+  width: 100%;
+  height: 20%;
+  background-color: #202A36;
+}
+
+footer section.sub p{
+  position: relative;
+  top: 40%;
+  color: white;
+}
+
+footer section.sub p.izquierda{
+  margin-left: 10%;
+  float: left;
+}
+
+footer section.sub p.derecha{
+  margin-right: 10%;
+  float: right;
 }

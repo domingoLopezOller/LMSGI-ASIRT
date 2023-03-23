@@ -1,0 +1,588 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 1000px;
+}
+
+/*Contenido de la cabecera*/
+
+header{
+  width: 100%;
+  height: 180px;
+  border-bottom: black 1px solid;
+}
+
+header div.anuncio{
+  width: 100%;
+  height: 20px;
+  background-color: rgb(28, 73, 56);
+  color: white;
+}
+
+header div.encabezado{
+  width: 100%;
+  height: 200px;
+  position:sticky; position:-webkit-sticky; top:10px;
+  display: flex;
+  flex: row nowrap;
+  width: 100%;
+  height: 40%;
+  padding-left: 20%;
+  padding-right: 20%;
+  gap: 5%;
+
+}
+/*Casa del libro logo*/
+header div.encabezado figure{
+  margin-top: 5%;
+  width: 300px;
+  height: 100px;
+  align-self: center;
+}
+
+header div.encabezado div.box{
+  padding-left: 10%;
+  margin-top: 3%;
+  width: 100%;
+  align-items: center;
+  align-items:normal;
+}
+
+header div.encabezado div.iconos{
+  float: left;
+  width:5%;
+  height: 6%;
+  margin: 10px;
+  padding: 30px;
+}
+
+header nav{
+  position:sticky; position:-webkit-sticky; top:10px;
+  display: flex;
+  flex: row nowrap;
+  width:100%;
+  height:40px;
+  margin:auto; 
+  padding-left:20%;
+  padding-right:8%;
+} 
+
+/*Quitar estilo <li> a <ul> */
+header nav ul {
+  list-style:none;
+}
+
+/* items del menu */
+header nav ul li {
+  display:inline-block;
+  width:16%;
+  height:100%;
+  
+} 
+   
+/* items del menu desplegable */
+header nav ul ul li {
+  display:block;
+  width:100%;
+}
+
+/* items del menu desplegable al pasar el ratón */   
+header nav ul li:hover > ul {
+  display:block;
+}   
+
+/* Posición del menú desplegable. Primer nivel */ 
+header nav ul ul{
+  display:none; /*No se visualiza mientras no haya evento hover */
+  position:absolute; /*Posición respecto del nav */
+  top: 26px;
+  background:#eee;
+} 
+
+
+/*Formato de los enlaces */
+header nav ul li a {
+  display:block;
+  color:rgb(93, 136, 88);
+  text-decoration:none;
+  font-size:16px;
+  width:100%;
+  height:100%;
+  letter-spacing:1px;
+  padding:10px 15px;
+} 
+ 
+/* efecto al pasar el ratón por los items del menu */   
+header nav a:hover {
+text-decoration: underline;
+}
+
+header div a{
+  text-decoration: none;
+  color: black;
+}
+
+/*Todo lo relacionado con el MAIN*/
+
+main{
+  background-color: #ffffff;
+  width: 100%;
+  height:3200px;
+}
+
+main section.uno{
+  padding-left: 20%;
+  padding-right: 20%;
+ 
+}
+
+/*Editar el estilo del cartel principal*/
+
+main section.uno article div.cartel figure{
+  width: 55%;
+}
+
+main section.uno article div.cartel h1{
+  width: 99%;
+  background-color: black;
+  color: aliceblue;
+  
+}
+
+main section.uno article div.cartel p{
+  width: 99%;
+  height: 50px;
+  background-color: black;
+  color: aliceblue;
+  
+}
+
+  main section article div.primero{
+    width:29%;
+    height:300px;
+    border:1px rgb(179, 178, 178) solid;
+    margin:2%;
+    color:rgb(0, 0, 0);
+  }
+
+/*Boton del cartel*/
+
+  main section.uno button.boton{
+    background-color: rgb(230, 192, 22);
+    width: 120px;
+    height: 40px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    position: relative;
+    top: -55px;
+    left: 800px;
+  }
+  
+  main section.uno button.boton:hover{
+  background-color: rgb(170, 143, 22);
+  }
+
+
+/*Todo lo relacionado con la seccion de anuncios*/
+
+main section.anuncios {
+  display: flex;
+  flex: row wrap;
+}
+
+main section.anuncios article{
+  width: 200px;
+  padding-left: 20.2%;
+}
+
+main section.anuncios article figure{
+  width: 195px;
+}
+
+main section.anuncios article figure div{
+width: 180%;
+height: 120px;
+background-color: #bdb8b8;
+position: relative;
+top: -8px;
+}
+
+main section.anuncios article figure div button{
+  background-color: rgb(230, 192, 22);
+    width: 250px;
+    height: 40px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    position: relative;
+    top: 10px;
+    left:50px;
+  }
+  
+  main section.anuncios article button:hover{
+  background-color: rgb(170, 143, 22);
+  }
+
+/*Todo lo relacionado con la segunda seccion*/
+
+main section.segundaseccion{
+width: 100%;
+height: 400px;
+}
+
+main section.segundaseccion div{
+  display: flex;
+  flex:row nowrap;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+main section.segundaseccion div div figure.libro4{
+  width: 100%;
+  height: 72%;
+  z-index: +1;
+}
+
+main section.segundaseccion div div div.libro4text{
+  position: relative;
+  left: -70px;
+  top: 40px;
+  background-color: #d1cbcb;
+  padding-left: 35%;
+  width: 250%;
+  height: 40%;
+}
+
+main section.segundaseccion div div div.libro5text{
+  position: relative;
+  left: 20px;
+  top: 60px;
+  background-color: #d1cbcb;
+  padding-left: 10%;
+  width: 70%;
+  height: 35%;
+}
+
+main section.segundaseccion div div figure.libro5{
+  width: 40%;
+  height: 70%;
+  z-index: +1;
+}
+
+main section.segundaseccion div div button{
+  background-color: rgb(230, 192, 22);
+  width: 60px;
+  height: 50px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  
+}
+
+main section.segundaseccion div div button:hover{
+background-color: rgb(170, 143, 22);
+}
+
+/*carrusel*/
+
+main section.carrusel a{
+ text-decoration: none;
+}
+main section.carrusel a h2{
+position: relative;
+top: -60px;
+left: 500px;
+color: black;
+}
+
+main section.carrusel a h4{
+  position: relative;
+  top: -100px;
+  left: 43%;
+  color: rgb(255, 0, 179);
+  }
+
+main section.carrusel a h4:hover{
+text-decoration: underline;
+  }
+
+
+main section.carrusel .container{
+  padding-right: 20%;
+  padding-left: 20%;
+  background-color: white;
+  width: 800px;
+}
+
+main section.carrusel ul, li {
+  padding-right: 20%;
+  padding-left: 20%;
+    list-style: none;
+}
+
+main section.carrusel ul.slider{
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+main section.carrusel ul.slider li {
+    position: absolute;
+    left: 230px;
+    top: -30%;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+main section.carrusel ul.slider li img{
+  width: 320px;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+main section.carrusel ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+main section.carrusel ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+main section.carrusel .menu{
+  text-align: center;
+  padding-left: 350px;
+}
+
+main section.carrusel .menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+main section.carrusel .menu li a{
+  position:relative;
+  top: -120px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+
+/*Cuarta seccion*/
+
+main section.cuartaseccion{
+  width: 100%;
+  height: 300px;
+}
+main section.cuartaseccion div{ 
+  display: flex;
+    flex:row nowrap;
+    padding-left: 8%;
+    padding-right: 8%;
+
+  }
+
+  main section.cuartaseccion div div h2{
+    position: relative;
+    top: -5px;
+    left: 130px;
+  }
+
+  main section.cuartaseccion div div h3{
+    position: relative;
+    top: 70px;
+    left: -90px;
+  }
+
+  main section.cuartaseccion div div h3 a{
+  text-decoration: none;
+  color: rgb(255, 0, 85);
+  }
+
+
+  main section.cuartaseccion div div figure.autormes{
+    position: relative;
+    left: -160px;
+    width: 480px;
+    height: 270px;
+    z-index: +1;
+  }
+  
+  main section.cuartaseccion div div button{
+    background-color: rgb(230, 192, 22);
+    position: relative;
+    right: 50%;
+    top: 120px;
+    width: 120px;
+    height: 50px;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    
+  }
+  
+  main section.cuartaseccion div div button:hover{
+  background-color: rgb(170, 143, 22);
+  }
+
+
+
+  
+
+/*Todo lo relacionado con la seccionde enviar email*/
+
+main section article.recibemail{
+  width: 100%;
+  height: 290px;
+  background-color: rgb(41, 83, 81);
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+main article div.enviaremail{
+    display: flex;
+    flex:row nowrap;
+}
+
+main button.botonemail{
+  background-color: rgb(230, 192, 22);
+  width: 300px;
+  height: 50px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  
+}
+
+main button.botonemail:hover{
+background-color: rgb(170, 143, 22);
+}
+
+
+/*Todo lo relacionado con el footer*/
+footer{
+    width:100%;
+    height: 200px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+  }
+  
+  footer div.redes{
+    width:100%;
+    height: 40%;
+  padding:1%;
+  }
+  footer div.redes figure.logotipos{
+    width: 80%;
+    height: 50%;
+    gap: 3%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 22%;
+    padding-right: 20%;
+  }
+
+  footer div.redes p{
+    padding-left: 350px;
+  }
+
+footer div.redes a{
+  text-decoration: none;
+  color: black;
+}
+
+
+  footer div.contenido{
+    width:100%;
+    height:150%;
+    display: flex;
+    flex:row nowrap;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: space-around;
+  }
+  
+  footer div.contenido ul{
+    list-style:none;
+    padding: auto;
+  }
+
+  footer div.contenido ul a{
+    text-decoration: none;
+    color: rgb(78, 167, 85);
+  }
+
+  footer div.contenido ul a:hover{
+    text-decoration: underline;
+  }
+  
+footer nav.primero{
+  width:100%;
+  height: 50px;
+  padding-top: 10px;
+  background-color: #d1cbcb;
+  
+}
+
+footer nav.primero figure.empresas{
+  width: 90%;
+    height: 100%;
+    gap: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer nav.segundo{
+  width:100%;
+  height: 20px;
+}
+
+footer nav.segundo p{
+  text-align: center;
+  float: left;
+  width: 30em;
+  height: 5em;
+  margin: 10px;
+  padding: 30px;
+}
+
+footer nav.segundo figure{
+  float: left;
+  width: 8%;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+}
+
+img{
+  width:180%;
+  height:80%;
+  object-fit: fill;
+}

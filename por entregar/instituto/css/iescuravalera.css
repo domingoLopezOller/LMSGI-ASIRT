@@ -20,7 +20,7 @@ header{
 
 header div.encabezado{
     display: flex;
-    flex: now nowrap;
+    flex: row nowrap;
     width: 100%;
     height: 30%;
     padding: 2%;
@@ -167,7 +167,6 @@ main{
 main section{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
 }
 
 main section article{

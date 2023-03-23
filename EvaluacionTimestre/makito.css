@@ -70,11 +70,11 @@ header nav{
 /* menu */
 
 header nav ul {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   list-style:none;
   height: 100%;
-  width: 80%;
+  width: 90%;
  }
  
  /* items del menu */
@@ -82,38 +82,45 @@ header nav ul {
  header nav ul li {
   background-color:#C3CACD;
   height: 100%;
-  width: autoS;
+  width: 10%;
  }
  
  /* enlaces del menu */
  
  header nav ul a {
   height: 100%;
+  padding: 7px;
   display:block;
   color:#202A36;
   text-decoration:none;
   font-size: 13px;
   font-weight: 300;
-  padding:10px;
+  width: 100%;
   border-right: #B4B4B4 solid 1px;
  }
 
- 
-
  header nav ul li.cotizadorimpresion{
-  background-color: #DD0000;
   color: white;
-  padding: 0;
-  margin: 0;
+ 
+ 
+  background-color: #DD0000;
   border: solid #DD0000 1px;
-    border-radius:15px;
-    -webkit-border-radius:15px;
-    -moz-border-radius:15px;
-    -ms-border-radius:15px;
-    -o-border-radius:15px;
-    -webkit-border-radius:15px;
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    -moz-border-radius:10%;
+    -ms-border-radius:10%;
+    -o-border-radius:10%;
+    -webkit-border-radius:45%;
   
  }
+
+
+header nav ul li.cotizadorimpresion a{
+  color: white;
+  width: 100%;
+  height: 100%;
+ }
+
 
  header nav ul li.asiaexpress{
   background-repeat: no-repeat;
@@ -129,6 +136,7 @@ header nav ul {
  header nav ul li {
   position:relative;
   float:left;
+  width: 10%;
  }
  
  /* efecto al pasar el ratón por los items del menu */
@@ -145,14 +153,34 @@ header nav ul li:hover a{
   color: white;
  }
 
+ header nav ul ul div{
+  display:none;
+ }
+ 
+ /* items del menu desplegable */
+ 
+ header nav ul ul li {
+  width:auto;
+  height: auto;
+ }
+
+ 
+ 
+ /* items del menu desplegable al pasar el ratón */
+ 
+ header nav ul li:hover > ul div{
+  display:flex;
+  white-space: nowrap;
+ }
+
 main{
   width: 100%;
   height: 90%;
 }
 
 main section.imagencentral{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 2%;
   height:90%;
   display:grid;
@@ -194,7 +222,7 @@ main section.imagencentral div.cinco{
 }
 
 main section.panelhorizontal{
-  width: 300%;
+  width: 255%;
   margin-top: 10%;
   display:inline-flex;
   justify-content: space-between;
@@ -277,13 +305,13 @@ footer section.top{
 }
 
 footer section.top div.derecha{
-  margin-right: 10%;
+  margin-right: 5%;
   float: right;
   text-align: center;
 }
 
 footer section.top div.izquierda{
-  margin-left: 10%;
+  margin-left: 5%;
   float: left;
 }
 
@@ -301,7 +329,7 @@ footer section.top div.listado{
 
 footer section.top div.listado ul{
   list-style: none;
-  margin-right: 60%;
+  margin-right: 35%;
 }
 
 footer section.top div.listado ul li{
@@ -312,7 +340,7 @@ footer section.top div.listado ul li{
 
 footer section.sub{
   width: 100%;
-  height: 20%;
+  height: 17%;
   background-color: #202A36;
 }
 
@@ -323,11 +351,11 @@ footer section.sub p{
 }
 
 footer section.sub p.izquierda{
-  margin-left: 10%;
+  margin-left: 5%;
   float: left;
 }
 
 footer section.sub p.derecha{
-  margin-right: 10%;
+  margin-right: 5%;
   float: right;
 }

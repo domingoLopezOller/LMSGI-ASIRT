@@ -6,8 +6,8 @@
         <meta name=”description” content=”pagina web del instituto”>
         <meta name=”keywords” content=”HTML5, CSS3, Javascript”>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="./css/pruebacss.css">
-        <link rel="icon" type="image/x-icon" href="../comienzo html/img/favicon.ico">
+        <link rel="stylesheet" href="./css/ProyectoFINAL.css">
+        <link rel="icon" type="image/x-icon" href="./img/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="./js/javascript.js"></script>
         <script src="https://kit.fontawesome.com/e382bdee75.js" crossorigin="anonymous"></script>
@@ -24,40 +24,40 @@
                     <form action="search">
                         <div autocomplete="off" name="query">
                             <div class="buscar">
-                                <input value="" aria-label="Buscar..." placeholder="Buscar...">
+                                <input value="" aria-label="Buscar" placeholder="    Buscar">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                         </div>
                     </form>
                 </div>
-                <div>
-                            <a href="#" title="Compromisos PcComponentes">
-                                <div>
-                                    <i class="fa-solid fa-box"></i>
-                                    <span>Compromisos</span>
-                                </div>
-                            </a> 
-                            <a href="#" title="Mi cuenta PcComponentes" aria-label="Mi cuenta">
-                                <div>
-                                    <i class="fa-regular fa-user"></i>
-                                    <span>Mi cuenta</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                            <button title="mi cesta PcComponentes" aria-label="Mi cesta">
-                                <div>
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                    <span>0</span>
-                                    <span>Mi cesta</span>
-                                </div>
-                            </button>
-                            </a>
+                <div class="usuario">
+                    <a href="#" title="Compromisos PcComponentes">
+                        <div>
+                            <i class="fa-solid fa-box"></i>
+                            <span>Compromisos</span>
+                        </div>
+                    </a> 
+                    <a href="#" title="Mi cuenta PcComponentes" aria-label="Mi cuenta">
+                        <div>
+                            <i class="fa-regular fa-user"></i>
+                            <span>Mi cuenta</span>
+                        </div>
+                        </a>
+                    <a href="#">
+                        <button title="mi cesta PcComponentes" aria-label="Mi cesta">
+                            <div>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>0</span>
+                                <span>Mi cesta</span>
+                            </div>
+                        </button>
+                    </a>
                 </div>
         </div>
         <div id='menubloque'>
             <ul id='menudesplegable'>
                 <li>
-                    <a href=''><i class="fa-solid fa-list"></i>Todas las Categorias</a>
+                    <a class="categoria1" href='#'><i class="fa-solid fa-list"></i>Todas las categorias</a>
                     <ul>
                         <li>
                             <a href=''>Dia del Padre</a>
@@ -285,7 +285,9 @@
         </div>
     </header>
     <main>
+        
         <section class="seccion1">
+            <p><strong> Expertos en tecnología </strong>con un servicio 5 estrellas</p>
             <figure>
                 <a href="#"> <img src="./img/CartelPadre.jpg" alt="Dia del Padre"></a>
             </figure>
@@ -347,8 +349,10 @@
             <article> <a href="#">
                 <img src="./img/1351-zotac-gaming-geforce-rtx-3060-twin-edge-12gb-gddr6.jpg" alt="RTX 3060">
                 <p class="nombre">Zotac Gaming GeForce RTX 3060 Twin Edge LHR 12GB GDDR6</p>
+            <div>
                 <p class="precio">349,90€</p>
-                <p class="PVPR">PVPR 414€</p>
+                <p class="PVPR">PVPR-414€</p>
+            </div>
                 <div class="envioGratis">Envio Gratis</div>
                 <div class="promocion">Promocion</div>
                 <div class="Descuento">-15%</div></a>
@@ -356,8 +360,10 @@
             <article><a href="#">
                 <img src="./img/1796-xiaomi-redmi-note-11-4-128gb-gris-grafito-libre.jpg" alt="Xiaomi">
                 <p class="nombre">Xiaomi Redmi Note 11 4/128GB Gris Grafito Libre</p>
+                <div>
                 <p class="precio">199€</p>
                 <p class="PVPR">PVPR 219,99€</p>
+            </div>
                 <div class="envioGratis">Envio Gratis</div>
                 <div class="promocion">Promocion</div>
                 <div class="Descuento">-9%</div></a>
@@ -365,8 +371,10 @@
             <article><a href="#">
                 <img src="./img/1868-realme-10-8-128gb-negro-libre.jpg" alt="Realme">
                 <p class="nombre">Realme 10 AMOLED FHD+ 8/128GB Negro Libre</p>
+                <div>
                 <p class="precio">249,01€</p>
-                <p class="PVPR">PVPR 272€</p>
+                <p class="PVPR">PVPR-272€</p>
+            </div>
                 <div class="envioGratis">Envio Gratis</div>
                 <div class="promocion">Promocion</div>
                 <div class="Descuento">-8%</div></a>
@@ -374,8 +382,10 @@
             <article><a href="#">
                 <img src="./img/1650-logitech-g733-auriculares-gaming-inalambricos-negros.jpg" alt="Cascos Logitech">
                 <p class="nombre">Logitech G733 Auriculares Gaming Inalámbricos Negros</p>
+                <div>
                 <p class="precio">125,90€</p>
                 <p class="PVPR">PVPR 159€</p>
+            </div>
                 <div class="envioGratis">Envio Gratis</div>
                 <div class="promocion">Promocion</div>
                 <div class="Descuento">-20%</div></a>
@@ -383,15 +393,18 @@
             <article><a href="#">
                 <img src="./img/171-logitech-g29-driving-force-para-ps5-ps4-ps3-pc-comprar.jpg" alt="Volante Logitech">
                 <p class="nombre">Logitech G29 Driving Force para PS5/PS4/PS3/PC</p>
+                <div>
                 <p class="precio">255€</p>
-                <p class="PVPR">PVPR 419€</p>
+                <p class="PVPR">PVPR-419€</p>
+            </div>
                 <div class="envioGratis">Envio Gratis</div>
                 <div class="promocion">Promocion</div>
                 <div class="Descuento">-39%</div></a>
             </article>
         </section>
+        <h2>Categorías en tendencia</h2>
         <section class="seccion5">
-            <h2>Categorías en tendencia</h2>
+            
             <figure>
                 <a href="#"><img src="./img/portatiles.jpg" alt="portatiles"></a>
                 <p>Portátiles</p>
@@ -442,8 +455,9 @@
                 <a href="#"><img src="./img/panel2appPCcomponentes.jpg" alt="Descubre-la-nueva-APP"></a>
             </figure>
         </section>
+        <h2>Descubre nuestras marcas</h2>
         <section class="seccion8">
-            <h2>Descubre nuestras marcas</h2>
+            
             <figure>
                 <a href="#"><img src="./img/PCcomg2.jpg" alt="PcCom2"></a>
             </figure>
@@ -456,6 +470,8 @@
             <figure>
                 <a href="#"><img src="./img/owlotech.jpg" alt="owlotech"></a>
             </figure>
+        </section>
+        <section class="seccion9">
             <figure>
                 <a href="#"><img src="./img/alurin.jpg" alt="alurin"></a>
             </figure>
@@ -469,8 +485,9 @@
                 <a href="#"><img src="./img/kilawea.jpg" alt="kilawea"></a>
             </figure>
         </section>
-        <section class="seccion9">
-            <h2>Compromisos con el cliente</h2>
+        <h2>Compromisos con el cliente</h2>
+        <section class="seccion10">
+            
             <figure>
                 <a href="#"><img src="./img/quienessomos.jpg" alt="uienes-somos"></a>
                 <p>Quienes somos</p>
@@ -492,14 +509,15 @@
                 <p>Sala de prensa</p>
             </figure>
         </section>
-        <section class="seccion10">
-            <h2>En nuestro blog</h2>
+        <h2 >En nuestro blog</h2>
+        <section class="seccion11">
+            
             <figure> <a href="#">
                 <img src="./img/pantallas.jpg" alt="Pantallas">
                 <div>
                     <h4>Diferencias entre pantallas OLED, AMOLED, QLED y NanoCell: ¿cuál es mejor?</h4>
                     <p>
-                        En este artículo te contamos las diferencias entre las diferentes tecnologías de iluminación para las pantallas: LED, AMOLED, LCD y OLED. Descubre qué son y cuál es mejor a la hora de elegir un monitor o tu nueva televisión.
+                        En este artículo te contamos las diferencias entre las diferentes tecnologías de iluminación para las pantallas: LED, AMOLED, LCD y OLE...
                     </p>
                     <p>Ver mas  <i class="fa-solid fa-arrow-right-long"></i></p>
                 </div></a>
@@ -509,7 +527,7 @@
                 <div>
                     <h4>Configurar e Instalar Kodi: elige los mejores add-ons   </h4>
                     <p>
-                        Convierte tu televisor normal en uno inteligente con KODI. Te enseñamos cómo puedes instalarlo y configurarlo a tu gusto, para ver todos los programas, películas y partidos de fútbol.
+                        Convierte tu televisor normal en uno inteligente con KODI. Te enseñamos cómo puedes instalarlo y configurarlo a tu gusto, para ver todos los...
                     </p>
                     <p>Ver mas  <i class="fa-solid fa-arrow-right-long"></i></p>
                 </div></a>
@@ -519,27 +537,27 @@
                 <div>
                     <h4>¿Qué es una placa base y cuál es su función?   </h4>
                     <p>
-                        ¿Sabes qué es una placa base, qué tipos hay y cuáles son sus características? Te ayudamos a elegir la mejor para que consigas el equipo que deseas.
+                        ¿Sabes qué es una placa base, qué tipos hay y cuáles son sus características? Te ayudamos a elegir la mejor para que... 
                     </p>
                     <p>Ver mas  <i class="fa-solid fa-arrow-right-long"></i></p>
                 </div></a>
             </figure>
         </section>
-        <h4>PcComponentes es tu tienda online de tecnología e informática</h4>
-        <p>Somos <strong> la tienda online líder en tecnología</strong>, basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. Desde 2005 somos <strong> expertos </strong>en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica siendo el cliente nuestra razón de ser, superando siempre sus expectativas.</p>
-        <p>Actualmente contamos con más de 100.000 artículos disponibles y 31.700 m2 repartidos entre todas nuestras instalaciones, además de tres tiendas físicas en <strong> Madrid, Barcelona y Alhama de Murcia.</strong></p>
-        <h4>Los expertos en tecnología más comprometidos contigo</h4>
-        <p>Nuestros compromisos se centran en ser expertos en lo que vendemos y garantizar al cliente todo lo que necesita:</p>
-        <ul>
-            <li>
-               <strong> Envíos gratuitos</strong> a partir de 50€ siempre en <strong> 24 horas*</strong> (si excepcionalmente incumplimos la fecha de entrega, te devolvemos los gastos de envío).
-            </li>
-            <li><strong> Garantía </strong>con la mejor solución para ti en <strong> 24h.</strong></li>
-            <li><strong>Devoluciones gratuitas.</strong></li>
-            <li><strong> Atención al cliente local y sin esperas.</strong></li>
-            <li>Nos tomamos muy en serio las <strong> opiniones </strong>de nuestros clientes, y puedes verlas siempre en nuestros artículos</li>
-        </ul>
-        <p>Bienvenido a PcComponentes.</p>
+        <h3 class="queofrecemos">PcComponentes es tu tienda online de tecnología e informática</h3>
+        <p class="queofrecemos">Somos <strong> la tienda online líder en tecnología</strong>, basada en la confianza, la experiencia de compra y el conocimiento del sector tecnológico. Desde 2005 somos <strong> expertos </strong>en informática y electrónica. Buscamos innovar, descubrir y responder día a día a las últimas necesidades de la comunidad más tecnológica siendo el cliente nuestra razón de ser, superando siempre sus expectativas.</p>
+        <p class="queofrecemos">Actualmente contamos con más de 100.000 artículos disponibles y 31.700 m2 repartidos entre todas nuestras instalaciones, además de tres tiendas físicas en <strong> Madrid, Barcelona y Alhama de Murcia.</strong></p>
+        <h3 class="queofrecemos">Los expertos en tecnología más comprometidos contigo</h3>
+        <p class="queofrecemos">Nuestros compromisos se centran en ser expertos en lo que vendemos y garantizar al cliente todo lo que necesita:</p>
+            <ul class="queofrecemos">
+                <li>
+                <strong> Envíos gratuitos</strong> a partir de 50€ siempre en <strong> 24 horas*</strong> (si excepcionalmente incumplimos la fecha de entrega, te devolvemos los gastos de envío).
+                </li>
+                <li><strong> Garantía </strong>con la mejor solución para ti en <strong> 24h.</strong></li>
+                <li><strong>Devoluciones gratuitas.</strong></li>
+                <li><strong> Atención al cliente local y sin esperas.</strong></li>
+                <li>Nos tomamos muy en serio las <strong> opiniones </strong>de nuestros clientes, y puedes verlas siempre en nuestros artículos</li>
+            </ul>
+        <p class="queofrecemos">Bienvenido a PcComponentes.</p>
     </main>
     <footer>
         <div class="contenedorFooter">

@@ -90,7 +90,10 @@ header nav ul {
  header nav ul a {
   height: 100%;
   padding: 7px;
-  display:block;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   color:#202A36;
   text-decoration:none;
   font-size: 13px;
@@ -147,6 +150,21 @@ header nav ul li:hover a{
   color: white;
  } 
 
+ header nav ul li:hover ul a{
+  margin-bottom: 15%;
+  margin-top: 5%;
+  height: 100%;
+  background:white;
+  color: #3A4A5E;
+  font-size: 11px;
+ } 
+
+ header nav ul ul li:hover a{
+  height: 100%;
+  background:#3A4A5E;
+  color: white;
+ } 
+
  header nav ul li.cotizadorimpresion:hover a{
   height: 100%;
   background:#DD0000;
@@ -162,6 +180,7 @@ header nav ul li:hover a{
  header nav ul ul li {
   width:auto;
   height: auto;
+  background-color: white;
  }
 
  
@@ -224,18 +243,12 @@ main section.imagencentral div.cinco{
 main section.panelhorizontal{
   width: 255%;
   margin-top: 10%;
-  display:inline-flex;
-  justify-content: space-between;
+  display:flex;
 }
 
 main section.panelhorizontal article{
   width:40%;
   height:280px;
-}
-
-main section.panelhorizontal article div{
-  height:100%;
-  width: 100%;
 }
 
 main section.panelhorizontal article div img{
@@ -247,12 +260,22 @@ main section.panelhorizontal article div img{
 main section.panelhorizontal article div.inicial p,div.colores{
   text-align: center;
   margin-top: 5%;
+  color: #B5B5B5;
+}
+
+main section.panelhorizontal article div.inicial a{
+  text-decoration: none;
+  color: #3A4A5E;
+}
+
+main section.panelhorizontal article div.inicial a:hover{
+  text-decoration: none;
+  color: #181B1E;
 }
 
 main section.panelhorizontal article div.inicial div.colores{
-  display: inline-flex;
-  position: relative;
-  left: 46%;
+  display:flex;
+  margin-left: 46%;
 }
 
 main section.panelhorizontal article div.inicial div.colores img{
@@ -266,7 +289,7 @@ main section.panelhorizontal article div h1{
   font-weight: 0;
 }
 
-main section.panelhorizontal article:hover div.oculto{
+main section.panelhorizontal article div.oculto:hover{
   opacity:0.8;
 } 
 
@@ -304,10 +327,19 @@ footer section.top{
  display: inline-block;
 }
 
+footer section.top figure{
+  position: absolute;
+  left: 96%;
+}
+
 footer section.top div.derecha{
   margin-right: 5%;
   float: right;
   text-align: center;
+}
+
+footer section.top div.derecha p{
+  color: #828282;
 }
 
 footer section.top div.izquierda{
@@ -332,10 +364,39 @@ footer section.top div.listado ul{
   margin-right: 35%;
 }
 
-footer section.top div.listado ul li{
-  margin-top: 3%;
+footer section.top div.listado ol{
+  list-style: none;
+  text-decoration: none;
+  margin-right: 35%;
+}
+
+footer section.top div.listado ol li a{
   font-size: 13px;
-  color: black;
+  color: #828282;
+}
+
+footer section.top div.listado ul li a{
+  font-size: 13px;
+  color: #828282;
+}
+
+footer section.top div.listado ol li{
+  font-size: 13px;
+  color: #828282;
+}
+
+footer section.top div.listado li a:hover{
+  color: #3A4A5E;
+}
+
+footer section.top div.listado ul li{
+  margin-top: 5%;
+  font-size: 13px;
+  color: #828282;
+}
+
+footer section.top div.listado a{
+  text-decoration: none;
 }
 
 footer section.sub{

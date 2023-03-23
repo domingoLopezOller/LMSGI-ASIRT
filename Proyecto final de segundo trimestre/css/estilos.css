@@ -1,133 +1,106 @@
 /* Estilos para el header */
 header {
-    background-color: rgb(0, 144, 157);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  /*Estilos para la barrauno*/
-  .contenedor-barra-uno {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  background-color: rgb(0, 144, 157);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
 
-  /*Estilos para el contenedor barra uno*/
-  
-div.contenedor-barra-uno ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-div.contenedor-barra-uno li {
-    margin: 0 10px;
-  }
-  
-div.contenedor-barra-uno a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  /* Estilos para la lista de navegación */
-div.contenedor-barra-uno ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-div.contenedor-barra-uno li {
-    margin: 0 10px;
-  }
-div.contenedor-barra-uno a {
-    color: white;
-    text-decoration: none;
-    
-  }
-  
-  /* Estilos para el menú desplegable */
- div.contenedor-barra-uno .desplegable ul {
-    display: none;
-    position: absolute;
-    background-color: rgb(0, 144, 157);
-    animation-name: desplegar;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-    
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@keyframes desplegar {
-    0% {
-        opacity: 0;
-        transform: translateY(-5px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+header div ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-  
-div.contenedor-barra-uno .desplegable:hover ul {
-    display: block;
-    opacity: 1;
-  transform: translateY(0);
-  }
- div.contenedor-barra-uno .desplegable ul li {
-    margin: 0;
-    margin-bottom: 5px; 
-  }
-  
- div.contenedor-barra-uno .desplegable ul li a {
-    color: white;
-  font-weight: normal;
+
+header div li {
+  margin: 0 10px;
+}
+
+header div a {
+  color: white;
+  text-decoration: none;
+}
+/*Estilo para poner de color blanco los iconos de font awesome*/
+header div li i {
+  color: white;
+}
+
+/* Estilos para el menú desplegable */
+.desplegable > ul {
+  display: none;
+}
+
+.desplegable:hover > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
   display: block;
-  margin-left: 10px;
-  }
-  
-  /* Estilos para el formulario de búsqueda */
- div.contenedor-barra-uno form input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-  }
- div.contenedor-barra-uno form button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Estilos para la imagen */
- div.contenedor-barra-uno img {
-    height: 50px;
-    float: right;
-  }
-  /* Estilos para los botones de la barra de navegación */
-    div.contenedor-barra-uno a:hover {
-        background-color: rgb(0, 84, 92);
-        text-decoration: underline;
-      }
-      
-     div.contenedor-barra-uno .desplegable:hover::after {
-        content: "";
-        display: inline-block;
-        margin-left: 5px;
-        width: 0;
-        height: 0;
-        border-top: 5px solid white;
-        border-right: 5px solid transparent;
-        border-left: 5px solid transparent;
-      }
-      /* Estilos para los botones centrados */
-    nav.barrauno li:nth-child(5),
-    nav.barrauno li:nth-child(6),
-    nav.barrauno li:nth-child(7) {
-        text-align: center;
-        background-color: rgb(0, 116, 127);
-        height: 30px;
-        padding: 8px 0;
+}
+
+.desplegable > ul > li {
+  display: block;
+}
+/*Estilo para los botones destacados*/
+header div .boton-destacado a {
+  background-color: rgb(0, 104, 113);
+}
+
+header div .boton-destacado a:hover {
+  background-color: rgb(0, 56, 61);
+}
+
+/* Estilos para el formulario de búsqueda */
+header form input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+header form button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para la imagen */
+header img {
+  height: 50px;
+}
+
+/* Estilos para los botones de la barra de navegación */
+header div a {
+  background-color: rgb(0, 144, 157);
+}
+
+header div a:hover {
+  background-color: rgb(0, 84, 92);
+  text-decoration: underline;
+}
+/*Color de fondo del header*/
+header nav, header nav ul {
+  background-color: rgb(0, 144, 157);
+}
+
+
+
+/* Estilos para los botones centrados */
+header nav li:nth-child(5),
+header nav li:nth-child(6),
+header nav li:nth-child(7) {
+  text-align: center;
+  background-color: rgb(0, 144, 157);
+  height: 30px;
+  padding: 8px 0;
 }
 /*Estilos para el formulario*/
  form {
@@ -149,8 +122,8 @@ div.contenedor-barra-uno .desplegable:hover ul {
     margin-left: 10px;
   }
 
-/*Estilos para la barrados*/
-.barrados {
+/* Estilos para la segunda barra */
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,18 +132,18 @@ div.contenedor-barra-uno .desplegable:hover ul {
   padding: 20px;
 }
 
-.barrados img {
+nav img {
   height: 50px;
   margin-right: 20px;
 }
 
-.barrados ul {
+nav ul {
   display: flex;
   list-style: none;
   flex: 1;
 }
 
-.barrados li {
+nav li {
   margin: 0 10px;
   display: flex;
   align-items: center;
@@ -178,19 +151,18 @@ div.contenedor-barra-uno .desplegable:hover ul {
   text-align: center;
 }
 
-.barrados a {
+nav a {
   color: #555;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
 }
 
-.barrados a:hover {
+nav a:hover {
   text-decoration: none;
 }
 
-.boton-izquierda,
-.boton-derecha {
+nav li {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -200,115 +172,186 @@ div.contenedor-barra-uno .desplegable:hover ul {
   color: #555;
 }
 
-.boton-izquierda i,
-.boton-derecha i {
+nav i {
   color: rgb(0, 144, 157);
 }
-/*Estilos para la imagen principal*/
-  figure {
-    margin-top: 20px;
-  }
-  
-  .imagendepropaganda img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-/*Estilos para los bloques principales de la página*/
-
-.contenedor-principal {
-  display: flex;
-  justify-content: space-between;
-  max-width: 960px;
-  margin: 0 auto;
+/* Estilos para la imagen principal */
+figure {
+  margin-top: 20px;
 }
 
-.bloques-derecha {
-  width: 300px;
+figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
+/* Estilos para los bloques principales de la página */
 
-
-.bloquesprincipales {
+main > div {
   display: flex;
   flex-wrap: wrap;
-  width: calc(100% - 320px);
+  justify-content: center;
+  gap: 20px;
 }
 
-/*Estilos para los botones*/
-.mas-info {
-    background-color: rgb(0, 144, 157);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 10px;
-    width: 30%;
-    margin: auto;
+main > div > div {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition: transform 0.3s ease-in-out;
 }
+
+main > div > div:hover {
+  transform: translateY(-10px);
+}
+
+main > div > div h2 {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+main > div > div p {
+  font-size: 1.2em;
+  color: #666;
+  margin-top: 10px;
+}
+
+main > div > div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: rgb(0, 144, 157);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #00796b;
+}
+/*Estilo para el bloque de switch*/
+.switch {
+  background-color: transparent;
+  border: 1px solid rgb(0, 144, 157);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .switch h2 {
+  color: rgb(0, 144, 157);
+  }
+  
+  .switch img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  }
+/* Estilos para el bloque de Ciberseguridad */
+.ciberseguridad {
+  background-color: transparent;
+  border: 1px solid rgb(0, 144, 157);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  }
+  
+  .ciberseguridad h2 {
+  color: black;
+  }
+  
+  .ciberseguridad img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  }
+
 /*Estilos para los bloques donde se encuentran las imágenes de cookies*/
 .contenedor-cookies {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bloquescookies {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .cookie-bloque {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%; 
-    margin-right: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%; 
+  margin-right: 20px; 
 }
 
 .cookie-bloque img {
-    width: 100%;
-    height: auto;
-    max-width: 400px; 
-    max-height: 400px; 
+  width: 100%;
+  height: auto;
+  max-width: 400px; 
+  max-height: 400px; 
 }
 
 .cookie-bloque h3,
 .cookie-bloque h2,
 .cookie-bloque p {
-    width: 100%;
-    text-align: center; 
+  width: 100%;
+  text-align: center; 
 }
-.cookie-bloque h3 {
-    background-color: rgb(0, 144, 157);
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 10px;
-    width: 30%;
-    margin: auto;
-    border-radius: 10%;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+.cookie-bloque. h3 {
+background-color: rgb(0, 128, 140);
+color: white;
+border: none;
+padding: 3px 10px;
+margin: auto;
+width: 30%;
+border-radius: 5%;
+-webkit-border-radius: 5%;
+-moz-border-radius: 5%;
+-ms-border-radius: 5%;
+-o-border-radius: 5%;
+transition: background-color 0.2s ease-in-out;
+}
+
+.cookie-bloque h3:hover {
+background-color: rgba(0, 54, 59, 0.8);
 }
 
 .cookie-bloque h2 {
-    color: rgb(0, 144, 157); 
+color: rgb(0, 144, 157);
 }
 
+.cookie-bloque h2:hover {
+color: orange;
+text-decoration: underline;
+}
 /*Estilos para el botón de ver más vídeos*/
 .ver-mas-videos {
-    display: inline-block;
-    background-color: rgb(0, 144, 157);
-    color: white;
-    text-decoration: none;
-    padding: 20px 30px;
-    font-size: 20px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  background-color: rgb(0, 144, 157);
+  color: white;
+  text-decoration: none;
+  padding: 30px 200px;
+  font-size: 20px;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.7);
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .ver-mas-videos:hover {
-    background-color: rgb(0, 144, 157);
+  background-color: rgb(0, 168, 184);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.9);
 }
 
 .boton-container {
@@ -482,7 +525,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
   }
 
 /*Estilos para el footer*/
-.pie-pagina {
+footer {
     background-color: rgb(0, 144, 157);
     padding: 40px 20px;
     display: flex;

@@ -151,45 +151,59 @@ div.contenedor-barra-uno .desplegable:hover ul {
 
 /*Estilos para la barrados*/
 .barrados {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    color: black; 
-    padding: 20px;
-  }
-  
-  .barrados img {
-    height: 50px;
-    margin-right: 20px;
-  }
-  
-  .barrados ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  .barrados li {
-    margin: 0 10px;
-  }
-  
-  .barrados a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .barrados a:hover {
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
 
-  .boton-izquierda i, 
-  .boton-izquierda a,
-  .boton-derecha a {
-    display: block;
-    margin-top: 5px;
-  }
+.barrados img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.barrados ul {
+  display: flex;
+  list-style: none;
+  flex: 1;
+}
+
+.barrados li {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.barrados a {
+  color: #555;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.barrados a:hover {
+  text-decoration: none;
+}
+
+.boton-izquierda,
+.boton-derecha {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #555;
+}
+
+.boton-izquierda i,
+.boton-derecha i {
+  color: rgb(0, 144, 157);
+}
 /*Estilos para la imagen principal*/
   figure {
     margin-top: 20px;
@@ -202,7 +216,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
     margin-bottom: 20px;
   }
 /*Estilos para los bloques principales de la página*/
-/* Añade estos estilos */
+
 .contenedor-principal {
   display: flex;
   justify-content: space-between;
@@ -214,7 +228,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
   width: 300px;
 }
 
-/* Modifica los estilos existentes */
+
 .bloquesprincipales {
   display: flex;
   flex-wrap: wrap;
@@ -469,7 +483,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
 
 /*Estilos para el footer*/
 .pie-pagina {
-    background-color: #f7f7f7;
+    background-color: rgb(0, 144, 157);
     padding: 40px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -529,10 +543,12 @@ div.contenedor-barra-uno .desplegable:hover ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: white;
   }
   
   .enlaces-sociales li {
     margin: 0 10px;
+
   }
   
   .enlaces-sociales li a {
@@ -542,6 +558,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
     align-items: center;
     transition: color 0.3s ease, border-bottom-color 0.3s ease;
     border-bottom: 2px solid transparent;
+
   }
   
   .enlaces-sociales li a:hover {
@@ -552,7 +569,7 @@ div.contenedor-barra-uno .desplegable:hover ul {
 
   /*Estilos para los últimos enlaces del footer*/
   .enlaces-del-footer {
-    background-color: transparent;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

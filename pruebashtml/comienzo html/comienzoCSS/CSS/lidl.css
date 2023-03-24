@@ -1,19 +1,563 @@
-ul li  {
-    list-style-type: none;
 
+
+/*header */
+header {
+    width: 100%;
+    height: 80%;
+    float: left;
 }
 
 img.logo {
     width: 100px;
     height: auto;
     float: left;
+    clear: both;
 }
 
-div.prueba {
-    float: right;
+
+body {
+    width: 100%;
+    height: 100%;
 }
+
+
+ div.prueba ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+
+a.a{
+    background: #0050aa;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 13px 16px;
+}
+
+
+nav div.prueba ul li {
+
+    float: left;
+    list-style: none;
+    margin: 3px;
+    display: flex;
+    flex: row nowrap;
+    
+}
+
+
+nav.navegacion ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    font-size: 30px;
+    
+}
+
+
+
+/* sectiones */
+
+section {
+    width: 80%;
+    height: 60%;
+}
+
+
 
 div.cuatro {
   float: right;  
   
+}
+
+div.prueba2 div.imagen {
+    width: 100%;
+    height: 100%;
+    background: url("/imagenes/devolver-productos-lidl-online.jpg");
+    
+}
+
+section div.cosas ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    
+}
+
+section div.cosas ul li a{
+   color: black;
+   font-size: 30px;
+    
+}
+
+div.prueba2 {
+
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+section figure img {
+        display: block;
+        margin: 0 auto;
+    
+    clear: both;
+}
+
+section div.boton  button {
+        width: 20%;
+        height: 10% ;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        align-items: center;
+}
+
+section div.boton {
+
+            margin-top:20px ;
+}
+
+
+main div.codigo {
+    width: 100%;
+    height: 30%;
+    background: blue;
+    text-align: center;
+    color: white;
+}
+
+
+div.menu i{
+    clear: both;
+}
+
+
+
+main {
+    width: 90%;
+    height: 80%;
+  margin: 7% ;
+    clear: both;
+}
+
+section article div  {
+    width: 100%;
+    height: 30%;
+   
+    float: left;
+   
+    
+}
+
+section.nuestras {
+    text-align: center;
+}
+
+
+section article div img {
+    width: 20%;
+    height: 20%;
+    float: left;
+    
+}
+
+
+
+section article div p {
+    float: left;
+}
+
+section.cabeza {
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* footer */ 
+
+footer{
+    width:100%;
+    height:40%;
+    background-color:gray;
+    color:white;
+  }
+  
+
+footer div.contenido {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  footer  div.lidl {
+    width: 70%;
+    height: 20%;
+  }
+
+
+
+
+  footer div.atencion {
+    width: 70%;
+    height: 20%;
+    
+    
+  }
+
+  footer div.pago {
+    width: 50%;
+    height: 80%;
+    
+}
+
+
+/* todos los div */
+
+
+div.garantia  {
+    width: 50%;
+    height: 50%;
+    clear: both;
+}
+
+div.garantia p ul li img {
+    width: 20%;
+    height: 20%;
+}
+
+
+div.marcas2 section ul li{
+    list-style: none;
+    display: inline-block; /* Hace que los elementos li se coloquen uno al lado del otro */
+  margin-right: 100px; /* Agrega un margen a la derecha para separar los elementos */
+}
+    
+
+div.marcas2 {
+    width: 100%;
+    height: 100%;
+}
+
+div.final ul {
+    
+    text-align: center;
+
+}
+
+
+div.final  ul li{
+    list-style: none;
+    display: inline-block; /* Hace que los elementos li se coloquen uno al lado del otro */
+  margin-right: 50px; /* Agrega un margen a la derecha para separar los elementos */
+}
+
+div.final  ul li a{
+   color: white;
+}
+
+
+div.final  ul.iconos li{
+    list-style: none;
+    display: inline-block; /* Hace que los elementos li se coloquen uno al lado del otro */
+  margin-right: 10px; /* Agrega un margen a la derecha para separar los elementos */
+
+}
+
+div.final ul.iconos li a {
+    color: white;
+}
+
+
+
+div.marcas2 section {
+    width: 100%;
+    height: 100%;
+}
+
+
+div.final ul li i {
+    font-size: 50px;
+    
+}
+
+
+
+div.prueba ul li {
+    list-style: none;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+
+nav.navegacion ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+div.prueba {
+    width: 30%;
+    height: 5%;
+    
+    float: left;
+    list-style: none;
+    margin: 1px;
+    position: absolute;
+    left: 60%;    
+    top: 1.5%;
+}
+
+
+div.marca {
+    width: 100%;
+    height: 100%;
+    
+    padding-left: 5%;
+    
+    
+}
+
+
+div.atencion ul li {
+    list-style: none;
+}
+
+div.atencion p {
+    text-align: center;
+}
+
+
+div.lidl ul li {
+    list-style: none;
+}
+
+
+div.atencion figure.footer  img {
+
+    width: 20%;
+    height: 30%;
+
+}
+
+   
+
+div.lidl ul li a {
+    color: white;
+}
+
+
+div.atencion ul li a {
+    color: white;
+}
+
+div.atencion figure.footer {
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin-right: 5px
+}
+
+div.articulos {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola línea */
+  }
+
+ div.garantia  ul li {
+    width: 20%;
+    height: 30%;
+    clear: both;
+    list-style: none;
+    float: left;
+    display: flex;
+    
+}
+
+div.garantia  ul li img {
+    width: 100px;
+    height: 50px;
+
+}
+
+div.premios {
+    clear: both;
+}
+
+
+div.garantia ul li {
+    float: left ;   
+    margin: 5px;
+    width: 50px;
+    height: 80px;
+}
+
+div.garantia ul {
+    width: auto;
+    height: auto;
+}
+
+footer div.contenido div.premios figure.logos{
+    width: 40%;
+    height: 30%;
+    margin: 1px;
+    float: left;
+    display: flex;
+    flex: auto;
+    
+
+  }
+  
+  footer div.contenido  figure.certificado{
+    width: 40%;
+    height: 20%;
+    margin: 5%;
+    display: flex;
+    flex: row nowrap;
+  }
+
+  footer div.contenido div.garantia figure.certificado img{
+    width: 80%;
+    height: 90%;
+    margin: 30px;
+  }
+  
+  
+div.premios div.logos {
+    width: 100px;
+    height: 50px;
+    
+    display:flex;
+    flex:row wrap;
+    
+}
+div.premios figure.logos img{
+    width: 60%;
+    height: 30%;
+}
+
+
+
+/* nav */
+
+nav.navega {
+
+        width: 80%;
+        height: 70%;
+        
+
+}
+
+/*articulo */ 
+
+
+
+
+
+article.card {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 15%;
+    justify-content: center;
+    clear: both;
+    border: 1px solid black;
+    flex: 1;
+    margin: 10px;
+    
+    
+}
+
+article p.price {
+    color: blue;
+    font-size: 22px;
+}
+
+article.card button {
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer ;
+    width: 100%;
+    font-size: 18px;
+}
+
+article.card img {
+    height: 20%;
+    width: 30%;
+
+
+}
+
+article.card button:hover{
+    opacity: 0,7;
+}
+
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+article.card div.texto{
+    height: 30%;
+}
+
+
+/*formatos */
+div.formatos {
+    position: relative;
+  }
+  
+  div.formato img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+  
+  .formato p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(20%, -50%);
+    color: black;
+    font-size: 24px;
+    -webkit-transform: translate(20%, -50%);
+    -moz-transform: translate(20%, -50%);
+    -ms-transform: translate(20%, -50%);
+    -o-transform: translate(20%, -50%);
 }

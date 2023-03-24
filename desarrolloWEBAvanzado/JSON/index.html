@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LISTADO DE HÉROES DE MARVEL</h1>
+    <ul id="demo">
+        <script>
+            let request = new XMLHttpRequest();
+            request.open("GET","./heroes.json", false);
+            request.send(null);
+            let jsonData = JSON.parse(request.responseText);
+            console.table(jsonData);
+
+            //Procesar el fichero para mostrar por HTML
+            
+            document.getElementById("demo").innerHTML = jsonData.map((heroe)=>{    
+                    if (heroe.publisher="Marvel Comics")
+                        return "<li>" + heroe.superhero + ", "+heroe.publisher+"</li>";
+            });
+        </script>
+    </ul>
+</body>
+</html>

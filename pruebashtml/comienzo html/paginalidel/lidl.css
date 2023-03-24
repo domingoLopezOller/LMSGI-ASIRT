@@ -106,6 +106,7 @@ div.prueba2 {
 }
 
 
+
 section figure img {
         display: block;
         margin: 0 auto;
@@ -307,6 +308,47 @@ div.prueba ul li {
     margin-right: 5px;
 
 }
+
+div.menuico ul li  {
+        list-style: none;
+        text-align: right;
+        vertical-align: top;
+        display: inline-block;
+        margin-right: 50px;
+    
+    }
+    div.menuico ul li a i {
+        align-items: center;
+        font-size: 30px;
+    }
+
+
+
+    div.menuico ul li  {
+        align-items: center;
+    }
+
+    div.menuico ul li {
+        text-align: center;
+    }
+
+    div.menuico ul li a {
+        color: black;
+    }
+
+
+    div.menuico {
+        
+        width: 50%;
+        height: 20%;
+        vertical-align: top;
+        display: inline-block;
+        list-style: none;
+        margin: 1px;
+        position: absolute;
+        left: 60%;    
+        top: 10%;
+    }
 
 
 nav.navegacion ul li a {

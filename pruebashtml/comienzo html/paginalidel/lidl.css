@@ -137,6 +137,10 @@ main div.codigo {
 }
 
 
+main h1 {
+    text-align: center;
+}
+
 div.menu i{
     clear: both;
 }

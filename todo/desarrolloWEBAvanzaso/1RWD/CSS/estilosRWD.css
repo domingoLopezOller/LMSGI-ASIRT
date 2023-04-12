@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex: row wrap;
+    background-color: peru;
+}
+
+div{
+    width: 32%;
+    height: 30%;
+    margin: 2%;
+}
+
+div.uno{
+    background-color: palegoldenrod;
+}
+
+div.dos{
+    background-color: palegreen;
+}
+
+div.tres{
+    background-color: paleturquoise;
+}
+
+@media screen and (max-width:900px) {
+    body{
+        background-color: purple;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-color: rgb(20, 85, 63);
+        display: flex;
+        flex: column wrap;
+    }
+    div{
+        display: block;
+        width: 100%;
+    }
+}

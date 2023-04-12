@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 600px;
+    height: 200px;
+    margin: 10px;
+}
+
+div.uno{
+    background-color: palegoldenrod;
+}
+
+div.dos{
+    background-color: palegreen;
+}
+
+div.tres{
+    background-color: paleturquoise;
+}

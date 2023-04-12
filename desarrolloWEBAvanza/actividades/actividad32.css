@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 100px;
+}
+
+div.A{
+    background-color: palegreen;
+}
+div.B{
+    background-color: paleturquoise;
+}
+div.C{
+    background-color: palevioletred;
+}
+div.D{
+    background-color: peachpuff;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+    div.A{
+        flex: 50%;
+    }
+    div.B{
+        flex: 50%;
+    }
+    div.C{
+        flex: 100%;
+    }
+    div.D{
+        flex: 100%;
+    }
+}
+@media screen and (min-width:801px) {
+    div.A{
+        flex: 100%;
+    }
+    div.B{
+        flex: 100%;
+    }
+    div.C{
+        flex: 50%;
+    }
+    div.D{
+        flex: 50%;
+    }
+}

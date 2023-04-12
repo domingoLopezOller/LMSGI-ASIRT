@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 100px;
+}
+div.A{
+    background-color: red;
+}
+div.B{
+    background-color: yellow;
+}
+div.C{
+    background-color: green;
+}
+div.D{
+    background-color: blue;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px) {
+    div.A{
+        flex:100%;
+    }
+    div.B{
+        flex:100%;
+    }
+    div.C{
+        flex: 40%;
+    }
+    div.D{
+        flex: 60%;
+    }
+}

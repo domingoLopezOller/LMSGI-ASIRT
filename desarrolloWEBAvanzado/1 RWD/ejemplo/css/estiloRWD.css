@@ -1,0 +1,62 @@
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  body{
+    background-color: violet;
+  }
+  
+  div.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Todas las columnas tienen igual tamaño y distribuidas un 25% */
+  div.row div.column ,div.column2{
+    display: inline-block;
+    flex: 25%;
+    padding: 20px;
+  }
+  
+  .rojo{
+    background-color:red;
+  }
+  .verde{
+    background-color:green;
+  }
+  .celeste{
+    background-color:cyan;
+  }
+  .gris{
+    background-color:lightgray;
+  }
+
+  /* Cambio el column para que sume más del 100% */
+  @media (max-width: 700px) {
+    body{
+      background-color:blue;
+    }
+    div.row div.column {
+      flex: 50%;
+    }
+    div.row div.column2{
+      flex:25%;
+    }
+    .verde{
+      background-color:gray;
+    }
+  }
+  
+  /* Los bloques div se pone por columna*/
+  @media (min-width: 700px) and (max-width:992px) {
+    body{
+      background-color: orange;
+    }
+    div.row {
+      flex-direction: column;
+    }
+    .verde{
+      background-color:green;
+    }
+  }

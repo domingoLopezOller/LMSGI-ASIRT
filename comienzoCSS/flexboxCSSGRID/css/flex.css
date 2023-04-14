@@ -49,6 +49,7 @@ article div.tipo{
     flex-direction: column;
     border-left:black 1px solid;
     justify-content: center;
+    align-items: center;
 }
 article p.fruta{
     font-size: 300%;

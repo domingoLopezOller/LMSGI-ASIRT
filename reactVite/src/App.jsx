@@ -5,6 +5,8 @@ import './App.css'
 import  {Cabecera, Cabecera2, CabeceraSocial3, ListarItems, NotificationCard}  from './componentes/Cabecera'
 import ExtraerINFO, { ProcesarJSONTabla, ProcesarJSONLista, ArrayMedia } from './componentes/ProcesarJSON'
 import AxiosApi from './componentes/AxiosApi'
+import Rutas from './componentes/Rutas'
+import {RutaOutlet} from './componentes/RutaOutlet'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -43,6 +45,11 @@ function App() {
       
       <ExtraerINFO tipo="tabla"/>
       <AxiosApi/>
+      
+      <h3>Ejemplo de uso de rutas</h3>
+      {/* <Rutas/> */}
+       <RutaOutlet/>
+
 
     </div>
   );

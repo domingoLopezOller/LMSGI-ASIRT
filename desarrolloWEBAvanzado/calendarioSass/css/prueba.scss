@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 // colors
 $door-moss: #ccddbb;
@@ -33,7 +33,7 @@ button {
   justify-content: center;
   align-content: center;
   
-  @media ((screen) and (min-width: $md-bp)) {
+  @media (screen and min-width: $md-bp) {
     grid-template-columns: repeat(10, 100px [col-start]);
     grid-template-rows: repeat(6, 100px [row-start]);
   }
@@ -393,7 +393,7 @@ button {
     }
 }
 
-@media ((screen) and (min-width: $md-bp)) {
+@media screen and (min-width: $md-bp) {
   .grid__item--1 {
     grid-area: 1 / 6 / span 2 / span 2;
           

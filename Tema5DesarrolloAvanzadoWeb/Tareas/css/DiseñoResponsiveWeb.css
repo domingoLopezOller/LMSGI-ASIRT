@@ -142,26 +142,30 @@ ul, ol {
 #menu {
   background: #192666;
   margin: 0 0.8%;
-  padding: 2.5% 0 0 0;
+  padding: 1.5% 0 0 0;
+  width: 98.5%;
 }
 
 #menu ul {
-  margin: 0 1%;
+  margin: 0 1.5%;
   padding: 0;
   list-style:none;
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 #menu ul li {
   margin: 0 1% 0 0;
   padding: 0;
+  height: 100%;
+  
 }
 
 #menu ul li a {
-  display: block;
-  position: relative;
-  padding: 1% 0%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 3% 0%;
   border: 0;
   background: #253575;
   color: #B5C4E3;
@@ -183,7 +187,7 @@ ul, ol {
 #contenido .articulo {
   clear: both;
   margin: 0;
-  padding: 20px;
+  padding: 5%;
   background: url("../imagenes/fondo_articulo.jpg") no-repeat;
 }
 
@@ -192,17 +196,17 @@ ul, ol {
 }
 
 #contenido .articulo h2 {
-  margin: 0 -20px;
-  padding: 10px;
+  margin: 0 -5%;
+  padding: 3%;
   background: #DEE5FD;
   color: #192666;
 }
 
 
 #contenido .info {
-  margin: 10px 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #DEE5FD;
+  margin: 1% 0;
+  padding-bottom: 1%;
+  border-bottom: 1% solid #DEE5FD;
   color:#6685CC;
 }
 
@@ -210,7 +214,7 @@ ul, ol {
 #contenido .info a:hover { color:#FF9000; }
 
 #contenido .info span.fecha, #contenido .info span.categoria, #contenido .info span.autor, #contenido .info span.comentarios {
-  padding-left:15px;
+  padding-left:3%;
 }
 
 #contenido .info span.fecha { background: url("../imagenes/icono_fecha.gif") 0 50% no-repeat; }
@@ -219,23 +223,23 @@ ul, ol {
 #contenido .info span.comentarios { background: url("../imagenes/icono_comentarios.gif") 0 50% no-repeat; margin-left: 8px; }
 
 #contenido #secundario h3 {
-  padding: 10px 0 10px 10px;
-  margin-top: 20px;
+  padding: 3% 0 3% 3%;
+  margin-top: 10%;
   background: #A0B9F3;
   color: #192666;
 }
 
 #contenido #secundario #sobremi img {
   float: left;
-  margin: 4px 5px 0 0;
+  margin: 1% 1% 0 0;
 }
 
 #contenido #secundario div {
-  padding: 0 10px;
+  padding: 0 1%;
 }
 
 #contenido #secundario ul {
-  margin: 15px 0;
+  margin: 1% 0;
   padding: 0;
   list-style:none;
 }
@@ -243,13 +247,13 @@ ul, ol {
 #contenido #secundario li {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #E0E8FA;
+  border-bottom: 1% solid #E0E8FA;
 }
 
 
 #contenido #secundario li a {
   display: block;
-  padding: 3px 0 3px 22px;
+  padding: 1% 0 1% 11%;
   background: url("../imagenes/icono_elemento.gif") 8px no-repeat;
   text-decoration: none;
 }
@@ -267,11 +271,9 @@ ul, ol {
 
 /* ---- Pie ---------------------------------------------------------------- */
 #pie p {
-  margin: 0;
+  margin: 0 0% 0% 5%;
   padding: 0;
-  position: absolute;
-  top: 10px;
-  left: 40px;
+  
 }
 
 @media (max-width: 1024px) and (min-width: 429px) {
@@ -288,6 +290,22 @@ ul, ol {
   #menu {
     background: green;
   }
+
+  #menu ul {
+    display: flex;
+  }
+
+  #menu ul li{
+    clear: both;
+  }
+
+  #menu ul span.inicio{background: url("../imagenes/hogar.png") 0 50% no-repeat; padding: 30% 5% 0% 50%; margin-top: 500px;}
+  #menu ul span.blog{background: url("../imagenes/blogging.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.fotos{background: url("../imagenes/camara.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.contacto{background: url("../imagenes/correo-de-contacto.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.enlaces{background: url("../imagenes/enlace.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.portfolio{background: url("../imagenes/portafolio.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.sobremi{background: url("../imagenes/usuario.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
 }
 
 @media (max-width: 428px) {
@@ -309,6 +327,18 @@ ul, ol {
     flex-direction: column;
   }
 
+  #menu ul li a{
+    display: none;
+  }
+
+  #menu ul span.inicio{background: url("../imagenes/hogar.png") 0 50% no-repeat; padding: 30% 5% 0% 50%; }
+  #menu ul span.blog{background: url("../imagenes/blogging.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.fotos{background: url("../imagenes/camara.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.contacto{background: url("../imagenes/correo-de-contacto.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.enlaces{background: url("../imagenes/enlace.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.portfolio{background: url("../imagenes/portafolio.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+  #menu ul span.sobremi{background: url("../imagenes/usuario.png") 0 50% no-repeat; padding: 30% 5% 0% 50%;  }
+
   #cabecera #buscador fieldset {
     display: none;
   }
@@ -319,6 +349,10 @@ ul, ol {
     left: 20%;
     padding: 5% 0% 5% 20%;
     background: url("../imagenes/busqueda.svg") 0 50% no-repeat; 
+  }
+
+  #cabecera{
+    background: blue;
   }
   
   

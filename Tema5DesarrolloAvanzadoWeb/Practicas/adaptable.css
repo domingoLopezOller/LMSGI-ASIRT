@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: violet;
+}
+
+div.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.row div.column ,div.column2{
+    display: inline-block;
+    padding: 20px;
+    flex: 25%;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: green;
+}
+
+.celeste{
+    background-color: cyan;
+}
+
+.gris{
+    background-color: lightgray;
+}
+
+@media (max-width: 700px){
+    body{
+        background-color: blue;
+    }
+
+    div.row div.column{
+        flex:50%;
+    }
+
+    div.row div.column2{
+        flex:25%;
+    }
+}
+
+@media (min-width: 700px) and (max-width:992px){
+    body{
+        background-color: orange;
+    }
+
+    div.row{
+        flex-direction: column;
+    }
+}

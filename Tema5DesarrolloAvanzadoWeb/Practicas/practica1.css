@@ -1,0 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@media (max-width:400px){
+    div {
+        margin-top: 40px;
+        background-color: #eeeeee;
+        }
+}
+
+@media (min-width:401) and (max-width:800px){
+    #A{
+        float: left;
+        width: 50%;
+    }
+    
+    #B{
+        float: right;
+        width: 50%;
+    }
+    
+    #C{
+        clear: both;
+    }
+
+    div{
+        background-color: #cccccc;
+        }
+}

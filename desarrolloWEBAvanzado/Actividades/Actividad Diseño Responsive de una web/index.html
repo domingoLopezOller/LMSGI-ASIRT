@@ -29,9 +29,13 @@
 
         <!-- Buscador -->
         <div id="buscador">
-            <form action="" method="get">
+            <input type="checkbox" id="toggle-buscador" />
+            <label for="toggle-buscador" id="icono-lupa">
+                <i class="fas fa-search"></i>
+            </label>
+            <form action="" method="get" id="form-buscador">
                 <fieldset>
-                	<legend>Buscador</legend>
+                    <legend>Buscador</legend>
                     <input type="text" name="busqueda" size="30" />
                     <input type="submit" name="botonbuscar" value="Buscar" />
                 </fieldset>

@@ -139,6 +139,29 @@ ul, ol {
 #cabecera #buscador fieldset {
   border: none;
 }
+#toggle-buscador {
+  display: none;
+}
+
+#icono-lupa {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#toggle-buscador:checked ~ #form-buscador {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  #buscador form {
+    display: none;
+  }
+
+  #icono-lupa {
+    display: block;
+  }
+}
 
 /* ---- Menú --------------------------------------------------------------- */
 

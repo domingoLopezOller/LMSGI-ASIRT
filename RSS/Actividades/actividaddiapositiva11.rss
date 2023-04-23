@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Pizzería La Serrana</title>
+    <link>http://www.pizzerialaserrana.it</link>
+    <description>Disfruta de nuestras deliciosas pizzas italianas hechas con ingredientes frescos y de calidad.</description>
+    <language>es-ES</language>
+    <lastBuildDate>Mon, 27 Mar 2023 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Pizza Montanara</title>
+      <link>http://www.pizzerialaserrana.it/pizza-montanara</link>
+      <description>La Pizza Montanara combina ingredientes sabrosos como pepperoni, cebolla caramelizada, champiñones, mozzarella y nuestra deliciosa salsa de tomate.</description>
+      <pubDate>Mon, 27 Mar 2023 12:01:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Pizza Boscaiola</title>
+      <link>http://www.pizzerialaserrana.it/pizza-boscaiola</link>
+      <description>La Pizza Boscaiola es perfecta para los amantes de la carne, con una combinación de jamón serrano, salami, panceta, mozzarella y nuestra exquisita salsa de tomate.</description>
+      <pubDate>Mon, 27 Mar 2023 12:02:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Pizza Ortolana</title>
+      <link>http://www.pizzerialaserrana.it/pizza-ortolana</link>
+      <description>La Pizza Ortolana es una opción vegetariana deliciosa que incluye pimientos, calabacín, berenjena, cebolla, mozzarella y nuestra salsa de tomate casera.</description>
+      <pubDate>Mon, 27 Mar 2023 12:03:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

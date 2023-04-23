@@ -1,0 +1,7 @@
+body{
+    height: 2000px;
+}
+
+img.carouselExample img{
+    height: 450px !important;
+}

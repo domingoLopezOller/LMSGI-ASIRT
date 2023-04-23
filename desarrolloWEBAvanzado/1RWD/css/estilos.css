@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: violet;
+}
+/*flexbox*/
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Create four equal column*/
+div.row div.column ,div.column2{
+    display: inline-block;
+    padding: 20px;
+    width: 300px;
+}
+.rojo{
+    background-color: red;
+}
+.verde{
+    background-color: green;
+}
+.celeste{
+    background-color: cyan;
+}
+.gris{
+    background-color: lightgray;
+}
+
+
+@media screen and (max-width: 992px) {
+    body {
+    background-color: blue;
+    }
+   }
+   @media print , (min-width: 700px) {
+    body {
+    background-color: orange;
+    }
+   }
+   @media (min-width: 700px) and 
+(orientation: landscape) {
+ body {
+ background-color: red;
+ }
+}
+  

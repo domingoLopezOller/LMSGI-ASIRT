@@ -384,3 +384,48 @@ img{
     object-fit: fill;
 }
 
+@media screen and (max-width:800px){
+    body{
+        height: 2800px;
+    }
+    header{
+     background: lightgrey;
+     height: 15%;
+    }
+    header div.encabezado{
+        flex-direction: column;
+    }
+    header nav{
+        display: none;
+    }
+    header div.encabezado div.buscar{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+        height: 75%;
+    }
+    main section{
+        width: 100%;
+    }
+    main aside{
+        width: 100%;
+    }
+    footer{
+        height: 45%;
+    }
+    footer div.contenido{
+        flex-direction: column;
+    }
+    footer div.calendario{
+        width: 100%;
+
+    }
+    footer div.encuentranos{
+        width: 100%;
+    }
+    footer div.enlaces{
+        width: 100%;
+    }
+}
+

@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prueba de JAVASCRIPT</title>
+    <script src="myScript.js"></script>
 </head>
 <body>
-    <script>
-        let nombre="Domingo";
-        console.log("Hola "+nombre);
+    <noscript>ESTA PÁGINA NECESITA JAVASCRIPT PARA FUNCIONAR</noscript>
+
+    <h1>Mi primer ejemplo de JAVASCRIPT en línea</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()"> Haz click para saber la fecha de hoy </button>
+    
+    <p id="demo"></p>
+
+
+    <h1>Mi primer ejemplo de JAVASCRIPT incrustado en body</h1>
+    <button type="button" onclick="myFunction()"> Haz click para saber qué pasa </button>
+    
+    <script> 
+        // Comentario de Javascript
+        /* COMENTARIO
+        DE VARIAS
+        LÍNEAS */
+        function myFunction(){
+            alert("Esto es una alerta");
+        }
     </script>
+
+
+    <h1>Mi primer ejemplo de JAVASCRIPT importado de un fichero externo</h1>
+
+    <p id="demo2">Esto es un párrafo.</p>
+    <script>
+        function myFunction2() {
+            alert("hola como estás");
+        }
+    </script>
+    <button type="button" onclick="myFunction2()">Pulsa!</button>
+    
 
 
 </body>

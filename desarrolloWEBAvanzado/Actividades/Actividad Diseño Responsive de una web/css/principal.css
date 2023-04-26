@@ -54,8 +54,11 @@ ul, ol {
 /* ---- Layout ------------------------------------------------------------- */
 
 #contenedor {
-  max-width: 100%;
-  margin: 50px auto 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 #cabecera {
@@ -346,4 +349,8 @@ ul, ol {
 
 #pie a:hover {
   color: #4F6AD7;
+}
+
+i{
+  display: none !important;
 }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./myscript.js"></script>
+</head>
+<body>
+    <noscript>ESTA PÁGINA NECESITA JAVASCRIPT PARA FUNCIONAR</noscript>
+    <h1>Mi primer ejemplo de JAVASCRIPT en línea</h1>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()"> Haz click para saber la fecha de hoy</button>
+    <p id="demo"></p>
+
+    <h1>Mi primer ejemplo de JAVASCRIPT incrustado en body</h1>
+    <button type="button" onclick="MyFunction()">Haz click para saber que pasa</button>
+
+    <script>
+        function MyFunction(){
+            alert("Esto es una alerta");
+        }
+    </script>
+
+<h1>Mi primer ejemplo de JAVASCRIPT importado de un fichero externo</h1>
+<p id="demo2">Esto es un párrafo</p>
+<script>function MyFunction2(){alert("hola como estás"); }</script>
+<button type="button" onclick="MyFunction2()">Pulsa!</button>
+</body>
+</html>

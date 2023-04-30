@@ -1,0 +1,11 @@
+h1 {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  color: rgb(67, 3, 97);
+  background-color: rgb(231, 189, 214);
+}
+
+p {
+  font-weight: bold;
+  color: rgb(231, 189, 214);
+}/*# sourceMappingURL=prueba.css.map */

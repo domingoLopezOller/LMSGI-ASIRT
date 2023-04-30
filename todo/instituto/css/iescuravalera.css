@@ -402,3 +402,50 @@ img{
 }
 
 
+@media screen and (max-width:800px){
+  body{
+    height: 2700px;
+  }
+  header{
+    background:lightgray;
+    height: 15%;
+  }
+  header div.encabezado{
+    flex-direction: column;
+    -ms-flex-align: start;
+  }
+  header nav{
+    display: none;
+  }
+  header div.encabezado div.buscar{
+    display: none;
+  }
+  main{
+    flex-direction: column;
+    height: 75%;
+  }
+  main section{
+    width: 100%;
+  }
+  main aside{
+    width: 100%;
+  }
+  footer{
+    display: flex;
+    flex: column;
+    height: 15%;
+  }
+
+  footer div.contenido{
+    flex-direction: column;
+  }
+  footer div.calendario{
+    width: 100%;
+  }
+  footer div.encuentranos{
+    width: 100%;
+  }
+  footer div.enlaces{
+    width: 100%;
+  }
+}

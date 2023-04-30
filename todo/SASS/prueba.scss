@@ -1,0 +1,13 @@
+$color:rgb(67, 3, 97);
+$fondo:rgb(231, 189, 214);
+
+h1{
+    text-decoration: dotted;
+    color: $color;
+    background-color: $fondo;
+}
+
+p{
+    font-weight: bold;
+    color: $fondo;
+}

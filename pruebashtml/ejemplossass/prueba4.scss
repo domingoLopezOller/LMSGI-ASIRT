@@ -1,0 +1,14 @@
+$color : blue;
+$fondo : yellow ;
+
+
+h1 {
+    text-decoration: dotted;
+    color : $color;
+    background-color : $fondo;
+}
+
+p{
+    font-weight: bold;
+    color: $fondo;
+}

@@ -410,3 +410,22 @@ img{
   header nav a i{
     float:right;
   }
+
+  @media screen and  (max-width: 800px){
+
+   header {
+      background: lightgray;
+   }
+   header div.encabezado{
+    flex-direction: column;
+   }
+  header nav{
+    display: none;
+  }
+  
+header div.encabezado div.buscar {
+  display: none;
+}
+
+
+  }

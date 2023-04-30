@@ -1,0 +1,245 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 1500px;
+}
+
+/* centrar cosas en flex con justify(primario) y align-line (secundario) si es con p
+hasta que sean:block y text-align */
+
+header {
+    width: 100%;
+    height: 45%;
+    background-color: black;
+    color: white;
+}
+
+header nav.sociales {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 5px;
+}
+
+header nav.sociales i {
+    font-size:  30px;
+    color: black;
+}
+
+header nav.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 20px;
+}
+
+header nav.menu div {
+    text-align: center;
+}
+
+
+
+
+header nav.menu a {
+    text-decoration: none;
+}
+
+
+header nav.contacto {
+    background-color: white;
+    color: black ;
+}
+
+header nav.menu i {
+    font-size: 45px;
+    color: green;
+}
+
+header nav.menu h3 {
+    color: white;
+}
+
+header div.logotipo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100%;
+    height: 100%;
+}
+
+
+header div.logotipo div.logo{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+}
+
+header div.logotipo div.logo figure{
+    width: 15%;
+    height: 15%;    
+}
+
+header div.logotipo div.logo figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 75%;
+}
+
+main section.trabajos {
+    width: 100%;
+    height: 10%;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 2%;
+}
+
+main section.trabajos h2{
+        color: white;
+        font-weight: bold;
+}
+
+main section.trabajos p {
+    color: blue;
+}
+
+main section.contenido {
+    width: 100%;
+    height: 90%;
+    background-color: beige;
+}
+
+main section.contenido article {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    margin-top: 1%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+main section.contenido article.noticia figure {
+    width: 100%;
+    height: 30%;
+    display: flex;
+}  
+
+main section.contenido article.noticia figure { 
+    width: 100%;
+    height: 100%;
+}
+
+
+main section.contenido div {
+    width: 100%;
+    height: 20%;
+    padding: 2px ;      
+}
+
+main section.contenido div h3 {
+    color: blue;
+}
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+
+
+/* como se veria con un tablet  */
+
+@media screen and (min-width:600px) {
+
+header div.logotipo i{
+    display: none;
+}
+main section.trabajos {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+main section.contenido {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+}
+
+main section.contenido figure {
+    width: 100%;
+    height: 40%;
+}
+
+}
+
+
+
+/* ahora con una pantalla de tele */
+
+@media screen and (min-width:600px) {
+
+    header div.logotipo i{
+        display: none;
+    }
+    main section.trabajos {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 2%;
+    }
+    
+    main section.contenido {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 300px;
+        padding-right: 3px;
+    }
+    
+    main section.contenido figure {
+        width: 100%;
+        height: 40%;
+    }
+    
+
+    
+    }
+    

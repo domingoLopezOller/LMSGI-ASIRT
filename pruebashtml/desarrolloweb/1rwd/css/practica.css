@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*flexbox*/
+
+div {
+    display: flex;
+    height: 100px;
+}
+
+/* todas las columnas miden igual */ 
+
+.A{
+    background-color: red;
+    
+}
+
+.B{
+    background-color: aqua;
+}
+
+.C {
+    background-color: yellow;
+}
+
+.D {
+    background-color: burlywood;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:800px)
+
+{
+  .A {
+
+    background-color: red;
+    flex: 100%;
+    }
+    .B {
+    
+        background-color: violet;
+        flex: 100%;
+   }
+   .C {
+    background-color: orange;
+    flex: 40%;
+   
+   }
+
+   .D {
+    background-color: blue;
+    flex: 60%;
+   }
+
+}
+
+
+@media screen and (min-width:801px)
+
+{
+  .A {
+
+    background-color: red;
+    flex: 50%;
+    }
+    .B {
+    
+        background-color: violet;
+        flex: 50%;
+   }
+   .C {
+    background-color: orange;
+    flex: 100%;
+   
+   }
+
+   .D {
+    background-color: blue;
+    flex: 100%;
+   }
+
+}

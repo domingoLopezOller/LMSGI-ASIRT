@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+    <rss version="2.0">
+    <channel>
+            <title>ediciones paraninfo</title>
+            <link>https://www.paraninfo.es/</link>
+            <description>web de la edicion paraninfo</description>
+            <item>
+                <title>libros de informatica</title>
+                <link>https://www.paraninfo.es/libro/informatica-n1-0073</link>
+                <pubdate>tue , 01 Jan 2021 10:00:00 +0100</pubdate>
+
+            </item>
+            <item>
+                <title>libros de electricidad y electronica </title>
+                <link>https://ww.paraninfo.es/libros/electricidad-y-electronica-n1-0048</link>
+                <description>libros tecnicos sobre electricidad y electronica</description>
+                <pubdate>tue,03 Jan 2021 10:00:00 +0100</pubdate>
+
+            </item> 
+    </channel>
+    </rss>
+    

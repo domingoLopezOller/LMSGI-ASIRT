@@ -159,12 +159,115 @@
     //     ejemplo("Manuel");
     //     ejemplo("Pepito", "Grillo");
         
-function multiplicar(a,b){
-    return a*b;
-}
-console.log(multiplicar(5,23));
-let multiplicar2 = function(a,b) {return a * b;}
-console.log(multiplicar2(5,23))
+// function multiplicar(a,b){
+//     return a*b;
+// }
+// console.log(multiplicar(5,23));
+// let multiplicar2 = function(a,b) {return a * b;}
+// console.log(multiplicar2(5,23))
 
-let multiplicar3 = (a,b) => a * b;
-console.log(multiplicar3(5 , 23 ))
+// let multiplicar3 = (a,b) => a * b;
+// console.log(multiplicar3(5 , 23 ))
+
+// function factorial(numero) {
+//     let resultado = 1;
+  
+//     for (let i = 2; i <= numero; i++) {
+//       resultado *= i;
+//     }
+  
+//     return resultado;
+//   }
+  
+//   const numero = prompt("Introduce un número para calcular su factorial:");
+//   const resultado = factorial(numero);
+//   console.log(`El factorial de ${numero} es ${resultado}.`);
+
+    // function factorial(n){
+    //     if (n<=1) return 1;
+    //     else return n*factorial(n-1);
+    // }
+    // console.log(factorial(3));
+    // console.log(factorial(5));
+
+   
+    // function sumarElementosArray(array) {
+    //     let suma = 0;
+      
+    //     for (let i = 0; i < array.length; i++) {
+    //       suma += array[i];
+    //     }
+      
+    //     return suma;
+    //   }
+    //   const numeros = [9.98, 7.86, 4.53, 8.91, 5.76, 2.31];
+    //   const resultado = sumarElementosArray(numeros);
+    //   console.log(resultado);
+
+//     let frase = "Hola caracola";
+//     let letra = 'la';
+
+//     let programa = (cadena, letra) => {
+//         let contador = 0;
+//             for (let i = 0; i < cadena.length; i++) { 
+//                 if (cadena.substr(i, letra.length) === letra) { 
+//                  contador++;
+//                     i += letra.length - 1; 
+//     }
+//   }
+//   return contador;
+// }
+
+// console.log(`En la frase "${frase}" aparece ${programa(frase, letra)} veces la letra "${letra}".`);
+    
+
+//Adivina el número
+// function adivinaNumero()
+// let numero=Math.floor(Math.random()*100)+1;
+// console.log(numero);
+// let consulta,contador=0;
+// do{
+//     consulta=prompt("Introduce un número o indica -1 para salir:");
+//     if (consulta < numero & consulta !=-1){
+//         alert("El número es inferior al correcto")
+
+//     }
+//     else if (consulta > numero & consulta)
+// }
+// function adivinaNumero();
+
+
+//ARRAYS Y OBJETOS
+// let vector_numeros = new Array(3);
+// vector_numeros[0] = 23;
+// vector_numeros[1] = -45.23;
+// vector_numeros[5] = "hola";
+// vector_numeros[-1] = 3;
+
+// console.log(vector_numeros);
+
+// const fruits = ["Banana", "Orange"];
+// fruits.push("Kiwi", "Lemon");
+// fruits.pop();
+// console.log(fruits);
+
+//Manipulación de objetos
+var empleado={
+    nombre:"Pepe Perez",
+    edad:27,
+    deportes:["ajedrez","fútbol"],
+    estaJubilado:function() {
+        if (this.edad > 65) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+//Acceso según las claves del objeto empleado
+console.log(empleado.edad);
+console.log(empleado.deportes);
+console.log(empleado.estaJubilado());
+   
+   

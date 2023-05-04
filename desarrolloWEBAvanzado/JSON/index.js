@@ -15,7 +15,7 @@ for (let i=0;i<datos.length;i++){
 //Sacar en un bucle usando map
 //Fíjate en el resultado si no pones al terminar el paréntesis de map .join('')
 document.getElementById("demo3").innerHTML +=jsonData.map((elemento,index)=>{
-  return "<li>" + jsonData[i].name + ", " + jsonData[i].age + "</li>";
+  return "<li>" + jsonData[index].name + ", " + jsonData[index].age + "</li>";
 }).join('');
 
 //Si no usas .join('') te va a crear separadores con ','

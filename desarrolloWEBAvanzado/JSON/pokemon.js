@@ -1,5 +1,5 @@
 // Caso de problema asíncrono con datos externos
-// fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+// fetch(`https://pokeapi.co/api/v2/pokemon/3`)
 //     .then(data=>data.json())
 //     .then (data=> console.log(data))
 //     .catch(error =>  console.log(error));

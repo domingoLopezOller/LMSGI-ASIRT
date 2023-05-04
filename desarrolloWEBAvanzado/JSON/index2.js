@@ -1,19 +1,19 @@
 //LECTURA DE DATOS IMPORTANDO EL FICHERO DIRECTAMENTE
 //Equivalente a esto pero en <script hay que poner esto: <script type="module"
-import json2 from "./heroes.json" assert { type: "json" };
+// import json2 from "./heroes.json" assert { type: "json" };
 
-// Procesar el fichero para mostrar por HTML
-document.getElementById("demo").innerHTML += json2.map((heroe) => {
-  if (heroe.publisher == "Marvel Comics") {
-    return "<li>" + heroe.superhero + ", " + heroe.publisher + "</li>";
-  }
-}).join('');
-// Colocar ahora los de DC
-document.getElementById("demo2").innerHTML += json2.map((heroe) => {
-    if (heroe.publisher == "DC Comics") {
-      return "<li>" + heroe.superhero + ", " + heroe.publisher + "</li>";
-    }
-  }).join('');
+// // Procesar el fichero para mostrar por HTML
+// document.getElementById("demo").innerHTML += json2.map((heroe) => {
+//   if (heroe.publisher == "Marvel Comics") {
+//     return "<li>" + heroe.superhero + ", " + heroe.publisher + "</li>";
+//   }
+// }).join('');
+// // Colocar ahora los de DC
+// document.getElementById("demo2").innerHTML += json2.map((heroe) => {
+//     if (heroe.publisher == "DC Comics") {
+//       return "<li>" + heroe.superhero + ", " + heroe.publisher + "</li>";
+//     }
+//   }).join('');
 
 //LECTURA DE DATOS GENERAL COMO FICHERO EN UNA URL
 fetch("./heroes.json")

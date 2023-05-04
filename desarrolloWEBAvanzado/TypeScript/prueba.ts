@@ -1,3 +1,4 @@
+//Procesando JSON bajo una interfaz con TypeScript
 interface PersonData {
     name: string;
     weight? : number;//opcional
@@ -17,12 +18,3 @@ interface PersonData {
   };
   
   console.log(datosPersona(persona));
-
-const array:number[] = [1, 2, 3, 4];
-console.log(`La suma de los elementos del array es: ${array.reduce((a, b) => a + b)}`); 
-
-var stringsearch:string = "o" ,str:string = "Texto donde buscar";
-    let count:number=0;
-    for(let i:number=0; i<str.length; count+=+(stringsearch===str[i++]));
-console.log(count);
-

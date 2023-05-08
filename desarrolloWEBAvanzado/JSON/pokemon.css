@@ -1,10 +1,10 @@
 table{
     border-collapse:collapse;
 }
-td{
+table tr{
     border:1px solid black;
 }
-th{
+table th{
     border:2px solid blue;
 }
 table img{

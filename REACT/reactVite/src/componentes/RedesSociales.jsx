@@ -20,13 +20,11 @@ export const RedesSociales = () => {
 }
 
 
-
+//Caso de sacar un listado de redes sociales que se pasa como argumento con un array de objetos. Para no tener que ir de uno en uno.
 export const RedesSociales2 = ({enlaces}) => {
-  let salida="";
   return (
     <>
-      <a href={enlaces[0].url}><img src={enlaces[0].imagen} /></a>
-      <a href={enlaces[1].url}><img src={enlaces[1].imagen} /></a>
+      {enlaces.map((item,index) => <a href={item.url}><img src={item.imagen} /></a>)}
     </>
   )
 }

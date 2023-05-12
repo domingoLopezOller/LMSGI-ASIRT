@@ -26,28 +26,7 @@ const fetchData = async (id) => {
                       <p>HP: ${pokemon.hp} Ataque: ${pokemon.ataque} Defensa: ${pokemon.defensa}</p>
                   `;
     //)
-  };
-  
-  //FUNCIÓN PARA LEER LOS 9 PRIMEROS POKEMON
-  const fetchData2 = async () => {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=151`);
-    const data = await res.json();
-    console.log(data.results);
-    let pokemon;
-    //Recorrer cada pokemon
-    document.getElementById("tabla").innerHTML += data.results.map((x, index) => {
-      pokemon = {
-        numero: index + 1,
-        img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1}.png`,
-        nombre: x.name,
-      };
-  
-      return `<tr>
-                  <td> ${pokemon.numero} </td> <td>${pokemon.nombre}</td> <td><img src=${pokemon.img} alt="pokemon"/></td>
-              </tr>`;
-    }).join('');
-  };
-  
+  }; 
   
   //Sacar datos con formato Bootstrap
   const fetchDataBootstrap = async (id) => {

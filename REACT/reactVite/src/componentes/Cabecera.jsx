@@ -7,9 +7,12 @@ export const Cabecera = () => {
 }
 
 
-export const Cabecera2 = () => {
+export const Cabecera2 = ({mensaje="mensaje por defecto",otro}) => {
     return (
-      <h1>Otro ejemplo de Cabecera</h1>
+      <>
+      <h2>{mensaje}</h2>
+      <h2>{otro[3]}</h2>
+      </>
     )
   }
 

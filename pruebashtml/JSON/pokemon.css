@@ -10,3 +10,25 @@ th{
 table img{
     width:200px;
 }
+
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+
+}
+
+
+section h2 {
+    text-align: center;
+}
+
+section script {
+    background-color: gray;
+}
+
+
+body {
+    background-color: aquamarine;
+}

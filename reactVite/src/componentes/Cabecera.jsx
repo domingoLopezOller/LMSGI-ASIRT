@@ -6,9 +6,12 @@ export const Cabecera = () => {
   )
 }
 
-export const Cabecera2 = () => {
+export const Cabecera2 = ({mensaje, otro}) => {
   return (
-    <h1>Otro ejemplo de cabecera</h1>
+    <>
+    <h2>{mensaje}</h2>
+    <h2>{otro[2]}</h2>
+    </>
   )
 }
 

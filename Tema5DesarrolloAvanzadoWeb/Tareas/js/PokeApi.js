@@ -8,9 +8,26 @@ function fetchPokemon(id) {
     });
 }
 
-for (let i = 1; i <= 6; i++) {
-    let pokemons = Math.floor(Math.random() * 1000) +1;
-    fetchPokemon(pokemons);
+let i = 0;
+let pokemon = 0;
+const vectorial = [];
+let count = 0;
+let encontrado = 0;
+
+while (i < 6) {
+    pokemon = Math.floor(Math.random() * 10) +1;
+    encontrado = 0;
+    for (count = 0;count<vectorial.length;count++){
+        if (vectorial[count] == pokemon){
+            encontrado = 1;
+        }
+    }
+
+    if (encontrado == 0){
+        fetchPokemon(pokemon);
+        vectorial.push(pokemon);
+        i = i + 1;
+    }
 }
 
 function createPokemon(pokemon) {
@@ -37,6 +54,4 @@ function createPokemon(pokemon) {
     card.appendChild(name);
 
     pokemonContainer.appendChild(card);
-}
-
-fetchPokemons(6);
+};

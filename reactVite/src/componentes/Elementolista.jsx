@@ -1,12 +1,10 @@
 import React from 'react'
 
-function Elementolista() {
+export const ElementoLista = () => {
   return (
     <>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
     </>
   )
 }
-
-export default Elementolista

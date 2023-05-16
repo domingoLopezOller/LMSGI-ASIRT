@@ -1,0 +1,11 @@
+aside{
+    background-color:lime;
+    width:20%;
+    height:500px;
+    text-align:center;
+}
+@media screen and (max-width:600px){
+    aside{
+        display:none;
+    }
+}

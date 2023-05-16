@@ -10,3 +10,22 @@ table th{
 table img{
     width:200px;
 }
+
+section#pokemonsBootstrap{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+
+section#pokemonsBootstrap div{
+    background-color:beige;
+    align-items: center;
+    margin:1%;
+    border: 2px solid blue;
+}
+section#pokemonsBootstrap div h3{
+    background-color: yellowgreen;
+}
+section#pokemonsBootstrap div h3,p{
+    text-align:center;
+}

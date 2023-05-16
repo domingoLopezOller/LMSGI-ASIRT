@@ -16,6 +16,8 @@
 //     especial: data.stats[3].base_stat,
 // }
 // console.log(pokemon);
+//Alternativa: Leer en una función con fetch y luego en otra función cargar los datos, NO a la vez como se propone
+
 
 //FUNCIÓN PARA LEER 1 POKEMON
 const fetchData = async (id) => {
@@ -54,19 +56,20 @@ const fetchData2 = async () => {
   console.log(data.results);
   let pokemon;
   //Recorrer cada pokemon
-  document.getElementById("tabla").innerHTML += data.results.map((x, index) => {
-    pokemon = {
-      numero: index + 1,
-      img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1}.png`,
-      nombre: x.name,
-    };
+  document.getElementById("tabla").innerHTML += data.results
+    .map((x, index) => {
+      pokemon = {
+        numero: index + 1,
+        img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index + 1}.png`,
+        nombre: x.name,
+      };
 
-    return `<tr>
+      return `<tr>
                 <td> ${pokemon.numero} </td> <td>${pokemon.nombre}</td> <td><img src=${pokemon.img} alt="pokemon"/></td>
             </tr>`;
-  }).join('');
+    })
+    .join("");
 };
-
 
 //Sacar datos con formato Bootstrap
 const fetchDataBootstrap = async (id) => {
@@ -85,17 +88,23 @@ const fetchDataBootstrap = async (id) => {
     defensa: data.stats[2].base_stat,
     especial: data.stats[3].base_stat,
   };
-  document.getElementById("pokemonsBootstrap").innerHTML +=`
+  document.getElementById("pokemonsBootstrap").innerHTML += `
     <div class="card" style="width:400px">
-      <img class="card-img-top" src="${pokemon.img}" alt="Card image" style="width:100%">
+      <img class="card-img-top" src="${
+        pokemon.img
+      }" alt="Card image" style="width:100%">
       <div class="card-body">
         <h3 class="card-title">${pokemon.nombre.toUpperCase()}</h3>
         <p class="card-text">
           <p>Número: ${pokemon.numero}</p>
-          <p>HP: ${pokemon.hp} Ataque: ${pokemon.ataque} Defensa: ${pokemon.defensa}</p>
+          <p>HP: ${pokemon.hp} Ataque: ${pokemon.ataque} Defensa: ${
+    pokemon.defensa
+  }</p>
         </p>
         <a href="https://www.wikidex.net/wiki/${pokemon.nombre}" class="btn btn-primary" target="_blanck">Ver detalle del Pokemon</a>
       </div>
     </div>
     `;
 };
+
+

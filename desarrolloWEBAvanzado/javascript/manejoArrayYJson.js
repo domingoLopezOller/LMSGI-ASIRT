@@ -157,3 +157,19 @@ var empleado={
 console.log(empleado.edad);
 console.log(empleado.deportes);
 console.log(empleado.estaJubilado);
+
+//Sacar un vector de números aleatorios sin que se repitan
+let vector=[],contador=0,encontrado=false,valor;
+    while (contador<5){
+        valor=Math.floor(Math.random()*1000)+1;
+        console.log(valor);
+        for(let j=0;j<vector.length;j++){
+            if(vector[j]==valor) encontrado=true;
+        }
+        if (!encontrado){
+            vector[contador]=valor;
+            contador++;   
+            encontrado=false;
+        }
+    }
+    console.log(vector);

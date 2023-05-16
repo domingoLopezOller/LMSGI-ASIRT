@@ -16,18 +16,33 @@
     <section id="pokemons">
         <h2> USANDO LA POKEAPI </h2>
         <script>
+            fetchData(15);
             fetchData(25);
-            fetchData(1);
-            fetchData(880);
+            fetchData(100);
         </script>
     </section>
-
+    <h2> POKEAPI Y BOOTSTRAP </h2>
     <section id="pokemonsBootstrap">
-        <h2> POKEAPI Y BOOTSTRAP </h2>
         <script>
-            fetchDataBootstrap(150);
-            fetchDataBootstrap(6);
-
+            //Colocar los pokemon en flex según el vector
+            //Sacar un vector de números aleatorios sin que se repitan
+            let vector = [],  contador = 0,  encontrado = false,  valor;
+            while (contador < 5) {
+                valor = Math.floor(Math.random() * 150) + 1;
+                console.log(valor);
+                for (let j = 0; j < vector.length; j++) {
+                    if (vector[j] == valor) encontrado = true;
+                }
+                if (!encontrado) {
+                    vector[contador] = valor;
+                    contador++;
+                    encontrado = false;
+                }
+            }
+            console.log(vector);
+            for(let i=0;i<vector.length;i++){
+                fetchDataBootstrap(vector[i]);
+            }
         </script>
     </section>
     <h3> TABLA CON POKEAPI </h3>

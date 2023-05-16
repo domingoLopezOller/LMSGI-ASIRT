@@ -1,4 +1,5 @@
 import React from 'react'
+import './cabecera.css'
 
 export const Cabecera = () => {
   return (
@@ -12,6 +13,16 @@ export const Cabecera2 = ({mensaje="mensaje por defecto",otro}) => {
       <>
       <h2>{mensaje}</h2>
       <h2>{otro[3]}</h2>
+      </>
+    )
+  }
+
+
+
+export const CabeceraEstilos= ({mensaje,color}) => {
+    return (
+      <>
+      <h1 className={color}>{mensaje}</h1>
       </>
     )
   }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>BarcaPizza</title>
+        <link>https://barcapizza.com</link>
+        <description>Restaurante italiano</description>
+        <item>
+            <title>Margarita</title>
+            <link>https://barcapizza.com/carta-barcapizza.htm#carte-pizzas</link>
+            <description>Orégano, Tomate y Queso</description>
+        </item>
+        <item>
+            <title>Parma</title>
+            <link>https://barcapizza.com/carta-barcapizza.htm#carte-pizzas</link>
+            <description>Orégano, Tamate, Queso y Jamón</description>
+        </item>
+        <item>
+            <title>Boscaiola</title>
+            <link>https://barcapizza.com/carta-barcapizza.htm#carte-pizzas</link>
+            <description>Orégano, Tomate, Queso y Champiñones</description>
+        </item>
+    </channel>
+</rss>

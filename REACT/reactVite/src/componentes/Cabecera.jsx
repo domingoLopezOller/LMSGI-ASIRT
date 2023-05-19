@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './cabecera.css'
 
 export const Cabecera = () => {
@@ -26,6 +26,5 @@ export const CabeceraEstilos= ({mensaje,color}) => {
       </>
     )
   }
-
-
-let suma= (a,b) => {return a+b;}
+  
+  

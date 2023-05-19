@@ -7,8 +7,8 @@ export const Section = () => {
     <section>
         <MyCard color="rojo"/>
         <MyCard color="verde"/>
-        <MyCard color="gris"/>
-        <MyCard bolor="azul"/>
+        <MyCard color="naranja"/>
+        <MyCard color="azul"/>
     </section>
   )
 }

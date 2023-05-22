@@ -1,17 +1,17 @@
 import React from 'react'
 import './web.css'
-import { Header } from './Header'
-import { NavBar } from './NavBar'
-import { Main } from './Main'
-import { Footer } from './Footer'
+// import { Header } from './Header'
+// import { NavBar } from './NavBar'
+// import { Main } from './Main'
+// import { Footer } from './Footer'
 
 export const Web = () => {
   return (
     <>
-    <Header />
+    {/* <Header />
     <NavBar />
     <Main />
-    <Footer />
+    <Footer /> */}
     </>
   )
 }

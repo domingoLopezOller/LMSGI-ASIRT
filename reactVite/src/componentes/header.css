@@ -2,8 +2,8 @@ header{
     width: 100%;
     height: 200px;
     background-color: black;
-    background-image: url('/baltasar.jpg');
+    background-image: url('/pepo.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain, cover;
+    background-size: cover;
 }

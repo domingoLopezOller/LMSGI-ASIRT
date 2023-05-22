@@ -4,6 +4,6 @@ import './aside.css'
 
 export const Aside = () => {
   return (
-    <h2>Noticias Variadas</h2>
+    <div></div>
   )
 }

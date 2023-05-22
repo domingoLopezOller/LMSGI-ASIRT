@@ -1,6 +1,6 @@
 import React from 'react'
 import {Cabecera, CabeceraHook, Form } from './Hooks'
-import Rutas from './Rutas'
+import Rutas, { RutaOutlet, RutasMenu } from './Rutas'
 
 export const ReactAvanzado = () => {
   return (
@@ -12,6 +12,10 @@ export const ReactAvanzado = () => {
     <CabeceraHook/> */}
     <h2>Rutas en URL</h2>
     <Rutas/>
+    <h2>Rutas con menu</h2>
+    <RutasMenu/>
+
+    <RutaOutlet/>
     </>
   )
 }

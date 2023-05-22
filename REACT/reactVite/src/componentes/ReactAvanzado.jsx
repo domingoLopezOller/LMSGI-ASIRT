@@ -2,7 +2,7 @@
 import React from 'react'
 import { Cabecera, CabeceraHook, Contador, Counter, EjemploContar, Form } from './Hooks'
 import { Pokemon2 } from './Pokemon'
-import Rutas, { RutasConError, RutasMenu } from './Rutas'
+import Rutas, {RutaOutlet, RutasConError, RutasMenu, RutasNavigate } from './Rutas'
 
 export const ReactAvanzado = () => {
   return (
@@ -27,12 +27,16 @@ export const ReactAvanzado = () => {
 
 
     <h1> React AVANZADO: gestión de rutas</h1>
-    <h2>Rutas en URL</h2>
-    <Rutas/>
+    {/* <h2>Rutas en URL</h2>
+    <Rutas/> */}
     {/* <h2>Rutas con error 404 y entrada variable de parámetros en URL</h2>
-    <RutasConError/>
-    <h2>Rutas con menú nav</h2>
-    <RutasMenu/> */}
+    <RutasConError/> */}
+    {/* <h2>Rutas con menú nav</h2>
+    <RutasMenu/>  */}
+    {/* <h2>Rutas con Navigate</h2>
+    <RutasNavigate/> */}
+    <h2>Rutas con Outlet</h2>
+    <RutaOutlet/>
     </>
   )
 }

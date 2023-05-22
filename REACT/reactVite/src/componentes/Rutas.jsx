@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link, NavLink, useParams } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, NavLink, useParams, Navigate, Outlet } from "react-router-dom";
 
 export default function Rutas() {
   return (
@@ -35,14 +35,10 @@ function Domingo() {
       return <h3>Parámetro introducido 👉️ {nombre}</h3>;break;
     case "juanfran":
       return <h3>Parámetro introducido 👉️ {nombre} </h3>; break;
+    default:
+      return <h2>USUARIO NO REGISTRADO </h2>
   }
   
-}
-
-function MySkills2() {
-  //Lectura del parámetro de la URL
-  const params = useParams();
-  return <h3>Parámetro introducido 👉️ {params.nombre}</h3>;
 }
 
 //Sólo se verá cuando en la ruta esta con /about, como si fuera una página diferente en otra carpeta del sitio
@@ -64,6 +60,13 @@ export function RutasConError() {
       </Routes>
     </Router>
   );
+}
+
+//Función que saca información del parámetro colocado
+function MySkills2() {
+  //Lectura del parámetro de la URL
+  const params = useParams();
+  return <h3>Parámetro introducido 👉️ {params.nombre}</h3>;
 }
 
 //Sólo se verá cuando en la ruta esta con error
@@ -90,5 +93,62 @@ function Navbar2() {
       <NavLink to="/">Home</NavLink>
       <NavLink to="/about">About</NavLink>
     </nav>
+  )
+}
+
+//Rutas con barra de menú y en caso de fallo no sale la página de error sino que redirecciona al Home
+export function RutasNavigate() {
+  return (
+    <Router>
+      <Navbar2 />
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+	      <Route path='*' element={<Navigate to='/about' />} />
+      </Routes>
+    </Router>
+  );
+}
+
+
+//Rutas con OUTLET
+export function RutaOutlet() {
+  return (
+    <Router>
+      <Navbar3 />
+      <Routes>
+            <Route exact path="/" element={<Home2/>}>
+            	<Route path="usuario/:nombre" element={<MySkills/>} />
+            	<Route path="/about" element={<About/>} />
+	          </Route>
+            <Route path="/otra" element={<Otra/>} />
+            <Route path="*" element={<NoPage/>} />
+      </Routes>
+    </Router>
+  );
+}
+function Otra(){
+  return(
+    <div>OTRA COSA</div>
+  )
+}
+function Navbar3() {
+  // visible en cada página
+  return (
+    <nav>
+        <Link to="/">Home</Link>
+        <Link to="usuario/Domingo">Usuarios</Link>
+        <Link to="about">Acerca de...</Link>
+        <Link to="otra">Otra cosa...</Link>
+    </nav>
+  )
+} 
+//El componente que incluye Outlet hará que todo el contenido "element" se incluya justo debajo de su contenido
+function Home2() {
+  return (
+    <div>
+        <h1> HOME </h1>
+        <Outlet />
+    </div>
   )
 }

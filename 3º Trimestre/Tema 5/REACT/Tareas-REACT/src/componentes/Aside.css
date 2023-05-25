@@ -1,0 +1,19 @@
+aside {
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(242, 242, 242);
+}
+
+aside h2 {
+    border-bottom: dotted grey;
+    background-color: rgb(219, 219, 219);
+}
+
+aside h3 {
+    color: blue;
+}
+
+aside p.more {
+    color: rgb(159, 159, 159);
+}

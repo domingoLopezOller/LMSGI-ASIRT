@@ -7,3 +7,10 @@ header{
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (max-width:600px){
+    header{
+    background-image: none;
+   background-color: blue;
+}
+  }

@@ -1,0 +1,35 @@
+aside{
+    background-color: white;
+    position: relative;
+    width: 20%;
+    border-top-left-radius: 30px ;
+    
+}
+
+aside h2{
+    border-top-left-radius: 30px;
+    padding-top: 4px;
+    padding-left: 20px;
+    background-color: rgb(195, 195, 195);
+}
+
+aside p.fecha{
+    color:rgb(6, 113, 228);
+    padding-left: 20px;
+}
+
+aside p.texto{
+    padding-left: 20px;
+}
+
+aside p.mas{
+    color:rgb(214, 214, 214);
+    padding-left: 20px;
+}
+
+@media screen and (max-width:600px){
+    aside{
+        display: none;
+    }
+}
+  

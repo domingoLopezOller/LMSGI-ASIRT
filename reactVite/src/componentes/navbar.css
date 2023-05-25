@@ -38,12 +38,16 @@ nav{
     background-color: #04AA6D;
   }
 
+  p.icono{
+    display: none;
+  }
+
   @media screen and (max-width:600px){
-    nav ul {
-        background-color: orange;
-    }
+
     p.texto{
         display:none;
     }
-
+    p.icono{
+      display: unset;
+    }
   }

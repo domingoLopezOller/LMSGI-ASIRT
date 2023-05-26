@@ -18,7 +18,7 @@
 //   // visible en cada página
 //   return <div>navbar</div>;
 // }
-// //Sólo se verá cuando en la ruta está en el comienzo con /
+// //Sólo se verá cuando en la ruta está en el comienzo con / test
 // function Home() {
 //   return <div>home</div>;
 // }

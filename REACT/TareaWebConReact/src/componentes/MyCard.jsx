@@ -4,18 +4,15 @@ import Card from 'react-bootstrap/Card';
 import './mycard.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function MyCard({color}) {
+function MyCard({ imagen, titulo, color }) {
   return (
-    
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="/vite.svg" />
-      <Card.Body className={color}>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+    <Card className={`${color} mx-2`} style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={imagen} style={{ height: '200px' }} />
+      <Card.Body>
+        <Card.Title>{titulo}</Card.Title>
+        <Card.Text className="white-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laudantium sit eos ab porro corporis qui quo fuga. Pariatur earum, aliquam error doloremque debitis praesentium nostrum. Quae temporibus ducimus nam!
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
   );

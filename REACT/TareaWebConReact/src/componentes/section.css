@@ -3,8 +3,11 @@ section{
     flex:row nowrap;
     width:80%;
     height:500px;
-    background-color:aquamarine;
+    background-color:none;
 }
+.card {
+    height: 100%;
+  }
 
 @media screen and (max-width:600px){
     section{

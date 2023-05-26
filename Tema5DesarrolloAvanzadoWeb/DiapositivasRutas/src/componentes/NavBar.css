@@ -1,0 +1,72 @@
+nav{
+    position:sticky; position:-webkit-sticky; top:10px;
+    width:100%;
+    height:100%;
+    background-color:black;
+    border: solid #CE4639 1px;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+   
+/* items del menu */
+nav ul li {
+    background-color:black;
+    
+}
+   
+/* enlaces del menu */  
+nav ul p {
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+   
+/* efecto al pasar el ratón por los items del menu */
+nav ul li:hover {
+    background:#CE4639;
+    padding: 0.7%;
+}
+
+nav p:hover {
+    color: white;
+}
+
+nav ul li ul li p {
+    color: gray;
+}
+
+/* menu desplegable */
+nav ul ul {
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del nav */
+    top: auto;
+    right: 1%;
+    bottom:auto;
+}
+   
+/* items del menu desplegable */
+nav ul ul li {
+    float:none;
+    border: #CE4639 solid 1px;
+    width:300px;
+}
+   
+/* enlaces de los items del menu desplegable */
+nav ul ul p {
+    line-height:120%;
+    padding:10px 15px;
+    background-color:#222222;
+}
+   
+   /* items del menu desplegable al pasar el ratón */
+nav ul li:hover > ul {
+    display:block;
+    color: white;
+}

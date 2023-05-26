@@ -1,0 +1,9 @@
+.logo {
+    height: 27em;
+    padding: 1em;
+    position: relative;
+    right: 20%;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  

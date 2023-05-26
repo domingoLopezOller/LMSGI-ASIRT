@@ -1,3 +1,4 @@
+import React from 'react'
 import Rutas from './componentes/Rutas.jsx';
 import './App.css'
 

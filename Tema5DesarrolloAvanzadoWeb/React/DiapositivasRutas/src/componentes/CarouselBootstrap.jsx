@@ -1,3 +1,4 @@
+import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './CarouselBootstrap.css';
@@ -5,6 +6,9 @@ import './CarouselBootstrap.css';
 function CarouselBootstrap({andalucia}) {
 
   return (
+    <div>
+    <h1>Carousel bootstrap en React</h1>
+    <p><strong>Actividad:</strong>Empleando Bootstrap haz un Carousel con imágenes de Andalucía que le indicas en un JSON como parámetro</p>
     <Carousel>
       <Carousel.Item>
         <img
@@ -95,6 +99,7 @@ function CarouselBootstrap({andalucia}) {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

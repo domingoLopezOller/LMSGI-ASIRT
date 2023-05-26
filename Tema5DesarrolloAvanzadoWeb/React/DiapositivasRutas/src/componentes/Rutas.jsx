@@ -1,11 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, useParams} from 'react-router-dom';
+import Comerror404 from './Comerror404.jsx';
 import CarouselBootstrap from './CarouselBootstrap.jsx';
 import IconosRedesSociales from './IconosRedesSociales.jsx';
 import NavBar from './NavBar.jsx';
-import Home from './Home.jsx';
-import error404 from '/error404.gif';
-
+import AboutMe from './AboutMe.jsx';
+import Curriculum from './Curriculum.jsx';
+import Productos from './Productos.jsx';
 
 export default function Rutas () {
     return (
@@ -16,18 +17,11 @@ export default function Rutas () {
         
         <main>
         <Routes>
-          <Route exact path="/" element={<HomeR/>} />
+          <Route exact path="/" element={<Home/>} />
             <Route path="/carousel" element={<Carousel/>} />
             <Route path="/redesSociales" element={<RedesSociales/>} />
-              {/* <Route path="/rutas/productos/:nombre" element={<Procesador/>} />
-              <Route path="/productos/:nombre" element={<Teclado/>} />
-              <Route path="/productos/:nombre" element={<Ram/>} />
-              <Route path="/productos/:nombre" element={<PlacaBase/>} />
-              <Route path="/productos/:nombre" element={<Raton/>} /> */}
-              <Route path="/curriculum/sobreMi" element={<SobreMi/>} />
-              <Route path="/curriculum/aptitudes" element={<Aptitudes/>} />
-              <Route path="/curriculum/formacionAcademica" element={<FormacionAcademica/>} />
-              <Route path="/curriculum/formacionLaboral" element={<FormacionLaboral/>} />  
+            <Route path="/productos/:nombre" element={<Producto/>} />
+            <Route path="/sobremi" element={<SobreMi/>} />
           <Route path="*" element={<NoPage/>} />
         </Routes>
         </main>
@@ -35,9 +29,9 @@ export default function Rutas () {
     )
   }
 
-  function HomeR() {
+  function Home() {
     return (
-        <Home />
+        <Curriculum />
     );
   }
 
@@ -55,8 +49,6 @@ export default function Rutas () {
 
     return (
         <div>
-            <h1>Carousel bootstrap en React</h1>
-            <p><strong>Actividad:</strong>Empleando Bootstrap haz un Carousel con imágenes de Andalucía que le indicas en un JSON como parámetro</p>
             <CarouselBootstrap andalucia={andalucia} />
         </div>
     );
@@ -68,27 +60,51 @@ export default function Rutas () {
     );
   }
 
-  function SobreMi() {
-    return <div>Sobre Mi</div>;
+  function SobreMi(){
+    return (
+      <AboutMe color="verde"/>
+    );
   }
 
-  function Aptitudes() {
-    return <div>Aptitudes</div>;
-  }
-
-  function FormacionAcademica() {
-    return <div>Formación Académica</div>;
-  }
-
-  function FormacionLaboral() {
-    return <div>Formación Laboral</div>;
+  function Producto() {
+    const params = useParams();
+    let nombre=params.nombre;
+    switch (nombre){
+      case "impresora":
+        return (
+          <Productos nombre={nombre}/>
+        );
+        break;
+        case "teclado":
+        return (
+          <Productos nombre={nombre}/>
+        );
+        break;
+        case "usb":
+        return (
+          <Productos nombre={nombre}/>
+        );
+        break;
+        case "raton":
+        return (
+          <Productos nombre={nombre}/>
+        );
+        break;
+        case "monitor":
+        return (
+          <Productos nombre={nombre}/>
+        );
+        break;
+      default:
+        return (<h2>NO EXISTE ESTE PRODUCTO: {nombre} </h2>);
+    }
+    
   }
 
   function NoPage() {
     return (
     <div>
-      <img src={error404} alt="Error 404" />
-      <p>Es posible que el enlace que has seguido sea incorrecto o que se haya eliminado la página.</p>
+      <Comerror404 />
     </div>
     );
   }

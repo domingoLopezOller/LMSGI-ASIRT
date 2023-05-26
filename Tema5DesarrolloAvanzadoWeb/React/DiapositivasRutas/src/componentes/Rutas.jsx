@@ -4,6 +4,7 @@ import CarouselBootstrap from './CarouselBootstrap.jsx';
 import IconosRedesSociales from './IconosRedesSociales.jsx';
 import NavBar from './NavBar.jsx';
 import Home from './Home.jsx';
+import error404 from '/error404.gif';
 
 
 export default function Rutas () {
@@ -84,5 +85,10 @@ export default function Rutas () {
   }
 
   function NoPage() {
-    return <div>Error 404</div>;
+    return (
+    <div>
+      <img src={error404} alt="Error 404" />
+      <p>Es posible que el enlace que has seguido sea incorrecto o que se haya eliminado la página.</p>
+    </div>
+    );
   }

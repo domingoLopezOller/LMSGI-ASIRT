@@ -1,21 +1,21 @@
-// import CarouselBootstrap from "./componentes/CarouselBootstrap";
-import { RedesSociales} from "./componentes/RedesSociales";
-import { useState } from 'react'
+import React from 'react'
+import './App.css'
+import Header from './componentes/Header.jsx';
+import NavBar from './componentes/NavBar.jsx';
+import Main from './componentes/Main.jsx';
+import Footer from './componentes/Footer.jsx';
 
-//import './App.css'
 
 function App() {
 
   return (
-      <div>
-        <h1>Usando Iconos de redes sociales</h1>
-        <p>Incluir imágenes e iconos de React</p>
-        <RedesSociales />
-{/* 
-        <h1> Usando Bootstrap en React </h1>
-      <CarouselBootstrap andalucia={andalucia}/> */}
-      </div>
-  )
+    <>
+    <Header />
+    <NavBar />
+    <Main />
+    <Footer />
+    </>
+  );
 }
 
 export default App

@@ -1,0 +1,14 @@
+section{
+    display:flex;
+    justify-content: space-around;
+    flex:row nowrap;
+    width:80%;
+    height:80%;
+    align-items: center;
+}
+
+@media screen and (max-width:600px){
+    section{
+        width:100%;
+    }
+}

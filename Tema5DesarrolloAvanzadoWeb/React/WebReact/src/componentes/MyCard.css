@@ -1,0 +1,17 @@
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+    
+}
+.verde{
+    background-color: green;
+}
+.naranja{
+    background-color:orange;
+}
+
+div.card{
+    margin-top: 5%;
+}

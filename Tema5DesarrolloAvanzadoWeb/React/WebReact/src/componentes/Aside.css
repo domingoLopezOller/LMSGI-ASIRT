@@ -1,0 +1,9 @@
+aside{
+    background-color:pink;
+    width:30%;
+    height:700px;
+    position: absolute;
+    left: 80%;
+    bottom: 1%;
+    top: 20%;
+}

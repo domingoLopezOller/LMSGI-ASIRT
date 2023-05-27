@@ -6,6 +6,8 @@ import Rutas, { RutaOutlet, RutasConError, RutasMenu } from './Rutas'
 export const ReactAvanzado = () => {
   return (
     <>
+    <h1>Tarea de la pagina 92</h1>
+  
     {/* <h1> React AVANZADO: Gestión de eventos onClick </h1>
     <Form/>
     
@@ -25,14 +27,15 @@ export const ReactAvanzado = () => {
     <Counter/> */}
 
 
-    <h1> React AVANZADO: gestión de rutas</h1>
+    {/* <h1> React AVANZADO: gestión de rutas</h1>
     <h2>Rutas en URL</h2>
-    {/* <Rutas/> */}
-    <RutaOutlet />
-    {/* <h2>Rutas con error 404 y entrada variable de parámetros en URL</h2>
-    <RutasConError/>
-    <h2>Rutas con menú nav</h2>
-    <RutasMenu/> */}
+     <Rutas/> 
+    <RutaOutlet /> */}
+     {/* <h2>Rutas con error 404 y entrada variable de parámetros en URL</h2>
+    <RutasConError/> */}
+    {/* <h2>Rutas con menú nav</h2>
+    <RutasMenu/> *
+    </> */}
     </>
   )
 }

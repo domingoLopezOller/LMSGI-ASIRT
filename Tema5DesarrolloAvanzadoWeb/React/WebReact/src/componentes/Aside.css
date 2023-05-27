@@ -1,9 +1,32 @@
 aside{
-    background-color:pink;
-    width:35%;
+    background-color:rgb(236, 234, 234);
+    width:25%;
     height:700px;
     position: absolute;
-    left: 80%;
+    left: 75%;
     bottom: 1%;
     top: 20%;
+    border: solid rgb(236, 234, 234);
+    padding: 1%;
+}
+
+div.encabezado{
+    background-color: rgb(236, 234, 234);
+    border-bottom: dotted;
+    margin-bottom: 3%;
+}
+
+h5{
+    color: blue;
+}
+
+h6{
+    color: rgb(185, 185, 185);
+    margin-bottom: 5%;
+}
+
+@media (max-width:1000px){
+    aside{
+        height: 1000px;
+    }
 }

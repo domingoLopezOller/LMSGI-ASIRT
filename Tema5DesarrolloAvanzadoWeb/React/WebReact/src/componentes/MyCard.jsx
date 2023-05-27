@@ -5,9 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyCard({color},{titulo}) {
   let imagenes = [
-    { color: "verde", imagen: "/services.jpg", title: "services" },
-    { color: "azul", imagen: "/clients.jpg", title: "clients" },
-    { color: "naranja", imagen: "/company.jpg", title: "company" },
+    { color: "verde", imagen: "/services.jpg", title: "SERVICES" },
+    { color: "azul", imagen: "/clients.jpg", title: "CLIENTS" },
+    { color: "naranja", imagen: "/company.jpg", title: "COMPANY" },
   ];
 
 let title;
@@ -24,7 +24,7 @@ while (i < 3) {
 
   return (
   
-    <Card class="rounded-left" className={color} style={{ width: '18rem'}}>
+    <Card className={color} style={{ width: '18rem'}}>
       <Card.Img variant="top" src={imagen} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

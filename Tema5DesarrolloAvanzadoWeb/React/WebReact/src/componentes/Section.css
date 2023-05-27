@@ -2,7 +2,7 @@ section{
     display:flex;
     justify-content: space-around;
     flex:row nowrap;
-    width:65%;
-    height:80%;
+    width:75%;
+    height:100%;
     align-items: center;
 }

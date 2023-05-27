@@ -1,22 +1,40 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './MyCard.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function MyCard({color}) {
+function MyCard({color},{titulo}) {
+  let imagenes = [
+    { color: "verde", imagen: "/services.jpg", title: "services" },
+    { color: "azul", imagen: "/clients.jpg", title: "clients" },
+    { color: "naranja", imagen: "/company.jpg", title: "company" },
+  ];
+
+let title;
+let imagen = '';
+let i = 0;
+while (i < 3) {
+    if (color == imagenes[i].color){
+        imagen = imagenes[i].imagen;
+        title = imagenes[i].title;
+        i = 3;
+    }
+    ((i++));
+}
+
   return (
-    
-    <Card className={color} style={{ width: '18rem'}}>
-      <Card.Img variant="top" src="/vite.svg" />
+  
+    <Card class="rounded-left" className={color} style={{ width: '18rem'}}>
+      <Card.Img variant="top" src={imagen} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>{title}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dolore pariatur sunt maiores nemo iste quo impedit iure minus suscipit quas quibusdam, sed sapiente ipsa autem laborum quod temporibus illum!
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
       </Card.Body>
+      <Card.Footer>
+
+      </Card.Footer>
     </Card>
   );
 }

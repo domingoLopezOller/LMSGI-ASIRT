@@ -1,15 +1,15 @@
 import React from 'react'
 import './Footer.css'
-import {BsFacebook, BsTwitter} from "react-icons/bs";
-import { BiWorld } from "react-icons/bi";
+import { BsFacebook,BsInstagram,BsTwitter,BsYoutube } from "react-icons/bs";
 
 const Footer = () => {
   return (
     <footer>
       <div>
-        <a href="#"><BsFacebook/> </a>  
-        <a href="#"><BsTwitter/> </a>
-        <a href="http://iescuravalera.es"><BiWorld /> </a>
+        <a href="https://www.facebook.com/"><BsFacebook/></a>
+        <a href="https://www.instagram.com/"><BsInstagram/></a>
+        <a href="https://twitter.com/"><BsTwitter/></a>
+        <a href="https://www.youtube.com/"><BsYoutube/></a>
       </div>
     </footer>
   )

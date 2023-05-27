@@ -5,9 +5,9 @@ import MyCard from './MyCard'
 const Section = () => {
   return (
     <section>
-        <MyCard color="verde"/>
-        <MyCard color="naranja"/>
-        <MyCard color="azul"/>
+        <MyCard color="naranja" />
+        <MyCard color="verde" />
+        <MyCard color="azul" />
     </section>
   )
 }

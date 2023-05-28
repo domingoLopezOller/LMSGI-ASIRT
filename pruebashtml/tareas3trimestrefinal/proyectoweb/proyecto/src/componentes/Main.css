@@ -1,0 +1,16 @@
+main{
+    display:flex;
+    flex: row nowrap;
+    width: 80%;
+    height: 62%;
+}
+
+@media (max-width:600px){
+    section{
+        width:100%;
+    }
+
+    aside{
+        display: none;
+    }
+}

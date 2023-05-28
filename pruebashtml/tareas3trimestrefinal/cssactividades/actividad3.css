@@ -1,0 +1,547 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    width:100%;
+    height: 1000px;
+}
+/* Contenido de la cabecera */
+header{
+    width:100%;
+    height:78%;    
+    background: linear-gradient(rgb(255, 255, 255) 10%, transparent 90%),  url('../Media/headerIES.jpg') no-repeat;
+    background-size:cover;
+}
+header div.encabezado{
+    display:flex;
+    flex:row nowrap;
+    width:100%;
+    height:30%;
+    padding:2%;
+    gap:5%; 
+}
+header div.encabezado figure{
+    width:10%;
+    height:80%;
+    align-self:center;
+}
+header div.encabezado div.texto{
+    width:75%;
+    align-self:center;
+    text-align: left;
+}
+header div.encabezado div.texto h1 a{
+    color:black;
+    text-decoration: none;
+}
+header div.encabezado div.texto h1 a:hover{
+    color:#CE4639;
+}
+header div.encabezado div.texto h3{
+    color:#4C89C1;
+    font-weight: 25;
+}
+header div.encabezado div.buscar{
+    width:15%;
+    align-self:center;
+}
+header div.encabezado div.buscar a{
+    color:black;
+    text-decoration: none;
+    font-weight: 500;
+}
+header div.encabezado div.buscar a:hover{
+    color:#CE4639;
+}
+
+
+/* Colocar los estilos del nav del header */
+/*Borde y posición del nav*/
+/* menu */
+header nav{
+    position:sticky; position:-webkit-sticky; top:10px;
+    width:55%;
+    height:10%;
+    margin:auto;
+    padding: auto;
+    background-color:white;
+    border: solid #CE4639 1px;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+
+header nav ul {
+    position: relative; 
+    top: 25%;
+    left: 15%;
+    list-style:none;
+}
+   
+/* items del menu */
+header nav ul li {
+    background-color:white;
+    
+}
+   
+/* enlaces del menu */  
+header nav ul a {
+    display:block;
+    color:#CE4639;
+    text-decoration:none;
+    padding:10px;
+}
+   
+/* items del menu */
+header nav ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+   
+/* efecto al pasar el ratón por los items del menu */
+header nav ul li:hover {
+    background:#222222;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+header nav ul li ul li a {
+    color: gray;
+}
+
+/* menu desplegable */
+header nav ul ul {
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del nav */
+    top: auto;
+    left:auto;
+    bottom:auto;
+}
+
+/* Posiciñon del menú desplegable. Segundo nivel */
+nav ul ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del ul */
+    top:33.3%;
+    left:100%;
+} 
+   
+/* items del menu desplegable */
+header nav ul ul li {
+    float:none;
+    border: #CE4639 solid 1px;
+    width:300px
+}
+   
+/* enlaces de los items del menu desplegable */
+header nav ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+    background-color:#222222;
+}
+   
+   /* items del menu desplegable al pasar el ratón */
+header nav ul li:hover > ul {
+    display:block;
+    color: white;
+}
+     
+/* CSS MAIN */
+main{
+    display:flex;
+    flex: row nowrap;
+    background-color:lightgrey;
+    width:100%;
+    height:150%;
+}
+main section{
+    width:70%;
+    height:100%;
+}
+/* Parte con los artículos de noticias */
+main section.noticias{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
+
+/* Vamos a gestionar que el artículo tenga dos div (inicial y oculto) donde el oculto se ve al pasar por encima */
+main section article{
+    width:29%;
+    height:300px;
+    margin:2%;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+
+main section article.card1{
+    border:1px #CE4639 solid;
+    color:#CE4639;
+}
+
+main section article.card2{
+    border:1px #26866D solid;
+    color:#26866D;
+}
+
+main section article.card3{
+    border:1px #604D88 solid;
+    color:#604D88;
+}
+
+main section article.card1 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/jace.png') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card1 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #CE4639 solid;
+}
+
+main section article.card1 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article.card2 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/Mural-8M-1024x768.jpg') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card2 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #26866D solid;
+}
+main section article.card2 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article.card3 div.inicial{
+    background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../Media/torneoAjedrez.jpg') no-repeat;
+    background-size:cover;
+    height:100%;
+    border-radius: 5%;
+}
+
+main section article.card3 div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px #604D88 solid;
+}
+main section article.card3 div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
+}
+
+main section article:hover div.oculto{
+    opacity:1;
+} 
+
+main section article div.oculto{
+    height:100%;
+    background-size:cover;
+    text-align:left;
+    position: relative;
+    top: -298px;
+    z-index: 1;
+    border-radius: 5%;
+    opacity: 0; 
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+
+main section article.card1 div.oculto{
+    background-color:#CE4639;
+    color: white;
+}
+
+main section article.card1 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card1 div.oculto p{
+    padding: 2% 10%;
+}
+
+main section article.card2 div.oculto{
+    background-color:#26866D;
+    color: white;
+}
+
+main section article.card2 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card2 div.oculto p{
+    padding: 2% 10%;
+}
+
+
+main section article.card3 div.oculto{
+    background-color:#604D88;
+    color: white;
+}
+
+main section article.card3 div.oculto h4{
+    border-bottom: white 1px solid;
+    padding: 2% 10%;
+}
+
+main section article.card3 div.oculto p{
+    padding: 2% 10%;
+}
+
+/* CSS sobre ASIDE */
+main aside{
+    width:30%;
+    height:100%;
+    padding:2%;
+}
+
+main aside p a{
+    color:red;
+    text-decoration:none;
+}
+main aside p a:hover{
+    color:gray;
+}
+main aside section.biblioteca{
+    width:100%;
+    height:25%;
+    margin:5%;
+}
+main aside figure.biblioteca{
+    width:100%;
+}
+main aside figure.logotipos{
+    width:50%;
+    margin:2%;
+    display:flex;
+    flex:row nowrap;
+    gap:1%;
+}
+
+main aside section.encuentranos{
+    width:100%;
+    height:20%;
+    margin:2%;
+    padding:5%;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+main aside section.encuentranos a{
+    color:#66A896;
+}
+main aside section.encuentranos a:hover{
+    color:gray;
+}
+
+main aside section.buscar{
+    width:100%;
+    height:15%;
+    padding:5%;
+}
+
+main aside section.buscar form input{
+    margin:2%;
+}
+main aside section.buscar form input.submit{
+    border:1px red solid;
+    padding:10px;
+    background-color:white;
+    color:red;
+    font-weight: bold;
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    -moz-border-radius:10%;
+    -ms-border-radius:10%;
+    -o-border-radius:10%;
+}
+main aside section.buscar form input.submit:hover{
+    background-color:black;
+    color:white;
+    border-color:black;
+}
+main aside section.videos{
+    width:100%;
+    height:35%;
+    padding:5%;
+    overflow:auto;
+    border-top:1px black solid;
+    border-bottom:1px black solid;
+}
+main aside section.videos hr{
+    margin:5%;
+}
+main aside section.videos iframe{
+    width:100%;
+    height:auto;
+    margin-top:3%;
+}
+
+footer{
+    width:100%;
+    height:50%;
+    background-color:#222222;
+    color:gray;
+}
+
+footer nav{
+    width:100%;
+    height:10%;
+    background-color:#2A2A2A;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+footer nav a{
+    color:white;
+    text-decoration: none;
+    margin:2%;
+}
+footer nav a:hover{
+    color:gray;
+}
+
+footer div.contenido{
+    display:flex;
+    width:100%;
+    height:90%;
+    flex:row nowrap;
+    gap:3%;
+}
+
+footer div p{
+    margin:20px;
+    color: rgb(204, 204, 204);
+}
+footer div a{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+}
+
+footer div a:hover{
+    color:gray;
+}
+footer div p.grisClarito{
+    color: rgb(204, 204, 204);
+}
+footer div li{
+    font-weight: bold;
+}
+footer div.calendario{
+    width:33%;
+    padding:1%;
+    border-right: #CE4639 2px solid;
+}
+footer div.calendario img{
+    width:85%;
+    height:85%;
+}
+footer div.enlaces{
+    width:33%;
+    padding:1%;
+}
+
+footer div.enlaces ul li{
+    padding: 2%;
+}
+
+footer div.encuentranos{
+    width:33%;
+    padding:1%;
+    border-left:green 2px solid;
+}
+
+footer div.encuentranos p{
+   text-align: justify;
+}
+
+footer img {
+    height: 50%;
+}
+
+footer div.encuentranos figure.logotipos{
+    width:50%;
+    height: 23%;
+    margin:2%;
+    display:flex;
+    flex:row nowrap;
+    gap:1%;
+}
+
+img{
+    width:100%;
+    height:100%;
+    object-fit: fill;
+}
+
+@media screen and (max-width:800px){
+    body{
+        height:3600px;
+    }
+    header{
+        background: lightgrey;
+        height:15%;
+    }
+    header div.encabezado{
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    header nav{
+        display:none;
+    }
+    header div.encabezado div.buscar{
+        display:none;
+    }
+    main{
+        flex-direction:column;
+        height:75%;
+    }
+    main section{
+        width:100%;
+    }
+    main aside{
+        width:100%;
+    }
+    footer{
+        height:45%;
+    }
+    footer div.contenido{
+        flex-direction: column;
+    }
+    footer div.calendario{
+        width:100%;
+    }
+    footer div.encuentranos{
+        width:100%;
+    }
+    footer div.enlaces{
+        width:100%;
+    }
+
+    
+}

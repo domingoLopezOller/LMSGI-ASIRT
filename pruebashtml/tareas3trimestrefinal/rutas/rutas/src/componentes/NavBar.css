@@ -1,0 +1,45 @@
+nav{
+    position:sticky; position:-webkit-sticky; top:10px;
+    width:100%;
+    height:100%;
+    background-color:blue;
+    border: solid #CE4639 1px;
+}
+
+nav ul {
+    list-style:none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+   
+/* items del menu */
+nav ul li {
+    background-color:blue;
+    
+}
+   
+/* enlaces del menu */  
+nav ul p {
+    display:block;
+    color:white;
+    text-decoration:none;
+}
+   
+/* efecto al pasar el ratón por los items del menu */
+nav ul li:hover {
+    background:black;
+    padding: 0.7%;
+}
+
+nav p:hover {
+    color: white;
+}
+   
+   /* items del menu desplegable al pasar el ratón */
+nav ul li:hover > ul {
+    display:block;
+    color: white;
+}

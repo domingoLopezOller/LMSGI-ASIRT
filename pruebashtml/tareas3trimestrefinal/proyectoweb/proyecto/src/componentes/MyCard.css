@@ -1,0 +1,23 @@
+.azul{
+    background-color: rgb(18, 18, 173);
+    
+}
+.verde{
+    background-color: rgb(15, 124, 15);
+}
+.naranja{
+    background-color:rgb(177, 120, 14);
+}
+
+div.card-footer{
+    background-color: grey;
+}
+
+p.card-text{
+    color:white
+}
+
+div.card-title.h5{
+    text-align: right;
+    color:white
+}

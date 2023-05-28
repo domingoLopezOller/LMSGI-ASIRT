@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#CajaA{
+    border:1px solid black;
+    flex: 100%;
+    background-color: orange;
+}
+
+#CajaB{
+  border:1px solid black;
+  flex: 100%;
+  background-color: green;
+}
+
+#CajaC{
+  border:1px solid black;
+  flex: 100%;
+  background-color: blue;
+}
+
+#CajaD{
+  border:1px solid black;
+  flex: 100%;
+  background-color: red;
+}
+
+  
+  @media (max-width: 800px) {
+    #CajaC, #CajaD{
+        flex: 50%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    #CajaA, #CajaB{
+        flex: 50%;
+    }
+  }

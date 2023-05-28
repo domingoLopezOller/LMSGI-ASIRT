@@ -1,5 +1,5 @@
 import React from 'react'
-export const ElemetoLista = () => {
+export const ElementoLista = () => {
   return (
     <>
         <li>hola</li>

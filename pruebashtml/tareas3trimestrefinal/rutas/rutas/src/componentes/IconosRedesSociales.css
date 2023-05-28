@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+}
+
+div div{
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+div div.contenedorIconosRedes a{
+    padding: 1%;
+}
+

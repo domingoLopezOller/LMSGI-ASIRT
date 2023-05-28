@@ -1,5 +1,3 @@
-// import React from 'react'
-// import Table from 'react-bootstrap/Table';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Productos.css'
 

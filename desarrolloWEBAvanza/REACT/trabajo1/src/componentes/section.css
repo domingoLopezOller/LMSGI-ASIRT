@@ -1,0 +1,11 @@
+section{
+    display: flex;
+    flex-direction: row nowrap;
+    width: 80%;
+}
+
+@media screen and (max-width:600px){
+   section{
+    width: 100%;
+   }
+}

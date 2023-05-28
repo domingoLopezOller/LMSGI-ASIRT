@@ -1,0 +1,9 @@
+header{
+    width: 100%;
+    height: 200px;
+    background-color: paleturquoise;
+    background-image: url('/gato.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain, cover;
+}

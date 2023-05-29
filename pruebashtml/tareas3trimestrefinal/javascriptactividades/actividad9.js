@@ -42,7 +42,7 @@ function sumarArray(array) {
     return parseInt(numero);
   });
   var resultado = sumarArray(miArray);
-  console.log("La suma de los elementos del array es: " + resultado);
+  alert("La suma de los elementos del array es: " + resultado);
   
 
 alert ('5')

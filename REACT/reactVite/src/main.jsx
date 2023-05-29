@@ -8,7 +8,7 @@ import { Web } from './componentes/Web.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App />  */}
-    <Web />
-    {/* <ReactAvanzado /> */}
+    {/* <Web /> */}
+    <ReactAvanzado />
   </React.StrictMode>,
 )

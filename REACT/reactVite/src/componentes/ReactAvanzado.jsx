@@ -3,6 +3,10 @@ import React from 'react'
 import { Cabecera, CabeceraHook, Contador, Counter, EjemploContar, Form } from './Hooks'
 import { Pokemon2 } from './Pokemon'
 import Rutas, {RutaOutlet, RutasConError, RutasMenu, RutasNavigate } from './Rutas'
+import { Header } from './Header'
+import { NavBar } from './NavBar'
+import { Main2 } from './Main2'
+import { Footer } from './Footer'
 
 export const ReactAvanzado = () => {
   return (
@@ -31,12 +35,13 @@ export const ReactAvanzado = () => {
     <Rutas/> */}
     {/* <h2>Rutas con error 404 y entrada variable de parámetros en URL</h2>
     <RutasConError/> */}
-    {/* <h2>Rutas con menú nav</h2>
-    <RutasMenu/>  */}
+    <h2>Rutas con menú nav</h2>
+    <RutasMenu/> 
     {/* <h2>Rutas con Navigate</h2>
     <RutasNavigate/> */}
-    <h2>Rutas con Outlet</h2>
-    <RutaOutlet/>
+    {/* <h2>Rutas con Outlet</h2>
+    <RutaOutlet/> */}
     </>
+    
   )
 }

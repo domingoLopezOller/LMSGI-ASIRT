@@ -12,6 +12,38 @@ alert("El resultado de la evaluación es: "+resultado);
 
 CalculaNota(notaTeoria,notaPractica);
 
+alert('2')
+
+function calcularFactorial(numero) {
+    if (numero === 0 || numero === 1) {
+      return 1;
+    } else {
+      return numero * calcularFactorial(numero - 1);
+    }
+  }
+  
+  var numero = parseInt(prompt("Ingrese un número:"));
+  var factorial = calcularFactorial(numero);
+  alert("El factorial de " + numero + " es: " + factorial);
+  
+
+alert ('3')
+
+function sumarArray(array) {
+    var suma = array.reduce(function(acumulador, elemento) {
+      return acumulador + elemento;
+    }, 0);
+    return suma;
+  }
+  
+  // Ejemplo de uso
+  var numeros = prompt("Ingrese los números separados por comas:"); // Ejemplo de entrada: 1,2,3,4,5
+  var miArray = numeros.split(",").map(function(numero) {
+    return parseInt(numero);
+  });
+  var resultado = sumarArray(miArray);
+  console.log("La suma de los elementos del array es: " + resultado);
+  
 
 alert ('5')
 
@@ -70,3 +102,4 @@ alert('6')
      alert("El número correcto es: "+numero+ " y has realizado "+contador+" intentos.");
  }
  adivinaNumero();
+
